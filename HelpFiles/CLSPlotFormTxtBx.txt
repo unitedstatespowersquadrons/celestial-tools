@@ -1,0 +1,15 @@
+CLS Plot form
+
+Purpose: To plot on a Constant Latitude Scale (CLS) USPS form a reduced sight or a series of sights comprising a fix. 
+This plotting form can be accessed from the SightLog form, from the Law of Cosines Sight Reduction (SRF) form, from
+the Alternative Sight Reduction Methods form, and from the Fix form. The approprise button to use this plotting form
+appears on each form listed when it can be used. You can use the CLS form repeatedly by a series of sights and fixes
+and each will plot on the same form as long as you do not exit the CLS Plot form. On the form there are three buttons
+you can use:
+	1. Print Sights  - Print a text file report of the Sights and Fixes that are inputs to these form plotted
+	2. Print Screen - Print the visible screen of the CLS Plot form
+	3. Exit - Close this form and return to the previous input form
+	
+The CLS Plot form seeks to implement the same CLS Plotting form (CLS-98) that is used in USPS classes.
+
+

@@ -1,0 +1,75 @@
+MANEUVERING BOARD (MoBoard)
+
+a. Purpose:  Perform several of the calculations typically done on a maneuvering board.  Calculate the
+Closest Point of Approach (CPA) of two vessels, course and speed of a contact (target) vessel, and
+related information.  Vessel 1 is the reference vessel (you).  Vessel 2 is the contact vessel.  Ranges
+and bearings are measured from Vessel 1 to Vessel 2.  If the resulting CPA is zero, a collision will
+occur.  (It is up to the captain to determine what range is "close enough".  Two types of calculations
+are included, depending on what data is known.  On a recreational vessel, data is typically obtained from
+a radar without Automatic Radar Plotting Aid (ARPA).
+
+Calculate the speed and direction of the true wind if the speed and course of the vessel and the speed
+and relative direction of the apparent wind are known.  Calculate the speed and relative direction of the
+apparent wind if the speed and course of the vessel and the speed and  direction of the true wind are
+known.
+
+b. Operation:  In the first (default) CPA type of calculation, required inputs are the range and bearing
+from Vessel 1 to Vessel 2 at two times, and, optionally, the course and speed of Vessel 1 (only needed to
+calculate Vessel 2 course and speed, not needed for CPA).  (In practice, a minimum of three sets of
+measurements are taken, in order verify that Vessel 2 is maintaining its course and speed.  Once
+verified, any two of the sets of measurements, preferably the earliest and latest, can be used for the
+calculation.)  Times are in whole minutes, ranges to hundredths of a nautical mile (limited to 99.99),
+bearings to tenths of a degree (limited to 359.9), course to tenths of a degree (limited to 359.9), and
+speed to tenths of a knot (limited to (99.9).  Press the "Calculate" button.  Outputs are the range of
+the CPA; the time to the CPA (measured from the later time); the bearing from Vessel 1 to Vessel 2 at the
+CPA; the time of CPA;  the direction of relative movement (DRM, also called direction of relative motion)
+and the speed of relative movement (SRM, also called speed of relative motion) of Vessel 2 with respect
+to Vessel 1; and the course and speed of Vessel 2.  (SRM and DRM are the speed and course of Vessel 2
+with respect to Vessel 1, and can be thought of as the speed and course of Vessel 2 if Vessel 1 were
+stationary.)  Vessel 2 can be a fixed object.  If no values are entered for  Vessel 1 speed, Vessel 1 is
+considered stationary.  If the time to the CPA is negative, CPA occurred before the later time, and the
+vessels are already moving apart.
+
+If the second time appears to be earlier than the first time, verification that the second time is on the
+following day, i.e. after midnight, will be requested, to confirm that it is not just an input error.
+
+In the second type of CPA calculation, required inputs the speeds and courses of Vessel 1 and Vessel 2,
+and the bearing and range from Vessel 1 to Vessel 2 at any available time.  (Actual time is not
+required.)  Speeds are to tenths of a knot (limited to 99.9), courses and bearings are to tenths of a
+degree, and ranges are to hundredths of a nautical mile (limited to 99.99).   Press the "Calculate"
+button.  Outputs are the range of the CPA; the time to the CPA (from the time of the data); the bearing
+from Vessel 1 to Vessel 2 at the CPA; and the DRM  and SRM.
+
+For the CPA calculations. course and bearing inputs can be true (recommended) or magnetic or compass
+(with respect to Vessel 1's compass), but must be consistent throughout, with resulting outputs of the
+same type.
+
+For the True Wind calculation, required inputs are the true course and speed of the vessel and the speed
+and relative "from" direction of the apparent wind.  Courses and directions are to tenths of a degree
+(limited to 359.9).  Speeds are to tenths of a knot (limited to 99.9).  The relative direction of the
+apparent wind can be entered as a negative number.  For instance, if the apparent wind is coming from 50°
+off the port bow, this can be entered as 310° (360 - 50) or -50° (relative).  The calculated direction of
+the true wind is displayed in degrees true.  However, if the Vessel Course is omitted or set to zero, the
+calculated direction of the true wind is effectively in degrees relative.
+
+For the Apparent Wind calculation, required inputs are the true course and speed of the vessel and the
+speed and true (referred to true north) "from" direction of the true wind.  Courses and directions are to
+tenths of a degree (limited to 359.9).  Speeds are to tenths of a knot (limited to 99.9).    The
+calculated direction of the apparent wind is displayed in degrees relative (to the course of the vessel).
+However, if the Vessel Course is omitted or set to zero, the calculated direction of the apparent wind is
+effectively in degrees true.
+
+Pressing the "Clear" button clears the input data of the displayed type of calculation, unless an illegal
+value remains, which must be corrected first. Inputs of the types that are not displayed are not cleared.
+
+Switching from one type to the other clears the output data but does not clear the input data.
+
+Calculations assume that both vessels have maintained course and speed.
+
+c. Accuracy/Resolution:  As with a maneuvering board, these are two-dimensional approximate solutions to
+a three-dimensional problem, but should be reasonably accurate for values for which a maneuvering board
+would be used.
+
+Ranges are displayed to hundredths of a nautical mile, elapsed times to tenths of minutes, clock times to
+whole minutes, speeds to tenths of a knot, and courses and bearings to tenths of a degree.
+

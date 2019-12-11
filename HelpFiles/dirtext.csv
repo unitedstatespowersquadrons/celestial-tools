@@ -1,0 +1,21 @@
+ScrIndex,ScreenName,HelpFileName
+8,Arc Time,ArcTimeTxtBx.txt
+15,2/3 Bearings,BearingsTxtBx.txt
+19,Currents,CurrentsTxtBx.txt
+10,Degree Length,DegLenTxtBx.txt
+17,Distances,DistantcesTxtBx.txt
+0,General Celestial Tools,GeneralTxtBx.txt
+14,Maneuvering Board,MoBoardTxtBx.txt
+9,Navigational Math,NavMathTxtBx.txt
+3,Noon Sight Planning,NoonSightTxtBx.txt
+11,Sailings,SailingxTxtBx.txt
+6,Shared Locations,SharedLocsTxtBx.txt
+5,Sight Log,SightLogTxtBx.txt
+1,Sight Planning,SightPlanTxtBx.txt
+12,60 DST ,SixtyDSTTxtBx.txt
+2,Sight Reduction and Fix (SRF),SRFixTxtBx.txt
+4,Alternate Sight Reduction Methods,SRMethodsTxtBx.txt
+18,Tides,TidesTxtBx.txt
+13,TVMDC,TVMDCTxtBx.txt
+16,Wind and Current ,WindCurrTxtBx.txt
+7,I&C Yellow Pages,YellowPagesTxtBx.txt

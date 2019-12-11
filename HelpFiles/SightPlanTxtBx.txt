@@ -1,0 +1,264 @@
+SIGHT PLANNER
+
+a. Purpose:  "Twilight" calculator and "Star Finder".  It will calculate the times of the Sun's rising
+and setting phenomena (twilights) and azimuths of sunrise and sunset for the entered date and location,
+and find the azimuth, altitude, and magnitude of the navigational bodies which are above the horizon at a
+selected time, without the need to consult an almanac or tables or to use a Rude (2102-D) Star Finder.
+(Since the program is intended to emulate the Rude Star Finder, it does not include corrections for
+refraction and dip.)  It will also calculate the availability data for a Sun-Moon fix for the entered
+date, location, azimuth range, and minimum altitude.  In addition, it will calculate the times
+(accurately or using the approximate method currently taught in N) and azimuths of moonrise and moonset
+and the phase of the Moon for the entered date and location.
+
+b. Operation:  Initial required inputs are date and DR latitude and longitude.  Zone Description is
+automatically calculated based on longitude, but any civil standard time zone can be entered manually to
+allow for time zones not based on longitude, or for Universal Time.  As a convenience feature, the UT
+(GMT) option forces time outputs to be in Universal Time.  Check the DST box if the timepiece is set for
+Daylight Savings Time.  Select whether the azimuths of the Sun and Moon should be shown for when the
+upper limb or the center of the body is on the visible horizon (see below).  Moon rise and set data is
+calculated fairly accurately unless the "Approximate Moon rise and set data" box is checked, in which
+case the accuracy will be similar to that of the approximate method currently taught in the N course.
+(Checking or unchecking that box has the same effect as activating the "Get Twilight Times/Moon Data"
+button.)  After activating the "Get Twilight Times/Moon Data" button, the program displays the zone times
+of sunrise, sunset, and civil, nautical, and astronomical morning and evening twilights in 24-hour
+format; the azimuths of sunrise and sunset (in parentheses, next to the times, if "Upper Limb" is
+selected); the times and azimuths of moonrise and moonset (if "Upper Limb" is selected), if they occur;
+and  the approximate phase of the Moon at ZT 1200, expressed in percent illumination, and whether it is
+waxing or waning.  (Note that rises and sets are defined as when the upper limb of the body is on the
+visible horizon.)  Any of the entered values can be changed at any time and the calculations redone.
+
+If "Center" is selected, the Sun and Moon azimuths shows are for when the center of the body is on the
+visible horizon.  Comparing the compass bearing of a celestial body with a computer bearing provides an
+accurate means of checking the deviation of a compass at sea.  This is usually done by measuring the
+body's amplitude, the angle between the body and the prime vertical (90° or 270°), measured along the
+horizon, when the center of the body is on the visible horizon.  Amplitude is then applied to the
+appropriate prime vertical to get the true azimuth of the center of the body.  Celestial Tools calculates
+the true azimuth directly, and displays it to the nearest tenth of a degree, as would a manual
+calculation.  (Although these azimuths are associated with the rises and sets, they actually occur
+shortly after the rises and shortly before the sets.)
+
+(Note that changing between "Upper Limb" and "Center" has the same effect as activating the "Get Twilight
+Times/Moon Data" button:  the azimuths are updated.)
+
+A time of "----" indicates that the Sun phenomenon does not occur for the date and location entered (e.g.
+midsummer sun does not set in high latitudes).
+
+(Note that when a manual time zone or DST is used, it is possible for solar phenomena to occur on the
+previous or next day.  For example, if the Start of AM Astronomical Twilight is 2336 and the Start of AM
+Nautical Twilight is 0058, the 2336 time is the previous day.)
+
+Note that in higher latitudes (generally above 62°) the Moon can remain above or below the horizon all
+day.  A less well known quirk of the arctic is that on certain days the Moon can rise or set twice.  (Try
+23 June 1989, L 66°N, Lo 0°.)
+
+Enter the zone time of interest for body visibility (i.e. above the horizon).  Any time can be entered
+(hhmm format), but in most cases it will be the start of AM civil twilight or the end of PM civil
+twilight, considered to be the middles of the optimum observing periods.  When the time is entered, a box
+next to it will indicate whether the time entered occurs during daylight (yellow background), during
+twilight (blue background), or at night (black background). (For the purposes of this function, morning
+twilight is defined as the time of the start of AM nautical twilight through the minute before the time
+of sunrise;  evening twilight is defined as the time of sunset through the minute before the time of the
+end of PM nautical twilight.)  This is intended to help catch errors in entering the desired zone time -
+in most cases the box should be blue, indicating twilight.  If it is not, be sure the entered time is the
+desired time.  If a range of azimuths of interest for body visibility other than 0° to 360° (the default)
+is desired, select a single range of azimuths, going clockwise.  (That is, from 10 to 350 would give a
+340° range, but from 350 to 10 would give a 20° range.  Remember that sights on bodies that are not above
+the available horizon could potentially be taken with a back sight.  To consider these, set the azimuth
+range from 0° to 360°.)  If desired, enter a minimum altitude for the Sun-Moon fix other than the default
+value of 15°, the minimum altitude for which temperature and barometric pressure corrections are not
+required.  Acceptable values are whole degrees from 0 to 90. (If 0° is used, only the upper limbs will be
+above the horizon.) (Versions of Celestial Tools prior to V4.2.1 had an upper limit of 15°.  This change
+allows the times that the Sun and Moon are at a higher altitude to be calculated.)  Select either "List
+Visible Bodies/Sun-Moon Fix", "View Visible Bodies", or "Star Finder Data".
+
+If "List Visible Bodies/Sun-Moon Fix" is selected, a table with three columns is displayed.  The three
+columns are for: the Sun, Moon, planets, and first magnitude stars; second magnitude stars; and third
+magnitude stars.  They show the name, azimuth, altitude, and magnitude of bodies that are above the
+horizon. (Note that star magnitudes, as listed in the Nautical Almanac, changed in 2006.  The magnitudes
+shown in Sight Planner are based on the Greenwich year derived from the date entered in the data entry
+section of the Sight Planner form.)  Within each column, the bodies within the azimuth range specified
+are listed in order of increasing azimuth.  For the Moon, percent illumination is given instead of
+magnitude.  Bodies within the JN altitude range of 15° to 75° are shown in bold type.
+
+Also displayed is Sun-Moon fix availability data.  A box at the bottom of the third magnitude star column
+will indicate whether an acceptable Sun-Moon fix is available for the entered date, location, azimuth
+range, and minimum altitude, and, if so, gives the range of zone times and the range of percent
+illumination of the Moon.   An acceptable Sun-Moon fix is defined as having the centers (not the upper
+limbs) of the Sun and Moon above the entered minimum altitude value, both bodies within the specified
+azimuth range, and the difference in azimuths between 45° and 135°.  Particular times, or even entire
+dates, might be rejected by the user if it is felt that the Moon is too narrow.  Be aware that for
+certain dates and latitudes the maximum allowed altitude of one of the bodies for a particular sight
+reduction method might be exceeded.
+
+Note that in all cases, including the variations of "View Visible Bodies" described below, if the time
+entered is that of sunrise, sunset, moonrise, or moonset, the corresponding body will not be considered
+visible.  This is because the rise and set times are defined as when the upper limb of the body is on the
+visible horizon, so the body is actually below the horizon.  A body is considered visible when its center
+is above the visible horizon, so, for example, it might be several minutes after the time of sunrise
+before the Sun is visible.
+
+If "View Visible Bodies" is selected, a view of how the bodies appear in the sky is displayed.  There are
+three options:
+
+If "View Overhead" is selected (the default), the view is from the inside of the celestial sphere, as it
+was on the 2102-A and 2102-B Star Finders.  The diagram is oriented as if it were being held overhead
+while looking at the sky:  if the "N" is to the north, east is to the right.  Azimuth increases
+counterclockwise.
+
+If "View "Star Finder"" is selected, the view is from the outside of the celestial sphere, the way it is
+on the 2102-D and 2102-C Star Finders.  Azimuth increases clockwise.
+
+In either of these cases, the center of the diagram represents the zenith, and the outer circle
+represents the horizon.  The default view has south at the bottom (view toward south), but it can be
+changed to view toward any of the cardinal compass points.  Circles of altitude at 15° increments are
+shown:  the ones at the special JN altitudes of 15° and 75° are solid, while the rest are dotted.  Dotted
+azimuth lines at 15° increments are also shown.
+
+If "View Horizon" is selected, the view is 180° of azimuth from the horizon up to 90° altitude.  The
+default view is centered on south (180°) azimuth, but it can be centered on any of the cardinal compass
+points.  Lines of altitude at 15° increments are shown:  the ones at the special JN altitudes of 15° and
+75° are solid, while the rest are dotted.  Dotted azimuth lines at 15° increments are also shown.
+
+The navigational bodies are represented by filled circles of three sizes:  the larger ones represent the
+first-magnitude stars and solar system bodies; the mid-sized ones represent the second-magnitude stars;
+and the smaller ones represent the third-magnitude stars.  There is the option of displaying any
+combination of first magnitude stars and solar system objects; second magnitude stars; and third
+magnitude stars.  If the "Show Names" box is checked, the names of the bodies will appear to the right of
+their circles.  (The default is all bodies without names.)
+
+If "Limit azimuth range" is unchecked (the default), the entire available sky is shown (360º for the
+"Overhead" and "Star Finder" views, 180º for the "Horizon" view).  If "Limit azimuth range" is checked,
+the display is limited to the specified azimuth range.
+
+If "Show Helpers" is checked, the positions of another 70 stars are analyzed and, if visible, the stars
+are displayed.  These stars are represented by open circles to distinguish them from the 64 navigational
+bodies.  Their magnitudes are represented by the size of the circles, and use the same binning as the
+navigational bodies, with an additional smaller circle representing fourth magnitude and dimmer stars.
+These stars include those selected to complete the most recognizable asterisms (not constellations; e.g.
+the Big Dipper, not Ursa Major) that contain navigational stars, plus other "pointer" stars, with the
+intent of making it easier to locate the body of interest.  Consistent with this purpose, when "Show
+Helpers" is checked, the check boxes for the first, second, and third magnitude bodies become active but
+are disabled, forcing the display of all available bodies.  When "Show Helpers" is unchecked, the three
+magnitude check boxes return to their previous states.  The option to limit azimuth range is still
+available when "Show Helpers" is checked.  The names of the helpers are not shown even if the "Show
+Names" box is checked.
+
+As the mouse pointer crosses into the sky display, the pointer changes from an arrow to a cross, and the
+azimuth and altitude of its position is displayed in the boxes to the right.  Regardless of whether or
+not "Show Names" is checked, when the pointer is over a body the name of the body will appear in a box by
+the azimuth and altitude boxes.  (Note that if a smaller circle, representing a dimmer star is obscured
+by a larger circle, representing a brighter body, the name of the dimmer star might not appear.)
+
+Whenever "View Visible Bodies" is selected with "View Overhead" or "View "Star Finder"", an additional
+function, "Best Bodies Aid", is available.  It is initially set to "Off", but if "Two-body fix", "Three-
+body fix (boat)", or "Three-body fix (beach)"  is selected, red radial lines appear on the sky view, and
+two additional buttons, "Rotate CW" and "Rotate CCW" become enabled.
+
+If "Two-body fix" is selected, three pairs of red azimuth lines appear.  The two solid red lines are
+separated by 90°, which results in the optimum cut (angle between LOPs) of 90° for a two-body fix.  A
+pair of dashed lines and a pair in a dash-dot pattern appear.  Each pair is 22.5° on either side of a
+solid red line.  If two bodies are selected, each within one of these matched pairs of broken lines, the
+cut will be within the allowable range of 45° to 135°.
+
+For a three-body fix, the optimum cut can be achieved with an azimuth spread between bodies of 120° or
+60°, represented by the three solid red lines. The 120° spread is recommended when at least 240° of
+horizon and clear sky is available, most likely on a boat.  When those conditions cannot be met, as when
+taking practice sights on a beach (unless a back sight might help), the 60° spread is recommended.  The
+"Three-body fix (boat)" and "Three-body fix (beach)" options represent the 120° and 60° choices,
+respectively.  The 120° spread is preferred, but circumstances might make the 60° spread preferable even
+if the 120° spread is possible.
+
+If "Three-body fix (boat)" is selected, three additional pairs of broken lines appear, one dashed, one in
+a dash-dot pattern, and one in a dash-dot-dot pattern.   Each pair is 15° on either side of a solid red
+line.  If three bodies are chosen, each within one of these matched pairs of broken lines, the azimuth
+spread between bodies will be from 90° to 150°, meeting the requirement that the smaller angle between
+any two LOPs must be no less than 30°.
+
+If "Three-body fix (beach)" is selected, to achieve the allowable range of cuts, the angle between the
+middle body and either outer body must be greater than or equal to 30° and less than or equal to 120°,
+and all three bodies must fall within a total angle of 150°.  This situation cannot be represented by
+pairs of dotted lines on either side of the solid lines.  Only two dotted lines, showing the extent of
+the 150° angle that all three bodies must fall within, will appear.  It is left to the user to ensure
+that the other requirement is met.
+
+All of the sets of red lines can be rotated clockwise or counterclockwise in 1° steps, using the buttons
+(mouse only, no keyboard control), at a rate of about 10° per second.  This feature can be used in
+combination with any of the other features in order to select the best bodies for two- and three-body
+fixes based on cut, magnitude, altitude, etc.  If options are selected that do not use this feature (e.g.
+"View Horizon"), the lines will reappear in their last positions when an appropriate option is selected
+again or when switching between "Two-body fix" and either "Three-body fix". The lines can be removed by
+selecting "Off", but will return to their last positions if "Two-body fix", "Three-body fix (boat)", or
+"Three-body fix (beach)" is selected again.
+
+Note that there is some distortion in these views compared to the actual sky, especially with the
+"Horizon" view, but the altitudes and azimuths observed here should be comparable to those obtained with
+"List Visible Bodies".  In the "Horizon" view there is increased distortion at higher altitudes - the
+higher the altitude, the more the "sky" is stretched horizontally.  Also note that if the time of
+sunrise, sunset, moonrise, or moonset is used, the Sun or Moon will not appear on the list or views,
+because, as explained earlier, the times are based on the Sun's or Moon's upper limb, but their
+visibility is based on their centers.
+
+If "Star Finder Data" is selected, a table with data which a student would need to manually set a Star
+Finder is displayed.  This includes zone description; GMT (UT); GHA of Aries; LHA of Aries; GHA, RA, and
+Dec of the Sun and Moon; and the SHA, RA, and Dec of the planets.
+
+If latitude, longitude, or time zone is changed, activating "List Visible Bodies", "View Visible Bodies",
+or "Star Finder Data", or changing the state of any of the view check boxes automatically updates
+twilight times, the visible bodies list, the visible bodies views, and the star finder data.
+
+The entered DR latitude is used to compute the altitudes and azimuths of the visible bodies.  In order to
+more closely match what would be found with a Rude Star Finder, the DR latitude can be changed to the
+latitude of the appropriate blue Star Finder template before continuing.
+
+The program can also be used as a star (or planet) identifier by using one of the "views" with "Show
+Names" checked, or by matching the altitude and azimuth of the unknown body with one on one of the tables
+of visible objects, for that date, time, and location.
+
+c. Accuracy/Resolution:  See Help>General>"Almanac" Accuracy.
+
+Azimuths and altitudes of the visible bodies are calculated quite accurately (better than can be achieved
+with a Rude Star Finder), but are displayed to the nearest degree.  In practice, additional precision is
+unwarranted, as it is unlikely that the sights will be taken at precisely the time used in the
+calculation, and a typical sextant Galilean telescope has a 4° field of view (prismatic telescopes 7°).
+However, in the upper part of the form, the azimuths of the Sun and Moon, when either the upper limb or
+the center of the body is selected, are shown to the nearest tenth of a degree.  (Prior to V5.1.5, the
+azimuths of only the upper limbs were shown, to whole degrees, when on the visible horizon.  This was
+changed so comparisons with the azimuth of the center could be made easily.)  Magnitudes of the planets
+are approximate and are rounded to tenths.  The magnitudes of Venus, Mars, and Jupiter are expected to be
+within 0.2 of the values in the Nautical Almanac.  The magnitude of Saturn may differ by more because the
+angle of its rings is not considered in the calculation.
+
+Times of Sun rising and setting phenomena are rounded to whole minutes and are generally accurate to
+within one minute, about the accuracy achievable with the Nautical Almanac.   (The one minute difference
+can be due to an actual variance of less than one second and the subsequent rounding to whole minutes.)
+The azimuths are rounded to whole degrees.
+
+With the "Approximate Moon rise and set data" box unchecked, the times of moonrise and moonset are
+rounded to whole minutes and are accurate to about one minute, except at high latitudes, where the
+uncertainty may reach several minutes.  For low to middle latitudes, manual calculations done with the
+Nautical Almanac "precise" (Table I and Table II) method should agree fairly well, but those done with
+the "approximate" method (daily pages only) can be off by almost an hour at high latitudes.  With the
+"Approximate Moon rise and set data" box checked, the times should agree with an "approximate" method
+calculation within one minute; the azimuths will also be approximate, based on the approximate time
+calculated.  Azimuths are rounded to whole degrees.   Percent illumination is rounded to whole percent.
+
+Often the differences between the Sun rise and set times and the twilight times calculated by Celestial
+Tools and those of the tables on the daily pages of the Nautical Almanac are a result of the fact that
+the Nautical Almanac tables are calculated for the middle day of the three days shown on a page, but are
+applied to all three days.
+
+There is the potential for a one minute difference between times calculated using Auto ZD and those
+calculated using Manual ZD.  Each is an independent calculation, and the difference can arise because of
+rounding.
+
+For "List Visible Bodies" and related functions, altitudes and azimuths are rounded to whole degrees.
+(Note that a calculated azimuth of 359.5° or greater is shown rounded to 360°, not 000°, so as to retain
+its proper position when visible bodies are listed in order of increasing azimuth.)
+
+In order to speed up the display of results on older, slower computers, the Sun-Moon calculation is done
+with five-minute resolution instead of one-minute resolution.  This could potentially result in a "from"
+time that is as much as four minutes late and a "to" time that is as much as four minutes early.  For its
+intended purpose, this should be of no concern.  (Another slight error is due to the fact that the
+calculations are done with values of altitude and azimuth that have already been rounded to the nearest
+degree, but this is minor.)
+

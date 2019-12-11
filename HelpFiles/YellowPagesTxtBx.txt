@@ -1,0 +1,46 @@
+YELLOW PAGES (INCREMENTS AND CORRECTIONS)
+
+a. Purpose:  Reproduces the values of the Nautical Almanac Increments and Corrections table,
+traditionally known as the "yellow pages" because of their color in the government edition.  Can be
+entered "forwards" or "backwards".  When entering "forwards", calculates GHA Increment for Sun/Planets,
+Aries, and Moon, given UT minutes and seconds; calculates v or d correction given UT minutes and v or d
+value.  When entering "backwards", calculates time given a GHA Increment for Sun/Planets, Aries, and
+Moon.
+
+The sole intent of this tool is to help the student avoid making errors, or to help find errors already
+made, in using the Nautical Almanac Increments and Corrections table, for instance the common "right
+page, wrong column" problem.  It does this by presenting output data for a single set of input values,
+instead of the full-page format of the Nautical Almanac.
+
+b. Operation: Select whether to enter the table "forwards" (default) or "backwards".
+
+"Forwards" mode is typically used when extracting data from the Nautical Almanac for a sight reduction.
+To calculate the GHA Increment, enter the UT minutes and seconds, and select whether to obtain the
+increment for Sun/Planets, Aries, or Moon.  To calculate the v or d correction, enter the UT minutes and
+the v or d value from the daily pages of the nautical Almanac, without a sign.  The GHA Increment and v
+or d correction will be displayed and will be automatically updated for whatever data is currently
+entered.
+
+"Backwards" mode can be used as part of the GHA method of finding the time of meridian transit.  Select
+whether to use Sun/Planets, Aries, or Moon. (Most common would be Sun, in determining the time of Local
+Apparent Noon.)  Enter the degrees and minutes of the GHA Increment (limited to 15°0.00' for Sun/
+Planets, 15°02.5' for Aries, 14°19.0' for Moon).  The corresponding time will be displayed, and will be
+automatically updated for whatever data is currently entered.
+
+Both "Forwards" and "Backwards" have no default object (i.e.  Sun/Planets, Aries, or Moon).  In order to
+avoid a chance of error, an object must be selected.
+
+c. Accuracy/Resolution:  Although all 21960 possible values of Increments and Corrections in the
+"forwards" mode have not been compared to those in the Nautical Almanac, it is believed that they all
+match.  Since the formulas for the values are published, but the method of rounding in the Nautical
+Almanac is unknown, the accuracy of the Yellow Pages Increment and Correction values will be specified as
+0.1'.  In the "backwards" mode, times are rounded to the nearest second  (rounded up if the GHA Increment
+is exactly between two tabulated values) and should match well.
+
+Contrary to common belief, not all Increments and Corrections tables are identical.  In 2001, four of the
+10800 correction values changed, and are expected to remain with their new values in the future.
+Specifically these are: minute	v or d	Corr (pre-2001)	Corr (2001 and later) 22            2.8 1.1 1.0
+22           16.4               6.2                              6.1 52            9.2 8.1 8.0 52
+16.4             14.4                            14.3 Celestial Tools will show both values for these
+four cases.
+

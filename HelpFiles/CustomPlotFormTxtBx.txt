@@ -1,0 +1,23 @@
+Custom Plot form
+
+Purpose: To plot on a standard square plotting form a reduced sight or a series of sights comprising a fix. 
+This plotting form can be accessed from the SightLog form, from the Law of Cosines Sight Reduction (SRF) form, from
+the Alternative Sight Reduction Methods form, and from the Fix form. The approprise button to use this plotting form
+appears on each form listed when it can be used. You can use the CLS form repeatedly by a series of sights and fixes
+and each will plot on the same form as long as you do not exit the CLS Plot form. On the form there are five inputs
+you can use:
+	1. Print Sights  - Print a text file report of the Sights and Fixes that are inputs to these form plotted
+	2. Print Screen - Print the visible screen of the CLS Plot form
+	3. Exit - Close this form and return to the previous input form
+	4. Change scale of plot form: 5 options
+		4.a Default is 60 nm miles on a plot side, which is the default for the CLS Plot form
+		4.b Choose 40 nm miles on a plot side for zooming in 
+		4.c Choose 20 nm miles on a plot side for the largest plot zoom
+		4.d Choose 80 nm miles on a plot side to zoom out 
+		4.e Choose 100 nm miles on a plot side for the smallest scale zoom
+	5. Check box to toggle the compass rose on or off on the plot
+
+When options 4 or 5 are used, the Custom Plot form will redisplay with the changes requested. 
+	
+The Custom Plot form seeks to implement the standard square plot form that allows zooming in or out for clarity.
+

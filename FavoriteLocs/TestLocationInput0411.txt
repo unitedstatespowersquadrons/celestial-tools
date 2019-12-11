@@ -1,0 +1,4 @@
+No=3;Name=test loc1;DRLat=40°03.8'N;DRLong=105°13.9'W;ZD=+06;DST=X;HorType=Natural;HorDist=00;HorDistType=Feet;HE=7 ft;ApprxBrg=SE;FromAZ=0;ToAZ=360;hsIEFmt=DM 
+No=5;Name=test loc2;DRLat=12°12.3'N;DRLong=12°12.3'W;ZD=+00;DST=;HorType=Natural;HorDist=00;HorDistType=Feet;HE=11 ft;ApprxBrg=N;FromAZ=0;ToAZ=360;hsIEFmt=DM 
+No=7;Name=test loc6;DRLat=45°13.8'S;DRLong=123°12.3'E;ZD=-08;DST=;HorType=Natural;HorDist=00;HorDistType=Feet;HE=23 ft;ApprxBrg=N;FromAZ=0;ToAZ=360;hsIEFmt=DM 
+No=8;Name=test loc5;DRLat=45°13.8'S;DRLong=123°12.3'E;ZD=-08;DST=X;HorType=Natural;HorDist=00;HorDistType=Feet;HE=13 ft;ApprxBrg=N;FromAZ=0;ToAZ=360;hsIEFmt=DM 

@@ -1,0 +1,12 @@
+﻿Type= FixSight  Sight #1 Name = CLS Plot Fix Squadron = CLS Plot Fix Body = Vega Date/Time = 12/11/2004 16:58:22
+ L = 47°24.1' N Lo = 122°20.1' W Int and Az = 1.4 nm Away at 278° Est Position = Fix Sight1 on 12/11/2004 16:58:22
+
+Type= FixSight  Sight #2 Name = CLS Plot Fix Squadron = CLS Plot Fix Body = Saturn Date/Time = 12/12/2004 07:27:19
+ L = 47°24.1' N Lo = 122°20.1' W Int and Az = 1.4 nm  Towards at 272° Est Position = Fix Sight2 on 12/12/2004 07:27:19
+
+Type= FixSight  Sight #3 Name = CLS Plot Fix Squadron = CLS Plot Fix Body = Sun L.L. Date/Time = 12/12/2004 12:05:35
+ L = 47°24.1' N Lo = 122°20.1' W Int and Az = 0.3 nm Away at 181° Est Position = Fix Sight3 on 12/12/2004 12:05:35
+
+Type= Fix  Sight #4 Name = CLS Plot Fix Squadron = CLS Plot Fix Body = Fix Date/Time = 12/11/2004 16:58:22
+ L = 47°23.7' N Lo = 122°20.1' W Int and Az = 0.4 nm  Towards at 177° Est Position = Fix at ZT 16-58-22 Loc = 47°23.7'N 122°20.1'W a= 0.4 Towards Zn= 177°
+

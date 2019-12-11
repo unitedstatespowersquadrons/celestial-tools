@@ -1,0 +1,281 @@
+THE SAILINGS
+
+a. Purpose:  For Mid-Latitude Sailing, Mercator Sailing, and "Accurate Rhumb Line" Sailing:  Calculate
+course and distance given initial position and final position.  Calculate final position given initial
+position, course, and distance.  Calculate set and drift given DR position, fix position, and elapsed
+time from previous fix; if previous fix is known, calculate drift angle, distance between fixes, course
+made good (more properly called track made good), speed made good.  For Great Circle Sailing:  Calculate
+initial course and distance, maximum latitude (vertex), and final course, given initial position and
+final position.  Calculate final position, maximum latitude, and final course, given initial position,
+initial course, and distance.  Calculate the points on a great circle route, rhumb line course and
+distance from point to point, and total rhumb line distance.  For all Sailings:  Calculate position given
+range and bearing to known object.
+
+This tool includes three types of rhumb line sailings, Mid-Latitude, Mercator, and "Accurate Rhumb Line",
+and Great Circle sailing.
+
+Mid-Latitude Sailing is a form of plane sailing, where the surface of the Earth is considered flat and
+the curvature of the Earth is not taken into account. It is an approximation that is considered
+sufficiently accurate for shorter distances.  This value varies from source to source, with some sources
+suggesting no more than 600 nm, and others, e.g. Bowditch, having examples over 1000 nm.  Earlier
+versions of Celestial Tools limited this distance to 600 nm, but this limitation was increased to 9999.9
+nm with V2.2.0, allowing a comparison of this method to the other methods provided for longer distances.
+(This limitation only applies to input values; calculated distances can exceed this.)  However, mid-
+latitude sailing has its issues near the poles, so the maximum latitude is limited  to 84°59.9', and a
+message will be generated if any part of the course exceeds this.  (Note that this will also generate the
+message for a course of 0° or 180° which exceeds this latitude, for which mid-latitude sailing is
+accurate, but for which there is no need to use a sailing of any kind.
+
+Mercator sailing considers the curvature of the earth, and is considered the most accurate form of rhumb
+line sailing developed for tabular use, but is less popular than mid-latitude sailing because its manual
+calculation is more difficult and requires an additional table (meridional parts).  USPS considers it the
+preferred tabular rhumb line method for distances over 600 nm.  As with mid-latitude, input distance is
+limited to 9999.9 nm, but calculated distances can exceed this.  When using tables, Mercator sailing is
+unreliable when the course lies within 5° of due east or west.  This is not a problem when using a
+calculator or computer except when calculating final position when the course is directly east or west,
+where conventional mid-latitude sailing is used.
+
+"Accurate Rhumb Line" sailing is the method used in Visual Passage Planner 2, and was never a tabular
+method.  It is the most accurate form of rhumb line sailing, and can be used for short or long distances.
+
+For Mercator sailing and Accurate Rhumb Line sailing, for courses of 0° or 180° where the course crosses
+a pole, the calculation will not be completed, but a message will be generated.
+
+Although most similar to Mid-Latitude Sailing, the Destination L and Lo function of any of the rhumb line
+sailings can be used in place of the "Simplified Traverse Table", with more accurate results.  However,
+starting with V5.0.0, the Simplified Traverse Table computation of arrival position knowing departure
+point and distance traveled has been included.
+
+Any of the rhumb line sailings can be used to calculate the drift angle between two fixes by calculating
+the course from the earlier fix to the later fix and the course between the earlier fix and the DR
+position at the time of the later fix, and taking the difference between them.  Alternatively, the drift
+angle can be found in one step by using the set and drift tool.
+
+Great circle sailing provides the shortest distance between two points, but since it is more difficult to
+follow a great circle route than a rhumb line, it is most practical when traveling long distances at high
+latitudes.  A frequently used rule of thumb is that for latitudes less than 40° and distances less than
+1000 nautical miles, the distance saving in a great circle route is usually not significant.
+
+A great circle route can reach latitudes higher than that of the point of departure or destination.  To
+avoid high latitudes where ice or gales might be encountered, a modification of great circle sailing
+called "composite sailing" may be used.  There are two methods used to accomplish this.  In Method 1, a
+great circle route is plotted from the point of departure to the destination and is followed from the
+point of departure until it crosses the limiting latitude, then the parallel of the limiting latitude is
+followed until the great circle again crosses it, then the great circle route is followed to the
+destination.  In Method 2, one great circle is plotted from the point of departure tangent to the
+limiting parallel, and a second from the destination tangent to the limiting parallel.  The first is
+followed from the point of departure to the limiting latitude, then the parallel of the limiting latitude
+is followed until the second great circle reaches it, then the second great circle is sailed to the
+destination.  Method 1 is easier to plot, but Method 2 results in a shorter course.  (In both methods,
+plotting is done on a gnomonic projection.)
+
+b. Operation:
+
+For all cases, press "Calculate" to complete the calculation.  (See below regarding the "Simplified
+Traverse Table" method.)
+
+Mid-Latitude, Mercator, and "Accurate Rhumb Line" Sailing:  Select whether you want to calculate course
+and distance, final position (destination L and Lo), or set and drift.  L1 and Lo1 are the latitude and
+longitude of the initial (point of departure) position.  L2 and Lo2 are the latitude and longitude of the
+final (destination) position.  L1 and L2 are limited to 84°59.9' for Mid-Latitude,and  89°59.9' for
+Mercator and "Accurate Rhumb Line".
+
+When calculating final position, enter L1, Lo1, true course (with 0.1° resolution), and either the
+distance (as actual distance or as start and end knotmeter log values, Log1 and Log2, limited to
+9999.9nm) or the speed and running time (as actual running time or start and end times, Time1 and Time2,
+in hhmm format).  Distance can be entered with tenth of a nautical mile resolution up to 9999.9 nautical
+miles. Speed can be entered with tenth of a knot resolution up to 99.9 knots.  (The speed value is either
+a constant speed or average speed based on the actual conditions.)  Run Time can be entered in integer
+hours and integer minutes, or just integer minutes.  If an hour value is entered, minutes are limited to
+59.  If no (or zero) hour value is entered, minutes are limited to 999 (almost 17 hours).  If a minute
+value greater than 59 is entered, the hour box is disabled.  If Log1 is greater than Log2 an error
+message will be generated.  If Time1 is later than Time2 an error message will be generated.  (The
+program does not consider this to be a run that crosses midnight.  If this is actually the case, it is
+best to use Run Time.)  Press the "Calculate" button to get the latitude and longitude of the final
+position.  If speed and time were entered, calculated distance will also be displayed.  If Time1 and
+Time2 were entered, calculated run time will also be displayed.
+
+If Mid-Latitude and Destination L and Lo are both selected, there is the option of calculation the
+arrival (destination) position using the "Simplified Traverse Table" method taught in recent N courses,
+rather than the more accurate mid-latitude calculation.  If this is chosen, outputs consist of the eight
+lines of intermediate values, the Arrival Position answer, and any other calculation that is normally
+displayed if distance is not input directly.  Only the final result of the intermediate values is shown -
+how they are derived is not, as that can be seen on the worksheet.  "Use this mid-latitude for CLS SAPS
+plot", described below, is ignored even if checked.  As with Mid-Latitude sailing, L1 is limited to
+84°59.9'.
+
+When calculating course and distance, enter L1, Lo1, L2, and Lo2, then press the "Calculate" button.
+
+When calculating set, drift, and drift angle, enter the Fix L and Fix Lo and the DR L and DR Lo at the
+time of the fix.  For drift determination, enter the elapsed time from the previous fix in integer hours
+and integer minutes, or just integer minutes, or the times of the earlier and later fixes, Time1 and
+Time2, in hhmm format.  (The same rules as when calculating final position apply.)  (Time is not required
+for set or drift angle determination.)  If the latitude and longitude of the prior fix are available,
+check the "Prior fix available for drift angle, CMG, SMG calculation" and enter the values (latitude
+limited to 89°59.9').  Press "Calculate" to get the set, total drift (the distance between the DR and the
+fix), drift, and, if the prior fix location was entered, the drift angle and whether it is to port or to
+starboard, the distance beween fixes, the course made good (CMG), and the speed made good (SMG).  If
+Time1 and Time2 were entered, calculated run time will also be displayed.
+
+(Set and drift can also be determined between two fixes by first determining the Destination L and Lo
+from the first fix knowing course and speed.  Then use this position as the DR L and DR Lo, along with
+the L and Lo of the second fix, in the Set and Drift calculation.  Including the first fix as the "prior
+fix" will also provide drift angle.  The need to do this, however, was eliminated in V5.4.0, as these
+values have been included in the calculation.)
+
+If Mercator Sailing is being used, the meridional parts for the starting latitude (M1), the destination
+latitude (M2), and the meridional difference (m) will also be displayed, unless calculating final
+position with a course directly east or west, where conventional mid-latitude sailing is used.  Two
+options are available:  "WGS 1972 ellipsoid" or "Clarke 1866 spheroid".  With "WGS 1972 ellipsoid"
+selected, the values of the meridional parts should agree with the Meridional Parts tables of editions of
+Bowditch (American Pratical Navigator) starting in the late 1900s.  If "Clarke 1866 spheroid" is
+selected, the values of the meridional parts should agree with the Meridional Parts tables of editions of
+Bowditch of the mid-1900s.  The values in the Meridional Parts tables of editions of Bowditch can be
+produced by just entering a latitude and pressing "Calculate".
+
+When calculating final position or set and drift, as any value is entered, values that are no longer
+appropriate are disabled.  For example, when calculating final position, if Time1 is entered, Run Time,
+Log1, Log2, and Distance will be disabled.
+
+Normally mid-latitude sailing uses the algebraic average of the initial latitude and the final latitude
+(whether an input or calculated) (south latitude is negative).  However, when using a Constant Latitude
+Scale (CLS) Small Area Plotting Sheet (SAPS), it is often desirable to use a convenient value of mid-
+latitude in order to keep the plot near the center of the sheet.  If a specific mid-latitude is to be
+used, check the "Use this mid-latitude for CLS SAPS plot" checkbox and enter the desired value in degrees
+and tens of minutes (0, 10, 20, 30, 40, or 50), with a maximum value of  55°00', the largest value shown
+on the CLS SAPS. This will result in an output that more closely matches the plot, but causes a slight
+error in longitude, zero at the equator and increasing to about 0.8' at a latitude of 55°.  Since a CLS
+SAPS has latitude and longitude ranges of one degree, an error message will appear if either is exceeded.
+If the selected mid-latitude causes the latitude range of the CLS SAPS to exceed one degree an error
+message will appear.  (The Universal Plotting Sheet is also a CLS chart, bit its small scale does not
+warrant the use of this feature.)
+
+When switching from one sailing to another, outputs are cleared but inputs are retained for ease in
+making comparisons.  When switching from one function to another, all inputs and outputs are cleared.
+Pressing "Clear All" removes all the input and output data.  Pressing "Clear But Use L2, Lo2 For New L1,
+Lo1" removes all the input and output data but makes the entered or calculated final position into a new
+initial position, and, if a specific mid-latitude was entered and the box checked, the entered value will
+be retained and the box will remain checked.
+
+Keep in mind that, because of rounding, the Destination L and Lo and the Course and Distance calculations
+might give slghtly inconsistent results.  For instance, if you enter the latitudes and longitudes of a
+departure point and a destination point and calculate the course and distance, and then use the
+calculated values in a Destination L and Lo calculation with the same departure point, you will probably
+not end up with exactly the same destination point.
+
+Great Circle Sailing: Select whether you want to calculate initial course and distance or final position
+(destination L and Lo).  L1 and Lo1 are the latitude and longitude of the initial (point of departure)
+position.  L2 and Lo2 are the latitude and longitude of the final (destination) position.
+
+When calculating initial course and distance, enter L1, Lo1, L2, and Lo2.  Press the "Calculate" button
+and the initial course, distance, maximum latitude, and final course will be displayed.  If the initial
+and final points are antipodes (i.e. on diametrically opposite sides of the earth) but not the poles, a
+message will be displayed.  (If  L1 and/or L2 are poles, the values of Lo1 and Lo2 do not matter.)
+
+When calculating final position, enter L1, Lo1, true course (with 0.1° resolution), and  distance.
+Distance can be entered with tenth of a nautical mile resolution up to 9999.9 nautical miles.  Press the
+"Calculate" button to get the latitude and longitude of the final position, maximum latitude, and final
+course.
+
+Note that the initial course for the reversed course (L2, Lo2 to L1, Lo1) equals the final course of the
+original course +/-180°.
+
+After the "Calculate" button is pressed, and if the entered or calculated course is not 0° or 180°,
+another button, "Points on Great Circle Route", becomes enabled.  When it is pressed, another window,
+"Points on Great Circle Route",  opens, listing the latitudes for the initial and final longitudes for
+the great circle course, the latitudes for each whole 5° longitude between them, the rhumb line course
+and distance from point to point, and the total rhumb line distance.  (The program uses "Accurate Rhumb
+Line" sailing to calculate the courses and distances, but any rhumb line tool  can now be used to
+calculate a rhumb line course between individual points.  The "Points on Great Circle Route" window also
+allows the calculation of the latitude for any longitude on that great circle, not just longitudes on the
+route.  Enter the longitude of the point, press the "Point Latitude" button, and the corresponding
+latitude will be displayed.
+
+Once any data, input or output, is displayed on the "Points on Great Circle Route" window, it is cleared
+whenever the "Calculate" button is pressed again.
+
+Composite Sailing: When Great Circle, Initial Course and Distance is selected, and it is desired to use
+composite sailing, check the "Use Composite Sailing" check box.  Enter the latitude limit (range 1° to
+89°59.9'); in practice, typically 38° to 50°).  Select Method 1 or Method 2.  Activate the "Calculate"
+button to complete the calculation.  Outputs include initial course, longitudes of the limiting parallel
+crossings, the distance of each segment, the total distance, and the final course.
+
+Pressing the "Points on Composite Route" button performs a function similar to the "Points on Great
+Circle Route" button for the particular composite sailing method selected., except the portion along the
+limiting parallel is shown as one segment rather than being broken at whole 5° longitude increments.   If
+Method 1 is selected, the "Points on Composite Route" window also allows the calculation of the latitude
+for any longitude on the great circle portion of the route (including the portion beyond the limiting
+parallel), not just longitudes on the route.  Enter the longitude of the point, press the "Point
+Latitude" button, and the corresponding latitude will be displayed.  (Because there are two great circles
+onvolved in Method 2, this feature is only enabled for Method 1.)
+
+Pressing "Clear All" removes all the input and output data.  Pressing "Clear But Use L2, Lo2 For New L1,
+Lo1" removes all the input and outpur data but makes the entered or calculated final position into a new
+initial position.  This allows the final postiion of a vessel that has traveled a series of rhumb lines
+to be determined mathematically, a convenient, step-by-step version of the Bowditch 2002 Table 4 Traverse
+Table method.
+
+Other applications: The LoC/NASR tool will calculate an EP for a Law of Cosines reduction and an AP/EP
+(as defined in the LoC/NASR Help) for a NASR reduction, but this can also be done with the Mid-Latitude
+and Mercator sailings, using the "Calculate Destination L and Lo" function.  Enter the DR L and Lo (LoC)
+or AP L and Lo (NASR) as L1 and L2, intercept length as Distance, and azimuth (be sure to add or subtract
+180º if intercept was Away) as True Course.  The resulting L2 and Lo2 correspond to the EP (LoC) or AP/EP
+(NASR).
+
+Any of the Sailings can be used to calculate position given the range and bearing to an object with a
+known latitude and longitude.  Use the "Calculate Destination L and Lo" function, with the latitude and
+longitude of the object as L1 and Lo1, and the reciprocal true bearing for True Course.  After the
+distance is entered, press the Calculate button to get your latitude and longitude.  Since visual
+bearings are generally at distances no more than 10 nm, any of the Sailings should give the same
+position.
+
+Taking this a step further, consider the situation of a multi-body fix using the NASR method from a
+moving vessel, where an earlier LOP must be advanced to the last LOP.  Enter the AP L and Lo (as L1 and
+Lo1), speed, and elapsed time from the earlier sight to the last sight.  The resulting L2 and Lo2
+effectively advance the AP to the time of the last sight.  Use the "Clear But Use L2, Lo2 for New L1,
+Lo1" button.  Then enter intercept length as Distance and azimuth (be sure to add or subtract 180º if
+intercept was Away) as True Course.  The resulting L2 and Lo2 correspond to the advanced AP/EP.
+
+The Sailings can also be used to find the set and drift of current using two fixes and the course, speed,
+and run time between them  (or the time of each fix).  Use the "Calculate Destination L and Lo" function
+with the first fix, course, speed, and elapsed time.   (Be sure to record the Destination L and Lo, as
+they are not saved when switching functions.)  Enter the calculated position as the DR position in the
+"Calculate Set and Drift" function, the second fix as the Fix position, and the run time between them (or
+the time of each fix).
+
+c. Accuracy/Resolution:  Calculated courses are displayed to both the nearest hundredth of a degree and
+rounded to whole degrees (just to whole degrees for the rhumb line courses in "Points on Great Circle
+Route").  Calculated distances and total drift are displayed to the nearest tenth of a nautical mile.
+Calculated set and drift angle are displayed to the nearest degree.  Calculated drift is displayed to the
+nearest tenth of a knot. Calculated latitudes and longitudes are displayed to the nearest tenth of a
+minute.
+
+Rhumb line distances in "Points on Great Circle Route" may differ by 0.1 nm from that shown using
+"Accurate Rhumb Line" on an individual pair of points because "Points on Great Circle Route" uses the
+unrounded calculated values of latitude.
+
+For Mercator sailing, values of meridional parts for latitudes with whole minutes (the latitudes
+tabulated in the Meridional Parts tables) are expected to agree with the Meridional Parts tables of
+editions of Bowditch (American Practial Navigator) from at least 1981 through 2002 when "WGS 1972
+ellipsoid" is selected.  These tables are based on the World Geodetic Survey of 1972 ellipsoid.  (This is
+the table that was used in the USPS JN course in the 1990s.)  When "Clarke 1866 spheroid" is selected,
+values of meridional parts are expected to agree with the Meridional Parts tables of editions of the
+mid-20th century, which are based on the Clarke spheroid of 1866, the standard reference spheroid used
+for charting North America at the time. (Editions of the early 20th century and earlier used yet another
+basis.)  When a latitude of interest contains tenths of minutes, manual calculation is done by linear
+interpolation between the whole minute latitudes immediately above and below the latitude of interest.
+Celestial Tools calculates the meridional parts for latitudes with tenths of minutes using the same
+formulas that are used to calculate the values for latitudes with whole minutes.  This is more accurate
+than interpolation, but could result in a differences compared to interpolated values.  The differene
+between calculated and interpolated values increases with increasing latitude, being nor more than 0.1 at
+low to middle latitudes, no more than 0.2 up to about 89°, and as much as 0.7% (over 200) near 90°
+
+For composite sailing Method 1, because of the rounding of the rhumb line distances, it is possible that
+the total rhumb line distance could be slightly less than the total composite sailing distance.
+
+Remember that for all sailings, calculations are done to the full precision of the computer, followed by
+rounding.  In most cases this results in an answer that is different, and probably more accurate, than a
+calculation done by hand with tables.  As with tables, the computations assume the Earth is a sphere, not
+an oblate spheroid.  For this reason, results may be slightly different than those of sources that
+consider the oblateness.
+

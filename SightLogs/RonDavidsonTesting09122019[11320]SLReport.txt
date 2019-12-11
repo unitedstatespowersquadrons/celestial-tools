@@ -1,0 +1,299 @@
+__________________________________________________________________________________________
+Sight # = 1	BodyName = Vega	BodyLimb = Lower
+Sight Date/Zone Time = 12/11/2004 16:58:22	DST = 	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.1'N	DR Long = 122°20.1'W
+HS = 50°29.7'	ApprxBrg=S	IC = 0°1.2' Off	HE = 10 ft	Horizon = Natural	Dip Short = 00 Nautical Mile
+SR Intercept = 1.4 nm Toward	SR Azimuth = 278°	SR EP =  EP L 47°24.3'N   EP Lo 122°22.1'W
+SR GHA = 176° 23.6'	SR Dec = 38° 47.3' N	SR Ho = 50° 27.0'
+SR EP= EP L 47°24.3'N   EP Lo 122°22.1'W
+WT Diff = Skipped - 1st Sight	hs Diff = Skipped - 1st Sight	hs/WT = Skipped - 1st Sight
+Name = Ron Davidson Sights0912	Squadron = CT Testing
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 2	BodyName = Saturn	BodyLimb = Lower
+Sight Date/Zone Time = 12/12/2004 07:27:19	DST = 	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.1'N	DR Long = 122°20.1'W
+HS = 26°40.2'	ApprxBrg=S	IC = 0°1.1' Off	HE = 10 ft	Horizon = Natural	Dip Short = 00 Nautical Mile
+SR Intercept = 1.4 nm Away	SR Azimuth = 272°	SR EP =  EP L 47°24.1'N   EP Lo 122°18.0'W
+SR GHA = 195° 12.8'	SR Dec = 20° 50.9' N	SR Ho = 26° 36.3'
+SR EP= EP L 47°24.1'N   EP Lo 122°18.0'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron Davidson Sights0912	Squadron = CT Testing
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 3	BodyName = Sun	BodyLimb = Lower
+Sight Date/Zone Time = 12/12/2004 12:05:35	DST = 	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.1'N	DR Long = 122°20.1'W
+HS = 19°18.0'	ApprxBrg=S	IC = 0°1' On	HE = 10 ft	Horizon = Natural	Dip Short = 00 Nautical Mile
+SR Intercept = 0.3 nm Toward	SR Azimuth = 181°	SR EP =  EP L 47°23.8'N   EP Lo 122°20.1'W
+SR GHA = 122° 52.7'	SR Dec = 23° 08.7' S	SR Ho = 19° 27.4'
+SR EP= EP L 47°23.8'N   EP Lo 122°20.1'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron Davidson Sights0912	Squadron = CT Testing
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 4	BodyName = Markab	BodyLimb = Lower
+Sight Date/Zone Time = 12/28/2004 17:15:31	DST = 	WE = 0001 Slow	ZD = Auto	
+DR Lat = 47°24.1'N	DR Long = 122°20.1'W
+HS = 57°14.6'	ApprxBrg=SW	IC = 00°0.1' On	HE = 10 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 3.1 nm Toward	SR Azimuth = 195°	SR EP =  EP L 47°21.1'N   EP Lo 122°21.3'W
+SR GHA = 130° 28.4'	SR Dec = 15° 13.9' N	SR Ho = 57° 10.8'
+SR EP= EP L 47°21.1'N   EP Lo 122°21.3'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron Davidson	Squadron = PBSPS
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 5	BodyName = Sun	BodyLimb = Lower
+Sight Date/Zone Time = 08/01/2016 14:18:33	DST = 	WE = 0000 Fast	ZD = Auto	
+DR Lat = 40°0.5'N	DR Long = 28°58.7'E
+HS = 54°24.2'	ApprxBrg=SW	IC = 00°01.5' Off	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 2.6 nm Toward	SR Azimuth = 241°	SR EP =  EP L 39°59.2'N   EP Lo 28°55.7'E
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 39°59.2'N   EP Lo 28°55.7'E
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron Davidson Sights0912	Squadron = CT Testing
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 6	BodyName = Sun	BodyLimb = Lower
+Sight Date/Zone Time = 09/17/2016 10:15:40	DST = 	WE = 0000 Fast	ZD = Auto	
+DR Lat = 26°42.7'N	DR Long = 127°40.9'E
+HS = 50°25.0'	ApprxBrg=SE	IC = 00°01.5' Off	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 3.5 nm Away	SR Azimuth = 123°	SR EP =  EP L 26°44.6'N   EP Lo 127°37.6'E
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 26°44.6'N   EP Lo 127°37.6'E
+WT Diff = WT=4297Dy 17Hr, 17Min,18Sec	hs Diff = WT Diff Too Large	hs/WT = WT Diff Too Large
+Name = Ron Davidson Sights0912	Squadron = CT Testing
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 7	BodyName = Sun	BodyLimb = Lower
+Sight Date/Zone Time = 10/11/2016 14:50:00	DST = 	WE = 0000 Fast	ZD = Auto	
+DR Lat = 25°30.0'S	DR Long = 122°30.0'W
+HS = 44°44.2'	ApprxBrg=SW	IC = 00°01.5' Off	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 0.6 nm Toward	SR Azimuth = 286°	SR EP =  EP L 25°29.8'S   EP Lo 122°30.6'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 25°29.8'S   EP Lo 122°30.6'W
+WT Diff = WT=24Dy 4Hr, 34Min,20Sec	hs Diff = WT Diff Too Large	hs/WT = WT Diff Too Large
+Name = Ron	Squadron = PBSPS
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 8	BodyName = Sun	BodyLimb = Lower
+Sight Date/Zone Time = 10/17/2016 10:15:40	DST = 	WE = 0000 Fast	ZD = Auto	
+DR Lat = 17°42.8'N	DR Long = 178°3.9'E
+HS = 53°38.9'	ApprxBrg=S	IC = 00°1.5' Off	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 2.8 nm Toward	SR Azimuth = 136°	SR EP =  EP L 17°40.8'N   EP Lo 178°05.9'E
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 17°40.8'N   EP Lo 178°05.9'E
+WT Diff = WT=5Dy 19Hr, 25Min,40Sec	hs Diff = WT Diff Too Large	hs/WT = WT Diff Too Large
+Name = Ron Davidson Sights0912	Squadron = CT Testing
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 9	BodyName = Sun	BodyLimb = Lower
+Sight Date/Zone Time = 01/05/2017 12:14:59	DST = 	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.0'N	DR Long = 122°20.1'W
+HS = 19°55.1'	ApprxBrg=S	IC = 00°01.5' Off	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 1.1 nm Toward	SR Azimuth = 180°	SR EP =  EP L 47°22.9'N   EP Lo 122°20.1'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°22.9'N   EP Lo 122°20.1'W
+WT Diff = WT=80Dy 1Hr, 59Min,19Sec	hs Diff = WT Diff Too Large	hs/WT = WT Diff Too Large
+Name = Ron	Squadron = PBSPS
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 10	BodyName = Jupiter	BodyLimb = Lower
+Sight Date/Zone Time = 07/24/2019 21:32:15	DST = X	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.0'N	DR Long = 122°20.1'W
+HS = 20°25.7'	ApprxBrg=S	IC = 00°01.5' On	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 0.1 nm Toward	SR Azimuth = 175°	SR EP =  EP L 47°23.9'N   EP Lo 122°20.1'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°23.9'N   EP Lo 122°20.1'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron	Squadron = PBSPS
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 11	BodyName = Altair	BodyLimb = Lower
+Sight Date/Zone Time = 07/24/2019 21:42:08	DST = X	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.0'N	DR Long = 122°20.1'W
+HS = 34°48.4'	ApprxBrg=S	IC = 00°01.5' On	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 0.6 nm Toward	SR Azimuth = 118°	SR EP =  EP L 47°23.7'N   EP Lo 122°19.3'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°23.7'N   EP Lo 122°19.3'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron Davidson Sights0912	Squadron = CT Testing
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 12	BodyName = Arcturus	BodyLimb = Lower
+Sight Date/Zone Time = 07/24/2019 21:51:48	DST = X	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.0'N	DR Long = 122°20.1'W
+HS = 47°34.6'	ApprxBrg=S	IC = 00°01.5' On	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 1 nm Away	SR Azimuth = 242°	SR EP =  EP L 47°24.5'N   EP Lo 122°18.8'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°24.5'N   EP Lo 122°18.8'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron Davidson Sights0912	Squadron = CT Testing
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 13	BodyName = Sun	BodyLimb = Lower
+Sight Date/Zone Time = 08/27/2019 18:10:05	DST = X	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°23.8'N	DR Long = 122°19.7'W
+HS = 17°17.0'	ApprxBrg=S	IC = 0°0' On	HE = 5 ft	Horizon = Dip Short	Dip Short = 2 Nautical Mile
+SR Intercept = 2.2 nm Away	SR Azimuth = 266°	SR EP =  EP L 47°24.0'N   EP Lo 122°16.5'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°24.0'N   EP Lo 122°16.5'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron Davidson Sights0912	Squadron = CT Testing
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 14	BodyName = Sun	BodyLimb = Lower
+Sight Date/Zone Time = 09/05/2019 16:41:40	DST = X	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.0'N	DR Long = 122°20.1'W
+HS = 28°52.7'	ApprxBrg=SW	IC = 00°1.0' On	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 1.3 nm Away	SR Azimuth = 246°	SR EP =  EP L 47°24.5'N   EP Lo 122°18.3'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°24.5'N   EP Lo 122°18.3'W
+WT Diff = WT=973Dy 4Hr, 26Min,41Sec	hs Diff = WT Diff Too Large	hs/WT = WT Diff Too Large
+Name = Ron	Squadron = PBSPS
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 15	BodyName = Moon	BodyLimb = Lower
+Sight Date/Zone Time = 09/05/2019 16:44:40	DST = X	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.0'N	DR Long = 122°20.1'W
+HS = 16°32.3'	ApprxBrg=SE	IC = 00°1.0' On	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 3.3 nm Toward	SR Azimuth = 149°	SR EP =  EP L 47°21.2'N   EP Lo 122°17.6'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°21.2'N   EP Lo 122°17.6'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron	Squadron = PBSPS
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 16	BodyName = Arcturus	BodyLimb = Lower
+Sight Date/Zone Time = 09/14/2019 19:33:23	DST = X	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.0'N	DR Long = 122°20.1'W
+HS = 37°01.0'	ApprxBrg=SW	IC = 00°00' On	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 3.2 nm Away	SR Azimuth = 258°	SR EP =  EP L 47°24.7'N   EP Lo 122°15.5'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°24.7'N   EP Lo 122°15.5'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron Davidson Sights0912	Squadron = CT Testing
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 17	BodyName = Schedar	BodyLimb = Lower
+Sight Date/Zone Time = 09/16/2019 19:30:32	DST = X	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.0'N	DR Long = 122°20.1'W
+HS = 33°45.3'	ApprxBrg=NE	IC = 00°00' On	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 0.6 nm Toward	SR Azimuth = 41°	SR EP =  EP L 47°24.5'N   EP Lo 122°19.5'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°24.5'N   EP Lo 122°19.5'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron	Squadron = PBSPS
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 18	BodyName = Dubhe	BodyLimb = Lower
+Sight Date/Zone Time = 09/16/2019 19:32:24	DST = X	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.0'N	DR Long = 122°20.1'W
+HS = 34°18.3'	ApprxBrg=NW	IC = 00°00' On	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 2.7 nm Away	SR Azimuth = 326°	SR EP =  EP L 47°21.8'N   EP Lo 122°17.9'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°21.8'N   EP Lo 122°17.9'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron	Squadron = PBSPS
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 19	BodyName = Moon	BodyLimb = Lower
+Sight Date/Zone Time = 09/17/2019 07:30:15	DST = X	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.0'N	DR Long = 122°20.1'W
+HS = 24°45.3'	ApprxBrg=SW	IC = 00°00' On	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 0.4 nm Toward	SR Azimuth = 252°	SR EP =  EP L 47°23.9'N   EP Lo 122°20.7'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°23.9'N   EP Lo 122°20.7'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron	Squadron = PBSPS
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 20	BodyName = Saturn	BodyLimb = Lower
+Sight Date/Zone Time = 09/18/2019 19:28:41	DST = X	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.0'N	DR Long = 122°20.1'W
+HS = 19°17.8'	ApprxBrg=SE	IC = 00°00' On	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 0.3 nm Toward	SR Azimuth = 168°	SR EP =  EP L 47°23.7'N   EP Lo 122°20.0'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°23.7'N   EP Lo 122°20.0'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron	Squadron = PBSPS
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 21	BodyName = Arcturus	BodyLimb = Lower
+Sight Date/Zone Time = 09/18/2019 19:31:18	DST = X	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.0'N	DR Long = 122°20.1'W
+HS = 34°47.2'	ApprxBrg=SW	IC = 00°00' On	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 0.7 nm Away	SR Azimuth = 260°	SR EP =  EP L 47°24.1'N   EP Lo 122°19.1'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°24.1'N   EP Lo 122°19.1'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron	Squadron = PBSPS
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 22	BodyName = Moon	BodyLimb = Lower
+Sight Date/Zone Time = 09/22/2019 11:02:51	DST = X	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.0'N	DR Long = 122°20.1'W
+HS = 41°09.8'	ApprxBrg=NW	IC = 00°1.5' On	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 2.2 nm Away	SR Azimuth = 257°	SR EP =  EP L 47°24.5'N   EP Lo 122°16.9'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°24.5'N   EP Lo 122°16.9'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron Davidson Sights0912	Squadron = CT Testing
+Remarks=
+__________________________________________________________________________________________
+
+__________________________________________________________________________________________
+Sight # = 23	BodyName = Jupiter	BodyLimb = Lower
+Sight Date/Zone Time = 09/23/2019 19:15:12	DST = X	WE = 0000 Fast	ZD = Auto	
+DR Lat = 47°24.0'N	DR Long = 122°20.1'W
+HS = 18°20.4'	ApprxBrg=S	IC = 00°00' On	HE = 15 ft	Horizon = Natural	Dip Short = 00 Feet
+SR Intercept = 0.6 nm Toward	SR Azimuth = 197°	SR EP =  EP L 47°23.4'N   EP Lo 122°20.4'W
+SR GHA = 	SR Dec = 	SR Ho = 
+SR EP= EP L 47°23.4'N   EP Lo 122°20.4'W
+WT Diff = Not the same body	hs Diff = Not the same body	hs/WT = Not the same body
+Name = Ron	Squadron = PBSPS
+Remarks=
+__________________________________________________________________________________________
+

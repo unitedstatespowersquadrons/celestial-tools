@@ -1,0 +1,16 @@
+LENGTH OF DEGREE
+
+a. Purpose:  Calculates the length of a degree of latitude and longitude in various linear units for both
+a spherical Earth (where 1° of latitude, or 1° along any great circle, is defined as 60 nautical miles)
+and the WGS84 spheroid (the most commonly used default datum for GPS units), for a specified latitude,
+north or south.  The WGS84 Spheroid output duplicates Bowditch 2002 Table 7.
+
+b. Operation:  Enter the latitude of interest.  Press the "Calculate" button.  The lengths will be
+displayed in feet, meters, statute miles, and nautical miles, to two decimal places (although for feet
+and meters the accuracy probably does not warrant that resolution), and will be automatically updated for
+whatever data is currently entered.  The length of a degree of latitude is calculated for a degree
+spanning 1/2° north to 1/2° south of the specified latitude.
+
+c. Accuracy/Resolution:   Lengths are displayed to three decimal places for nautical miles and statute
+miles, and to whole feet and meters, to duplicate Bowditch 2002 Table 7.
+

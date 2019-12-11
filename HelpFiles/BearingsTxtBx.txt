@@ -1,0 +1,102 @@
+DISTANCE BY TWO BEARINGS/FIX BY CROSS BEARINGS/COURSE MADE GOOD BY THREE BEARINGS
+
+a. Purpose:  Calculate the distance to a fixed object by taking two bearings on the object from a moving
+vessel.  This works in the same manner as "doubling the angle on the bow", but works for any allowed
+combination of bearings.  It will also calculate the distance from the position of the second bearing to
+the point where the object is abeam (closest point of approach), and, if the required data is provided,
+the time required to get to this point and the time of arrival at this point.  (This tool does the
+calculations of Bowditch 2002 Table 18 - Distance of an Object by Two Bearings.)
+
+It assumes that the vessel maintains its course and speed, and that the vessel is approaching the object,
+not moving away from it.
+
+Calculate a fix from two cross bearings on charted objects with no (or little) vessel movement between
+the bearings, or a running fix if there is vessel movement between the bearings.  (Note:  To calculate a
+fix by range and bearing, see Help>The Sailings>Other applications.)
+
+Calculate the course made good (CMG) using three bearings on the same object at different times and the
+time or distance intervals between them, as might be done if it is suspected that an unknown current has
+thrown the vessel off track.
+
+b. Tab #1: Distances by 2 Bearings:
+Distance by two bearings: Select whether the bearings will be Relative (bow bearings, the
+default), True, Magnetic, or Compass.  If True, Magnetic, or Compass is selected, enter the vessel's
+course (whole degrees, from 0 to 359), as the type selected.  If Relative is selected, enter the first
+and second bow (relative) bearings to the object, limited to whole degrees from 1 to 90.  (0° would be a
+collision course; over 90° the vessel would already be moving away from the object.) These can be
+clockwise or counterclockwiese, i.e. with respect to the starboard or port bow, with no sign.  If True,
+Magnetic, or Compass is selected, enter the first and second bearings as the type selected (whole
+degrees, 0 to 359).
+
+Enter either the distance traveled between the two bearings (as actual distance or as start and end
+knotmeter log values, Log1 and Log2, limited to 9999.9nm) or the speed and running time (as actual
+running time or start and end times, Time1 and Time2, in hhmm format).  Log1 and Time1 are associated
+with the first bearing; Log2 and Time2 are associated with the second bearing.  Distance can be entered
+with tenth of a nautical mile resolution up to 99.9 nautical miles (a much larger than practical value).
+Speed can be entered with tenth of a knot resolution up to 99.9 knots.  (The speed value is either a
+constant speed or average speed based on the actual conditions.)  Run Time can be entered in integer
+hours and integer minutes, or just integer minutes.  If an hour value is entered, minutes are limited to
+59.  If no (or zero) hour value is entered, minutes are limited to 99 (1.65 hours).  If a minute value
+greater than 59 is entered, the hour box is disabled.  If the entered speed and time result in a distance
+greater than 99.9 nautical miles, an error message will be generated.  If Log1 is greater than Log2 an
+error message will be generated.  If Time1 is later than Time2 an error message will be generated.  (The
+program does not consider this to be a run that crosses midnight.  If this is actually the case, it is
+best to use Run Time.)  Press the "Calculate Distance" button to get the distance from the position of
+the second bearing to the object, the distance off that the object will be when abeam, and the distance
+that would have to be traveled before the object is abeam.  If speed and run time were entered,
+calculated distance from the position of the second bearing to the point where the object is abeam will
+also be displayed.  If the times of the bearings rather than the run time are entered, the time that the
+object will be abeam will also be displayed.  If Time1 and Time2 were entered, calculated run time will
+also be displayed.
+
+Pressing the "Clear" button clears the input and output data.
+
+Switching from one bearing type to another clears the input and output data unless an illegal input value
+remains, which must be corrected first.
+
+Tab #2: Course by 2 or 3 Bearings
+Course made good by three bearings and intervals between them: Enter the three bearings taken on the same
+object and the intervals between the first and second bearing and the second and third bearing.  Bearings
+must be in whole degrees, and can be true, magnetic, or compass, with the resulting CMG in the same
+units.  Intervals can be time between bearings or the distance traveled between bearings.    Time or
+distance can be used if speed is constant; distance must be used if speed has changed.  Intervals do not
+have to be the actual values as long as the ratios are correct.  For instance, if the times or distances
+between bearings are the same, the CMG will be correct as long as the same number is used in both
+Interval boxes.  (Up to five characters, including a decimal point, are accepted.)  If, for instance, the
+first interval is 1nm and the second is 2nm, one and two, two and four, etc., can be entered in the two
+Interval boxes.  (In practice, the intervals are usually made the same to make the determination by
+chartwork easier.)
+
+Bearings must be monotonically increasing or decreasing.  If they do not appear as such, as would happen
+if zero degrees was crossed (e.g. 345°, 355°, 5°), a message will appear asking for confirmation.
+
+Pressing the "Calculate CMG" button completes the CMG calculation.
+
+Pressing the "Clear" button clears the input and output data.
+
+Tab #3: Fix from 2 Bearings
+Fix by cross bearings: Enter the latitudes and longitudes of the two observed objects, obtained from a
+chart.  Enter the true bearings from the vessel to the two objects, or check the "Reciprocal bearings"
+box and enter the true reciprocal bearings from the two objects to the vessel.  Although bearings will
+generally be in whole degrees, values up to 359.9° can be entered, with a maximum of five characters
+including a decimal point.  Press the "Calculate Fix from Cross Bearings" button and the latitude and
+longitude of the fix will be displayed.
+
+To establish a running fix,  use The Sailings, Destination L and Lo to advance the position of the
+earlier charted object to the later time, and use this position for L1 and Lo1.  (The earlier and later
+charted objects could be the same.)
+
+Bearings are best done with a hand bearing compass, but sighting over the vessel's compass can be done.
+Magnetic or compass bearings must be converted to true bearings.  Ideally the smaller angle formed by the
+cross bearings is 90°, giving the least fix error due to bearing error, but keeping the smaller angle
+from 45° to 135° is recommended.  (Some sources, e.g. AP 85/86, recommend 40° to 140°; other sources,
+e.g. AP 2004, recommend 30° to 150°.)  If the entered bearings are outside the 45° to 135° range a
+message will be displayed.
+
+Pressing the "Clear" button clears the input and output data, and unchecks the "Use reciprocal bearings"
+checkbox if checked.
+
+Accuracy/Resolution:  Distances are rounded to the nearest hundredth of a nautical mile.  Times are
+rounded to the nearest minute.  Courses are rounded to the nearest degree.  Latitudes and longitudes are
+rounded to the nearest tenth of a minute.
+

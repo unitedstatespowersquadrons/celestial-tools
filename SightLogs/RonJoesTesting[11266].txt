@@ -1,0 +1,1 @@
+No=1;Date/Time=11/30/1976 17:05:54;SDate=11/30/1976;STime=17:05:54;BodyName=Altair;BodyLimb=Lower;DST=;WE=0000;WEType=Fast;DRLat=47°41.6'N;DRLong=122°24.3'W;HS=45°6.2';IC=0°0';ICType=On;HE=8 ft;HorDist=00;HorDistType=Feet;HorType=Natural;a=;Zn=;Remarks=Location Golden Gardns Park, Seattlle, Wa;Name=Ron Jones;Squadron=Seattle;ZD=Auto;EP=;ApprxBrg=S

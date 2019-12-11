@@ -1,0 +1,1 @@
+No=1;Date/Time=12/12/2004 07:27:17;SDate=12/12/2004;STime=07:27:17;BodyName=Saturn;BodyLimb=Lower;DST=;WE=0002;WEType=Slow;DRLat=47°24.1'N;DRLong=122°20.1'W;HS=26°40.2';IC=00°1.1';ICType=Off;HE=10 ft;HorDist=00;HorDistType=Feet;HorType=Natural;a=1.4 nm Away;Zn=272°;Remarks=;Name=Ron Davidson test2;Squadron=CTTesting;ZD=Auto;EP= EP L 47°24.1'N   EP Lo 122°18.0'W;ApprxBrg=S

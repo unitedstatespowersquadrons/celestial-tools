@@ -1,0 +1,44 @@
+WIND & CURRENT
+
+a. Purpose:  Calculate Course to Steer (CTS), Speed of Advance (SOA, over ground), and speed (through
+water) required to achieve planned cruising speed (over ground) given the desired course to the
+destination, the planned cruising speed (over ground), the set and average drift of the current, and the
+leeway drift angle and wind direction.  Calculated Course Made Good (CMG, expected path over the bottom,
+more accurately referred to as Track) and Speed Made Good (SMG, the resultant speed) given vessel's
+heading (the direction the vessel is pointing, not necessarily the actual course) and speed,  the set and
+average drift of the current, and the leeway drift angle and wind direction.
+
+b.  Operation:  For CTS and SOA, enter the Intended Course (whole degrees), planned Cruising Speed (over
+ground, knots, limited to 99.9), current Set (whole degrees), average current Drift (knots, limited to
+99.9), leeway Drift Angle (if any, whole degrees), and wind direction (if any).  For TR and SOA, Heading
+is used instead of Intended Course.  Wind direction, where the wind is coming from, is only enabled if
+there is a non-zero value of Drift Angle.  It can be selected as one of the eight cardinal or
+intercardinal compass points, or as from port or starboard, of particular use if the wind is nearly on
+the bow or stern.  Press the "Calculate" button. For CTS and SOA, the CTS (with and without leeway), SOA
+(over ground), and speed (through water) required to achieve planned cruising speed (over ground) are
+displayed.  (If the desired course could not be achieved under the entered conditions without adjusting
+the speed through the water, e.g. engine RPM, the SOA will be shown as zero or a negaive number.)  For
+CMG and SMG,  the CMG (with and without leeway) and SMG (over ground) are displayed.
+
+In most cases, either current or leeway but not both will be used.  The option to use both exists to
+allow for current to be extracted from a current table or previous experience and leeway estimated from
+the wind being experienced.  If drift angle due to current is known from previous current measurements,
+and course, speed, and weather and sea conditions have not changed, it, and its direction, can be used
+(under Leeway) in place of set and drift.  In this case, the supplement (+/- 180°) of the current set is
+used to select the "Wind from" direction.
+
+Pressing "Clear" removes all the input and output data.
+
+Course and Set inputs can be true or magnetic or compass, but must be consistent throughout, with
+resulting outputs of the same type.
+
+The term current is used to mean not only the flow of the water surface but also the sum of all factors
+causing the course made good to differ from the course steered.  Leeway is the angular difference due to
+wind between the true course steered and the true course over ground, but can be used to represent the
+set and drift due to current as explained above..
+
+Current set and drift can be determined using The Sailings.
+
+c. Accuracy/Resolution:  CTS is rounded to whole degrees.  SOA and speed required to achieve planned
+cruising speed are rounded to tenths of a knot.
+

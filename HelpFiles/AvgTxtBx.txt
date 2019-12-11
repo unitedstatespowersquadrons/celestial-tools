@@ -1,0 +1,55 @@
+SIGHT AVERAGING
+
+a. Purpose:  To analyze and obtain the average watch times and sextant altitudes for a run of sights.
+
+b. Operation:  Input up to ten pairs of watch times (WT) and sextant altitudes (hs).  Sextant altitudes
+can be entered in either degrees and decimal minutes (DM.m) or degrees, minutes, and seconds (DMS).
+Watch times must be entered in chronological order.  Subsequent data entry lines do not become active
+until an acceptable time is entered on the current line.  (This allows all the watch times to be entered
+as a group, all the sextant altitude degrees to be entered as a group, etc.)
+
+(Once data is entered on a line, it can be changed, but a line of data should never be completely
+deleted.  This will result in error messages.  If, for instance, you wish to eliminate a sight from
+averaging, use the Analyze function described below.)
+
+At this point either the "Analyze" button or the "Calculate Averages" button can be activated.
+
+If you are happy with the data as entered, activate the "Calculate Averages" button and the average watch
+time and average sextant altitude will be displayed.
+
+However, if you want to examine the data to look for bad sights or erroneous entries, activate the
+"Analyze" button.  Unless the body is near the observer's meridian, a number of observations taken in
+quick succession and plotted versus time should result in nearly a straight line.  When the "Analyze"
+button is activated, the values of the "residuals" for each sight are then displayed.  The residuals are
+the differences, in arc-minutes, between the measured altitude entered and the altitude calculated by a
+least-squares linear regression fit determined from using all the entered times and altitudes.  (In
+versions of Celestial Tools previous to V5.1.1, the differences (from sight to sight) of watch time and
+sextant altitude are displayed, plus the rate of change of sextant altitude per unit time.  It was often
+difficult to determine which sight was an outlier.)  If a sight seems bad, having a particularly high
+residual (ignoring the sign), and you do not want to include it in the averaging, clear its check box. If
+data was entered incorrectly, it can be fixed now.   (Whenever the "Analyze" button is pressed, all the
+check boxes will be checked, even if previously cleared, and the displayed averages will disappear.  It
+is presumed that a subsequent press of the "Analyze" button was done because of a change in the data,
+perhaps from an erroneous value, so the old averages are no longer valid.)  Then press the "Calculate
+Averages" button and the averages for the checked sights will be displayed.  If, for any reason, a sight
+that is intended to be used for the average does not have a check box, simply press the "Analyze" button
+again. (Note that this method of analysis results in a line through the data points that should resemble
+a line drawn by eye on a plot, but can result in a good sight being rejected and a bad sight being
+retained.  See the article "How to Average Celestial Sights for Optimum Accuracy", by David Burch, for an
+improved method.)
+
+Note that although the watch times have to be entered in chronological order, if you do not intend to
+analyze the sights the sextant altitudes do not have to be entered on the same line as the corresponding
+time.  However, it is recommended that the watch times and sextant altitudes be entered as pairs.  If you
+intend to analyze the sights, it is mandatory that they be entered as pairs.  In any case, an error
+message is generated if the number of watch times does not equal the number of sextant altitudes.
+
+If a run of sights crosses midnight, which could occur when using an artificial horizon, the watch times
+after midnight must be entered with an hour value of 24 instead of 00.  (Note that only this tool allows
+times of up to 245959 to be entered.)  If necessary, subtract 24 hours from the resulting average watch
+time and add one day.
+
+c. Accuracy/Resolution:  Average watch time is displayed to the nearest second.  Average sextant altitude
+is displayed to the nearest tenth of a minute.  "Scatter" values are displayed to the nearest tenth of an
+arc-minute.
+

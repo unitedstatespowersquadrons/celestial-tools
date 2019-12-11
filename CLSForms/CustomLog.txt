@@ -1,0 +1,158 @@
+﻿Tuesday, November 26, 2019  10:05:40 AM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot100540AM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 882
+Tuesday, November 26, 2019  10:05:43 AM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot100543AM1.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 882
+Tuesday, November 26, 2019  6:01:18 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60118PM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:18 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60118PM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:18 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60118PM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:25 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60125PM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:34 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60134PM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:34 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60134PM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:37 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60137PM1.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:55 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60155PM1.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:55 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60155PM1.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:55 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60155PM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:59 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60159PM1.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:59 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60159PM1.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:59 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60159PM1.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:59 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60159PM1.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:59 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60159PM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:01:59 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60159PM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:03:11 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60311PM1.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:03:11 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60311PM1.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:03:11 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60311PM1.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:03:11 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60311PM1.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Tuesday, November 26, 2019  6:03:11 PM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot60311PM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Wednesday, November 27, 2019  7:08:05 AM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot70805AM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Wednesday, November 27, 2019  7:08:05 AM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot70805AM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Wednesday, November 27, 2019  7:08:10 AM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot70810AM1.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Wednesday, November 27, 2019  7:08:13 AM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot70813AM1.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Wednesday, November 27, 2019  7:08:13 AM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot70813AM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Wednesday, November 27, 2019  7:08:16 AM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot70816AM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Wednesday, November 27, 2019  7:08:23 AM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot70823AM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Wednesday, November 27, 2019  7:08:23 AM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot70823AM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884
+Wednesday, November 27, 2019  7:08:23 AM - Try #1 - Exception on BM Save: Name = ./Graphics/CustomPlot70823AM0.jpg    Exception: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
+   at System.Drawing.Image.Save(String filename, ImageFormat format)
+   at System.Drawing.Image.Save(String filename)
+   at CelestialTools.CustomPlot.SaveDisplayBMFname() in C:\Users\Harry.HRHLENOVO2\Documents\Visual Studio 2015\Projects\CelestialTools\CelestialTools\CustomPlot.vb:line 884

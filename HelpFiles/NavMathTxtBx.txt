@@ -1,0 +1,120 @@
+NAVIGATION MATHEMATICS
+
+a. Purpose:  Single or double linear interpolation, generally used with a table of values.  Single
+interpolation is used if either a row or a column table entering value is the desired value.  Double
+interpolation is used if neither a row nor a column table entering value is the desired value.
+
+Convert angles in degrees and minutes and time in hours, minutes, and seconds to decimal degrees and
+decimal hours.  This is particularly useful for determining values for use in the Interpolation tool.
+
+Add or subtract two angles in degrees and minutes format.
+
+Add or subtract mixed values of time.  Convert a mixed time to days/hours/minutes/seconds.
+
+Solve time of day problems, like time to call, time of arrival, time of departure, etc.
+
+Calculate Zone Description from longitude.
+
+b. Operation: Interpolation: R1, R3, C1, and C3 are tabulated row and column table entering values.  R2
+and C2 are the desired (untabulated) row and column table entering values.  K1, K2, K3, and K4 are values
+extracted from the table (K for "known").  (Negative K values are permitted; negative R and C values are
+not permitted.  Negative K values allow interpolation where the K values might have different signs, as
+in the case of a deviation table.)  Shaded, unlabeled boxes are calculated output values.
+
+For double interpolation, enter values in the C1, C2, C3, R1, R2, R3, K1, K2, K3, and K4 boxes.  Press
+the "Interpolate" button.  Output values will appear in the darker boxes.
+
+For single interpolation, enter values in the C1, C2, C3, K1, and K3 boxes, or in the R1, R2, R3, K1, and
+K2 boxes.  Unused K boxes must be left blank for Celestial Tools to recognize it as a single
+interpolation calculation.  Press the "Interpolate" button.  Output values will appear in the darker
+boxes.
+
+Input values must not be entered as mixed units.  For example, longitudes must be in decimal degrees or
+decimal minutes, not in degrees and minutes; times must be in decimal hours or minutes or seconds, not in
+hours, minutes, and seconds.  If convenient, a constant can be subtracted from each value.  For example,
+1h 00m, 1h 03m, and 1h 10m can be most conveniently entered as 60, 63, and 70, or as 0, 3, and 10.  (Be
+sure to write the full values on your worksheet and to extract data from the correct rows and columns of
+the table.)  A sexagesimal-to-decimal converter for angles and times is included for the convenience of
+the user.  Angles can be entered in either degrees and decimal minutes (DM.m) or degrees, minutes, and
+seconds (DMS).  Converted time is expressed both as  decimal hours and as whole hours and decimal
+minutes.
+
+The program will check if the entered values make sense (C2 must be between C1 and C3, R2 must be between
+R1 and R3, etc.).  If not, a message is generated.
+
+Trailing zeros to the right of a decimal point need not be entered and will not be displayed.  For
+example, 26.0 may be entered as 26 and will be displayed as 26. (Be sure to use the required precision on
+your worksheet.)
+
+The "Clear" buttons clear all input and output values.
+
+Sexagesimal-to-Decimal Converter: Select the angle format to be used (degrees and decimal minutes or
+degrees, minutes, and seconds.  Enter the angle to convert (range 0° to 999°59.9') and/or time to convert
+(range 0 to 99h59m59s).  Press the "Convert" button to complete the conversion.
+
+The "Clear" buttons clear all input and output values.
+
+Angle Addition and Subtraction: Enter the two angles and select the operation to be performed (+ or -).
+The result is updated whenever anything is changed.
+
+The "Clear" buttons clear all input and output values.
+
+Time Addition/Subtraction/Conversion: For addition or subtraction. enter any combination of days (d),
+hours (h), minutes (m), and seconds (s) for the two values to be combined, and select the operation to be
+performed (+ or -).  Acceptable input characters are the digits 0 through 9 and one decimal point.  There
+is essentially no limit on the number of characters that can be entered, but keep in mind that all
+characters might not be able to be seen at once.  Input values can be mixed.   For example, 126.5 hours
+can be entered as 126.5h, 5d 6h 30m, 5d 6.5h, etc.    Press the "Calculate" button.  The calculated time
+will be displayed as days, hours, minutes, and seconds.  Negative results will have a minus sign before
+the days value.  Whenever any input value or operation is changed, the calculated value will be cleared.
+
+To convert a mixed time to days, hours, minutes, and seconds, simply enter the mixed time as the upper
+time, leave the lower time blank, and press the "Calculate" button.
+
+The "Clear" buttons clear all input and output values.
+
+Time of Day Calculator: Enter the zone time (ZT, based on the civil time zone) at Location A in the
+format hhmm, from 0000 to 2359.  Enter the zone description (ZD) of Location A.  If Daylight Savings Time
+is in effect at Location A and it has not been included in the zone description, check the DST box.
+Enter the Interval (travel time), if any, as any combination of days (d), minutes (m), and hours (h).
+Acceptable input characters are the digits 0 through 9 and one decimal point. There is essentially no
+limit on the number of characters that can be entered, but keep in mind that all characters might not be
+able to be seen at once. Any convenient values can be used.  For example, 126.5 hours can be entered as
+126.5h, 5d 6h 30m, 5d 6.5h, etc.   If there is an Interval, and the time at Location B is expected to be
+later than the time at Location A, as when calculating an arrival time, select the + operator.  If the
+time at Location B is expected to be earlier than the time at Location A, as when calculating a departure
+time, select the - operator.  Enter the zone description (ZD) of Location B.  If Daylight Savings Time is
+in effect at Location B and it has not been included in the zone description, check the DST box.  Press
+the "Calculate" button.  The calculated ZT (civil) will be displayed as a time of day (0000 to 2359) with
+the number of whole days, before (-) or after (+), if any, also displayed.  Whenever any input value or
+operation is changed, the calculated value will be cleared.
+
+The "Clear" buttons clear all input and output values.
+
+Time Zone Calculator: Enter the longitude.  The Zone Description (ZD) updates automatically as values are
+changed.
+
+The "Clear" buttons clear all input and output values.
+
+c. Accuracy/Resolution:  Both older and newer courses state that only final answers should be rounded;
+any values along the way should not be rounded.  However, older courses have a special rule for
+interpolation.  For example, N93 states "For intermediate interpolation numbers, work to one decimal
+place greater than the tabular precision.  The final interpolated number is then rounded to the same
+precision as the table."  A consequence of this rule is that a slightly different final result could be
+obtained depending on whether the first interpolation is done horizontally or vertically. The
+Interpolation tool does not use this special rule.  All outputs are rounded to a maximum of five decimal
+places, and rounded intermediate values are used for subsequent calculations.  As such, the order of
+interpolation has no effect, and all four intermediate values, in addition to the final value, will be
+displayed.  It is left to the user to round appropriately.
+
+In the sexagesimal-to-decimal converter , converted values are rounded to a maximum of five decimal
+places.
+
+The Angle Addition and Subtraction tool should give accurate results, constrained to 0° to 359°59.9'.
+
+In the Time Addition and Subtraction tool, results are rounded to whole seconds.
+
+In the Time of Day Calculator tool, results are constrained to 0000 to 2359, rounded to whole minutes.
+
+The Time Zone Calculator should give accurate Zone Descriptions based on longitude alone.
+

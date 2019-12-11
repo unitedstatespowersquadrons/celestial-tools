@@ -1,0 +1,55 @@
+FAVORITE PLACES
+
+a. Purpose:  Save the latitudes, longitudes, range of useful azimuths, type of horizon (natural,
+artificial, or dip short), and dip short distance for locations that will be reused for sight-taking
+sessions.  Automatically load this data into the Sight Planner, Sight Reduction and Fix, Noon Sight, and
+LoC/NASR tools, as appropriate.
+
+b. Operation:  The Favorite Places window has two sections.  The upper section contains a list of
+locations that have been saved.  The lower section is used for adding locations to the list.
+
+The first time Favorite Places is activated, the list of locations will be empty.  In the lower section
+of the window enter a descriptive name of a location (up to 35 characters), its latitude and longitude,
+and a range of azimuths of interest.  The azimuth range is for use with Sight Planner.  As with Sight
+Planner, if a range other than the default range of 0 to 360 degrees is desired, select a single range of
+azimuths, going clockwise.  (That is, from 10 to 350 would give a 340 degree range, but from 350 to 10
+would give a 20 degree range.)  Also select the type of horizon:  natural, artificial, or dip short
+(represented as NH, AH, and DS, respectively, in the Hor column).  If dip short is selected, also enter
+the numerical portion of the dip short distance (limited to five characters, including a decimal point)
+and select the units of the dip short distance.  Then activate the "Add New Location" button and the
+location will appear in the list in the upper section of the window.
+
+More locations can be added to the list in the same manner.  As each one is added, it will appear in its
+proper alphabetic position on the list.  (Actually the position is determined by the ANSI code for the
+characters, so numbers will be before letters.)
+
+To remove a location from the list, click on the location then activate the "Remove Location" button.
+After confirmation the location will be removed.
+
+To save the list for future use, activate the "Save Location List" button.  The list will be saved to a
+file called "Favorite_Places.txt", which is located in the same directory as the Celestial Tools
+executable.  (This file can be edited with a text editor such as Windows Notepad, but this is not
+recommended because of font types and column spacings for the various entries.)  If you attempt to close
+the Favorite Places window after a location has been added or removed from the list without saving the
+list, you will be asked whether or not you want the list saved.
+
+To use a location, either double-click on the desired location or click on the location and activate the
+"Use Location" button.  (Use the scroll bar if necessary to get to the desired location.)  The latitude
+and longitude will be loaded into Sight Planner, Sight Reduction and Fix, Noon Sight, and LoC/NASR; the
+azimuth range will be loaded into Sight Planner; and the type of horizon, and, if applicable, the dip
+short distance, will be loaded into Sight Reduction and Fix and Noon Sight.  This will happen whether or
+not the tool windows are open.  The programs are then used normally.
+
+The ability to save the type of horizon and the dip short distance was new in Celestial Tools V1.1.0.  In
+order to maintain compatibility with 800x600 screens, the data columns had to be moved.  Unfortunately
+this means that lists of Favorite Places developed with previous versions of Celestial Tools (V1.0.6 or
+earlier, or betas of V1.1.0 dated before 9/30/2006) can be read by V1.1.1 or later but will not work
+properly and will have to be re-entered. Possibly the best way to do this is to use your existing
+Favorite Places, re-enter each location (including the new data), add it to the list, then remove the old
+location.
+
+Keep in mind that the dip short feature is of limited use.  Often you have to reduce the sight to get
+azimuth, which you then use on your map to get the dip short distance.  However, if you are lucky enough
+to use an area where there are one or more ranges of azimuths with a relatively constant dip short
+distance, this feature should save some keystrokes.
+
