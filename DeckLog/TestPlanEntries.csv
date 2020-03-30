@@ -1,0 +1,5 @@
+Vessel,Navigator,From,To,Log Type,Log DateTime,Course Psc,Var,Dev,Course True,Speed,Position L/Lo,Weather Notes,Log Entry Notes,ElapsedTime,Distance,Calc Dest,Calc True,Calc Speed,Set,Drift,Eval Basis
+,,,,,,,,,,,,,,,,,,,,,
+Vessl test1,Someone new,Boulder,Somewhere,Plan,03/30/2020 06:04:54,165°,15W,0W,180°,7.5kn,L=40°05.3'N Lo=105°13.8'W,,Estimated Arrival Time for Plan Log Entry:03/30/2020 22:08:46,16:03:52,120.5nm,L=38°05'N Lo=105°13.8'W,180°,,,,
+Vessl test1,Someone new,Boulder,Somewhere,Plan,03/30/2020 22:08:46,075°,15W,0W,90°,7.5kn,L=38°05'N Lo=105°13.8'W,,Estimated Arrival Time for Plan Log Entry:03/31/2020 07:28:48,09:20:01,70.0nm,L=38°05'N Lo=103°45'W,90°,,,,
+Vessl test1,Someone new,Boulder,Somewhere,Plan,03/31/2020 07:28:48,165°,15W,0W,180°,7.5kn,L=38°05'N Lo=103°45'W,,Estimated Arrival Time for Plan Log Entry:03/31/2020 23:30:16,16:01:28,120.2nm,L=36°05'N Lo=103°45'W,180°,,,,

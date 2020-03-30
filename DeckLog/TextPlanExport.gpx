@@ -1,0 +1,22 @@
+<gpx xmlns=" http://www.topografix.com/GPX/1/1" 
+xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+version="1.1"
+creator="Vessl test1 BoulderPlan Entries">
+
+<wpt lat="40.08833" lon="-105.23"><time>2020-03-30T13:04:54Z</time><name>Boulder/Somewhere</name>
+</wpt>
+<wpt lat="38.08333" lon="-105.23"><time>2020-03-31T05:08:46Z</time><name>Boulder/Somewhere</name>
+</wpt>
+<wpt lat="38.08333" lon="-103.75"><time>2020-03-31T14:28:48Z</time><name>Boulder/Somewhere</name>
+</wpt>
+
+<rte><rtept lat="40.08833" lon="-105.23"><time>2020-03-30T13:04:54Z</time><name>Boulder/Somewhere</name>
+</rtept>
+<rtept lat="38.08333" lon="-105.23"><time>2020-03-31T05:08:46Z</time><name>Boulder/Somewhere</name>
+</rtept>
+<rtept lat="38.08333" lon="-103.75"><time>2020-03-31T14:28:48Z</time><name>Boulder/Somewhere</name>
+</rtept>
+
+</rte>
+</gpx>
