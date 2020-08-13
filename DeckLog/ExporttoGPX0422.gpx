@@ -1,0 +1,78 @@
+<gpx xmlns=" http://www.topografix.com/GPX/1/1" 
+xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+version="1.1"
+creator="Bounty St ThomasPlan Entries">
+
+<wpt lat="18.33333" lon="-0.94333"><time>2020-04-20T06:00:00Z</time><name>St Thomas/St Croix/Plan</name>
+</wpt>
+<wpt lat="18.33333" lon="-0.94333"><time>2020-04-20T07:30:00Z</time><name>St Thomas/St Croix/DR</name>
+</wpt>
+<wpt lat="18.33333" lon="-0.94333"><time>2020-04-20T07:30:00Z</time><name>St Thomas/St Croix/GPS</name>
+</wpt>
+<wpt lat="18.25000" lon="-0.92333"><time>2020-04-20T08:15:00Z</time><name>St Thomas/St Croix/DR</name>
+</wpt>
+<wpt lat="18.13833" lon="-0.89667"><time>2020-04-20T09:15:00Z</time><name>St Thomas/St Croix/DR</name>
+</wpt>
+<wpt lat="17.97167" lon="-0.85833"><time>2020-04-20T10:45:00Z</time><name>St Thomas/St Croix/DR</name>
+</wpt>
+<wpt lat="17.80500" lon="-0.75833"><time>2020-04-20T10:46:48Z</time><name>St Thomas/St Croix/Plan</name>
+</wpt>
+<wpt lat="17.80500" lon="-0.82"><time>2020-04-20T12:15:00Z</time><name>St Thomas/St Croix/DR</name>
+</wpt>
+<wpt lat="17.80500" lon="-0.75833"><time>2020-04-20T12:15:00Z</time><name>St Thomas/St Croix/DR</name>
+</wpt>
+<wpt lat="17.80500" lon="-0.75833"><time>2020-04-20T12:15:00Z</time><name>St Thomas/St Croix/GPS</name>
+</wpt>
+<wpt lat="17.77500" lon="-0.755"><time>2020-04-21T07:00:00Z</time><name>St Croix/St Johns/Plan</name>
+</wpt>
+<wpt lat="18.33833" lon="-0.68167"><time>2020-04-22T07:30:00Z</time><name>St Johns/Tortolla/Plan</name>
+</wpt>
+<wpt lat="18.30833" lon="-0.675"><time>2020-04-22T07:45:47Z</time><name>St Johns/Tortolla/Plan</name>
+</wpt>
+<wpt lat="18.37500" lon="-0.6"><time>2020-04-22T08:36:01Z</time><name>St Johns/Tortolla/Plan</name>
+</wpt>
+<wpt lat="18.46667" lon="-0.55333"><time>2020-04-22T08:36:01Z</time><name>St Johns/Tortolla/Plan</name>
+</wpt>
+<wpt lat="18.46000" lon="-0.63333"><time>2020-04-22T08:36:01Z</time><name>St Johns/Tortolla/Plan</name>
+</wpt>
+
+<rte><rtept lat="18.33333" lon="-0.94333"><time>2020-04-20T06:00:00Z</time><name>St Thomas/St Croix/Plan</name>
+</rtept>
+<rtept lat="17.80500" lon="-0.75833"><time>2020-04-20T10:46:48Z</time><name>St Thomas/St Croix/Plan</name>
+</rtept>
+<rtept lat="17.77500" lon="-0.755"><time>2020-04-21T07:00:00Z</time><name>St Croix/St Johns/Plan</name>
+</rtept>
+<rtept lat="18.33833" lon="-0.68167"><time>2020-04-22T07:30:00Z</time><name>St Johns/Tortolla/Plan</name>
+</rtept>
+<rtept lat="18.30833" lon="-0.675"><time>2020-04-22T07:45:47Z</time><name>St Johns/Tortolla/Plan</name>
+</rtept>
+<rtept lat="18.37500" lon="-0.6"><time>2020-04-22T08:36:01Z</time><name>St Johns/Tortolla/Plan</name>
+</rtept>
+<rtept lat="18.46667" lon="-0.55333"><time>2020-04-22T08:36:01Z</time><name>St Johns/Tortolla/Plan</name>
+</rtept>
+<rtept lat="18.46000" lon="-0.63333"><time>2020-04-22T08:36:01Z</time><name>St Johns/Tortolla/Plan</name>
+</rtept>
+
+</rte>
+<trk>
+<trkseg><trkpt lat="18.33333" lon="-0.94333"><time>2020-04-20T07:30:00Z</time><name>St Thomas/St Croix</name>
+</trkpt>
+<trkpt lat="18.33333" lon="-0.94333"><time>2020-04-20T07:30:00Z</time><name>St Thomas/St Croix</name>
+</trkpt>
+<trkpt lat="18.25000" lon="-0.92333"><time>2020-04-20T08:15:00Z</time><name>St Thomas/St Croix</name>
+</trkpt>
+<trkpt lat="18.13833" lon="-0.89667"><time>2020-04-20T09:15:00Z</time><name>St Thomas/St Croix</name>
+</trkpt>
+<trkpt lat="17.97167" lon="-0.85833"><time>2020-04-20T10:45:00Z</time><name>St Thomas/St Croix</name>
+</trkpt>
+<trkpt lat="17.80500" lon="-0.82"><time>2020-04-20T12:15:00Z</time><name>St Thomas/St Croix</name>
+</trkpt>
+<trkpt lat="17.80500" lon="-0.75833"><time>2020-04-20T12:15:00Z</time><name>St Thomas/St Croix</name>
+</trkpt>
+<trkpt lat="17.80500" lon="-0.75833"><time>2020-04-20T12:15:00Z</time><name>St Thomas/St Croix</name>
+</trkpt>
+
+</trkseg>
+</trk>
+</gpx>

@@ -1,0 +1,4 @@
+Vessel,Navigator,From,To,Log Type,Log DateTime,Course Psc,Var,Dev,Course True,Speed,Position L/Lo,Weather Notes,Log Entry Notes,ElapsedTime,Distance,Calc Dest,Calc True,Calc Speed,Set,Drift,Eval Basis
+,,,,,,,,,,,,,,,,,,,,,
+V,N,FR,TO,DR,06/03/2020 15:00:00,110°,0W,0W,110°,9.5kn,L=39°10'N Lo=144°06'E,,,,,,,,,,
+V,N,FR,TO,DR,06/03/2020 19:22:00,110°,0W,0W,110°,9.5kn,L=38°55.6'N Lo=144°56.1'E,,,04:22:00,41.5 nm,L=38°55.6'N Lo=144°56.1'E,110°,9.5kn ,,,DR from: 06/03/2020 15:00:00

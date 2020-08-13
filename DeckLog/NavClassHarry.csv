@@ -1,0 +1,4 @@
+Vessel,Navigator,From,To,Log Type,Log DateTime,Course Psc,Var,Dev,Course True,Speed,Position L/Lo,Weather Notes,Log Entry Notes,ElapsedTime,Distance,Calc Dest,Calc True,Calc Speed,Set,Drift,Eval Basis
+,,,,,,,,,,,,,,,,,,,,,
+Ocean Navigator,Harry,Straits Juan De Fuca,Honolulu ,Plan,06/25/2004 07:00:00,210°,0W,3W,213°,9kn,L=48°24.0'N Lo=124°45.0'W,,Estimated Arrival Time for Plan Log Entry:06/26/2004 11:56:42,1dy 04:56:42,260.5nm,L=44°44.0'N Lo=128°7'W,213°,,,,Planned Route Entry
+Ocean Navigator,Harry,Straits Juan De Fuca,Honolulu ,Plan,06/25/2004 07:00:00,199°,0W,3W,202°,9.0kn,L=44°44.0'N Lo=128°07.0'W,,,1dy 03:21:23,246.2nm,L=40°54.8'N Lo=130°8.27'W,202°,,,,Planned Route Entry
