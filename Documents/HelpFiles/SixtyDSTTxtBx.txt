@@ -1,0 +1,25 @@
+60D=ST
+
+a. Purpose:  Calculate speed, time, or distance, given two of the three quantities.  This tool is similar
+to Bowditch 2002 Table 11 (Speed, time, and Distance), with the exceptions noted below.
+
+b. Operation:  Enter the values for the at least two of the quantities.  Press the button for the
+quantity to be calculated.  If there is already a value present it will be updated based on the other two
+values.  If the unknown value is time, it will be displayed as minutes and days/hours/minutes.
+
+Inputs and outputs have upper limits, perhaps unreasonable high, that allow for a long ocean voyage:
+99.9 knots, 59999 minutes or 99 days 999 hours 59 minutes, 9999.9 nautical miles.  If a calculated output
+value exceeds its limit the value is replaced by dashes and a message is displayed.
+
+Time can be entered as whole minutes or whole days/whole hours/whole minutes.   (If the desired time is
+of another format, e.g. 125.6 hours, use the Time Addition/Subtraction/Conversion tool in Navig. Math to
+convert to days/hours/minutes.)  Once a value is entered in any of the four time boxes the inappropriate
+ones are disabled.
+
+Pressing the Clear button clears all values.
+
+c. Accuracy/Resolution:  Outputs are rounded:  speed to tenths of a knot, time to whole minutes, and
+distance to tenths of a nautical mile.  Note that Bowditch 2002 Table 11 does not use the USPS standard
+for rounding.  For instance, with a speed of 4.5 knots and a time of 30 minutes, a distance of 2.25
+nautical miles is calculated, which is rounded to 2.2 nm by Table 11, but 2.3 nm by Celestial Tools.
+

@@ -1,0 +1,35 @@
+TVMDC
+
+a. Purpose:  Update the values of the compass variables True (T), Variation (V), Magnetic (M), Deviation
+(D), and Compass (C) when any one is changed. (T, M, and C can be courses, bearings, or headings,
+consistent within the tool.)  Calculate the value of variation for a selected year based on the data
+provided on a chart.
+
+b. Operation: The window is divided into two sections.  The section on the left does the TVMDC
+calculation.  The section on the right calculates variation based on chart data.
+
+TVMDC (left section): As any value is entered or changed, all other appropriate values change on the fly.
+Values of V and D do not change automatically; they only change by manually entering or changing their
+values.  If T, M,  or C is changed,the other two are updated.  If V or D are changed, the values below or
+above them are updated, depending on whether True to Compass (down arrow) or Compass to True (up arrow)
+is selected.
+
+Values must be entered in whole degrees.  Leading zeros are not needed.  To change a value, the existing
+value must be deleted or backspaced over. Highlighting then typing the new value will not work.
+
+Press the "Clear" button to clear all numerical values.
+
+Variation (right section): Enter the charted variation (limited to 99°59'), year, and annual change.
+Enter the year of interest (default is the system year).  As any of these values is entered or changed,
+the value of Corrected Variation is updated automatically.  This value can then be used in the TVMDC
+section if desired.
+
+There are no limits imposed on the years except they are limited to a maximum of four digits.  Because of
+this and the fact that Corrected Variation is calculated automatically, as a year is changed the
+difference in years can be very large, possibly resulting in an unreasonably large value of Corrected
+Variation.  Corrected Variations greater than 99° are flagged with a yellow background to warn of this
+possibility.
+
+c. Accuracy/Resolution:  For TVMDC, outputs are displayed to three figures, with leading zeros added
+where appropriate.  For Variation, Corrected Variation is  rounded to whole degrees.
+

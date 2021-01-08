@@ -1,0 +1,328 @@
+SIGHT REDUCTION METHODS & FIX
+
+a. Purpose:  Allows data extracted from the Nautical Almanac (rather than from the built-in medium-
+precision almanac) to be entered for sight reductions using various methods.  (In keeping with the spirit
+of Celestial Tools as being an instructional aid rather than doing the work for the student, this module
+is  intended, for most methods, to be only a little more than Windows executable versions of DOS programs
+and spreadsheets already available on the USPS web site.)  The methods included are the Law of Cosines
+(LoC) calculator method, the Nautical Almanac Concise method (NASR), Pub. 249 (formerly H.O. 249, Sight
+Reduction Tables for Air Navigation, A.P. 3270 in the United Kingdom), Pub. 229 (formerly H.O. 229, Sight
+Reduction Tables for Marine Navigation, H.D. 486 in the United Kingdom), H.O. 214 (Tables of Computed
+Altitude and Azimuth), H.O. 211 (Dead Reckoning Altitude and Azimuth Table, Third Edition, known as
+Ageton, and the Modified H.O. 211 Compact Sight Reduction Table, known as Ageton-Bayless), H.O. 208
+(Navigation Tables for Mariners and Aviators, Sixth Edition, known as Dreisonstok), two versions of the
+S-Table, and the Weems Line of Position Book.
+
+(Over the years the USPS SR forms for the same sight reduction method have changed in their layout,
+operation, and Zn resolution.  Celestial Tools SR "forms" are patterned after the following USPS SR
+forms:  Law of Cosines - SR 96a; NASR - SR 96a; Pub. 249 - SR Pub. 249 Vol II & III; Pub. 229 - SR 96b;
+H.O. 211 - SR 87, with the exception regarding Zn noted in Accuracy/Resolution.  The form for H.O. 214 is
+patterned as a combination of the H.O. 214 form of SR 712 and the Pub. 229 form of SR 96b.  The form for
+H.O. 208 is patterned after the examples in the sixth edition of the H.O. 208 book.)
+
+Calculates an Estimated Position (EP) for all methods. Calculates an AP/EP and a DR-LOP distance for all
+methods that use an Assumed Position (AP) rather than a Dead Reckoning (DR) position.  (See below for how
+EP and AP/EP are defined.)  Use two more sights reduced by the Law of Cosines method to establish a fix.
+
+b. Operation:  Required inputs are GHA or LHA (Tot GHA or LHA from SR form), declination (Dec from SR
+form), observed altitude (Ho from SR form), and DR latitude and longitude (if GHA is being used).  To use
+LHA instead of GHA, enter LHA in place of GHA and set DR Lo to zero or leave blank.  (Be aware that doing
+this will give an EP, and an AP/EP if applicable, referred to 0° longitude.)  Time is only required if it
+is intended to establish a fix from a moving vessel.  (The time value need not be accurate.  It is only
+used to determine which is the latest of the selected sights so the earlier sights can be advanced to its
+DR position.)  Select one of the eight sight reduction method buttons and the corresponding sight
+reduction will be displayed in the format required by the SR form (where the format of the form is
+known).
+
+GHA has an upper limit of 719°59.9' in case Tot GHA from the SR form exceeds 360° and has not been
+adjusted.
+
+The NASR method is not suitable for values of Ho exceeding 75°.  The Law of Cosines is not suitable for
+values of Ho exceeding 88°.  Pub. 229 requires a special interpolation technique for Ho values of 86° or
+greater that is not included in this program. The corresponding buttons will be disabled if the entered
+value of Ho exceeds these limits.
+
+Ho has a lower limit of -59.9', so sights on bodies on the visible horizon (with a negative altitude on
+the celestial horizon) and heights of eye up to about 75 feet can be reduced.  If a negative value of
+minutes of Ho is entered, any value of degrees of Ho will be cleared and the Ho degrees box will be
+disabled.
+
+When using the standard procedure for determining Asm Lo and Asm LHA with the NASR method, if the
+difference between Asm Lo and DR Lo is exactly 30', there are two possible correct sets of values that
+can be derived.  Celestial Tools is configured to give the set with the value of Asm LHA closer to the
+actual value of LHA.
+
+For the NASR method, after the "NASR" button is activated the user can select whether to use the
+Auxiliary Table found in the pre-1999/post-2004 Nautical Almanacs or that found in the 1999-2004 Nautical
+Almanacs.  The default is the pre-1999/post-2004 set.  Whenever this option is changed, the calculation
+is done without having to activate the "NASR" button.
+
+A little explanation is in order.  In the late 1990s, USPS produced its own version of the Auxiliary
+Table, called the "ALTITUDE CORRECTION TABLE for The Nautical Almanac Sight Reduction Table".  Its
+purpose was twofold.  It had a revised format which made it easier to determine the signs of the
+corrections, and it "corrected" the tabulated values of corr1 and corr2 to match what would be derived
+from using a calculator and applying standard rounding techniques. (The single row that did not conform
+to this design in the Auxiliary Table was the values for P 30° and Z2 60°.  The Auxiliary Table values
+for corr1 are one less than the USPS version values when P° is 30 and F' is odd.  The Auxiliary Table
+values for corr2 are one less than the USPS version values when Z2° is 60 and A' is odd.)  This table was
+well-received, and replaced the original Auxiliary Table starting with the 1999 Nautical Almanac.
+However, starting in 2005, the Nautical Almanac maintained the improved format of the USPS version, but
+went back to the "uncorrected" values of corr1 and corr2.
+
+The NASR method program is capable of producing results outside the range of the tables, generally for
+objects that have a negative altitude, i.e. below the horizon.  This is not of significant interest to
+mariners.
+
+For the Law of Cosines, the Estimated Position (EP) is the point at the end of the intercept line through
+which goes the line of position.  For all methods that use an AP rather than a DR, this point is not the
+Estimated Position as normally defined, since the intercept starts at an Assumed Position (AP) instead of
+at a DR position or a Known Position (KP), and is called AP/EP in Celestial Tools to distinguish it from
+a normal EP.  (It is only valid from a fixed position, not from a moving vessel.  One of the rhumb line
+methods of The Sailings can be used to advance an AP/EP.)  In either case, this point should be useful in
+checking the accuracy of a plot.  For NASR, the DR-LOP distance is also shown, which, if the DR position
+is a known position (KP), is a measurment of the quality of the sight.  From this, the real EP,  the
+point on the LOP closest to the DR position, is calculated and displayed.  These results will not
+necessarily match those obtained by the Law of Cosines because of the difference in precision and
+rounding and the skewing of the LOP if there is sufficient difference in the azimuths derived by the two
+methods.
+
+For Pub. 249, the program should operate properly even outside the declination range of 29°N to 29°S of
+the tables.
+
+For Pub. 229, the DSD value and correction are generally only needed for values of Hc greater than 60°
+and certain conditions of latitude, declination, and LHA.  After the "Pub. 229" button is activated, an
+"Always use DSD" checkbox will appear in the data display area, next to "Pub 229".   If this box is
+unchecked (the default), the DSD value and correction will only be included if the DSD correction exceeds
+0.25'.  This should correspond to the tabular values of d printed in italic type followed by a small dot.
+If it is checked, the DSD value and correction will be included whether it is needed or not.  If the DSD
+value and correction are needed, the checkbox will be disabled.  (Checking or unchecking this box has the
+same effect as activating the "Pub. 229" button:  the output display area is updated.)
+
+For H.O. 211, after the "H.O. 211" button is activated the user can select whether to use Original
+(Ageton) or Compact (Ageton-Bayless) tables.  The default is the Compact tables.  (The original tables
+included entries for half-minutes of arc, which were deleted from the compact tables.) (Note that
+changing this option has the same effect as activating the "H.O. 211" button:  the output display area is
+updated.)  For the Original tables, meridian angle t and declination must be at least 0.3'.  For the
+Compact tables, meridian angle t and declination must be at least 0.5'.
+
+H.O. 211 has a "forbidden zone", generally considered to be where K is between 82° and 98° (though some
+sources have smaller ranges), where an intercept error of up to 30 miles may result (less if
+interpolation of the tables is used).  The USPS recommendation is to discard the sight.  However, if K is
+between 82° and 98°, Celestial Tools will interpolate (actually calculate) for the second B value.  When
+this occurs, either with the Compact or Original Tables, a message will appear indicating this, and
+giving the option of using the Sadler Technique, a modified form of H.O. 211 for use in the "forbidden
+zone", which gives more accurate results.  For the Sadler Technique with the Original tables, meridian
+angle t must be at least 0.3' away from 90°.  With the  Compact tables, meridian angle t must be at least
+0.5' away from 90°.
+
+For H.O. 214, after the "H.O. 214" button is activated the user can select one of three possible
+solutions: 1) Solution for line of position, using delta d correction.  This is the primary method for
+which the tables were originally designed, and is the default.  The solution is short and simple,
+essentially being plotted from an assumed (AP) latitude and longitude.  (The AP/EP is referenced to Asm L
+and Asm Lo.) 2) Solution for line of position, using both delta d and delta t corrections.  This is used
+if it is desired to plot from an AP latitude and a DR longitude.  (The AP/EP is referenced to Asm L and
+DR Lo.) 3) Solution for position line from the DR position using delta d, delta t, and delta L.  (No AP/
+EP or DR-LOP distance will be shown.) (Note that changing this option has the same effect as activating
+the "H.O. 214" button:  the output display area is updated.)  H.A. is the equivalent of meridian angle t.
+The use of delta t is not in general recommended when the altitude of the observed body is greater than
+80°, but it will be included in the solution nevertheless.  The azimuth obtained from the tables is
+correct for the values with which the tables were entered, and for plotting lines of position generally
+need no correction.  If more accuracy is desired, the azimuth may be interpolated, but this will not be
+done by Celestial Tools.
+
+For H.O. 208, the assumed LHA (the LHA to the nearest whole degree) cannot be 0° or 180°.  When high
+altitudes are observed near mereidian transit, selecting an assumed position to fit the tables may
+produce an appreciable error in azimuth.  Under these circumstances, interpolation to minutes of latitude
+is recommended, but will not be done by Celestial Tools.  Note that for H.O. 208, for a latitude of zero,
+the name of the latitude in the data entry section is automatically changed to the name of the
+declination regardless of how it was originally set.
+
+Two versions of the S-Table are provided:  the original (the default), by Mike Pepperday, which was
+included in the Nautical Almanac for a few years in the early '90s, and is still available as a booklet;
+and a modified version, by Rodger E. Farley, available in his book "Celestial Navigation in a Teacup"
+(formerly "The Armchair Celestial Navigator").  Both versions are derivatives of H.O. 211, and, as such,
+also have a "forbidden zone"  where K is between 82° and 98°, which is handled in the same manner as in
+H.O. 211 .  The worksheeet for the Pepperday version as shown in the Nautical Almanac and the booklet is
+very similar to the H.O. 211 worksheet.  (Pepperday revised it to an improved version after the
+publication of the booklet, but it was never published.)  The Farley version uses an original worksheet.
+In both cases Celestial Tools uses a worksheet similar to that of H.O. 211, but with the nomenclature
+changed to agree with the particular version being used.
+
+The Farley version uses + for N and W, and - for S and E.  It also uses an unconventional definition of
+LHA, similar to meridian angle t.  For example, if LHA is 350°, it will be shown as -10°.  The Farley
+version also does not mention the interpolation requirement where the value of the derived parameter K is
+near 90° (as in H.O. 211), but there is an implication in the example in the book that "eyeball
+interpolation" should always be done for any parameter.  (The Pepperday version specifically says not to
+bother using anything but the nearest tabulated value except in the case of K near 90°.) Celestial Tools,
+however, is programmed so that interpolation is only done when the K value is from 82° to 98°.
+
+For the Weems Line of Position Book, after the "Weems LPB" button is activated, an "Interpolate Table B"
+checkbox will appear in upper left corner of the data display area.   If this box is unchecked (the
+default), the value of K~d is rounded to the nearest whole minute before calculating the value of B, and
+Hc is rounded to whole minutes, as was done in examples in the second (and, it is believed, the first)
+edition of the book.  If it is checked, the value of K~d to tenths of a minute is used for calculating
+the value of B, and Hc is rounded to tenths of minutes, as was done in examples in the third (and, it is
+believed, the fourth) edition of the book.  This checkbox is only associated with the calculation of Hc,
+to the left of the vertical dotted line. (Checking or unchecking this box has the same effect as
+activating the "Weems LPB" button:  the output display area is updated.)  All editions of the Weems Line
+of Position Book used Rust's Azimuth Diagram to determine Z and Zn.  The third and fourth editions added
+a tabular method for that purpose.  Celestial Tools displays Z and Zn, calculated from the formula from
+which the Rust diagram was constructed, to the left of the vertical dotted line on the display.  The
+tabular method is shown to the right of the vertical dotted line.  Interpolation of Table B is never
+used:  the table is entered with angles rounded to whole minutes, and B values are extracted rounded to
+units.  (Note that in cases where it might not be clear, the table used (A or B) is embedded in the arrow
+symbols, and whether the table is entered from the top or bottom is indicated.)  It should be noted that
+this method uses an unconventional definition of azimuth angle (Z).  The prefix is determined by whether
+the body is north or south of the observer, and the maximum value is 90°, where in most methods the
+prefix is the elevated pole, and the maximum value is 180°.  (In all methods the suffix is determined by
+whether the body is east or west of the observer.)
+
+Although examples in some books indicate that this is not required, in all sight reduction methods that
+use an assumed longitude to calculate a whole degree value of LHA, Celestial Tools will always select an
+assumed longitude that is within 30' of the DR longitude.  This will result in a whole-degree value of
+assumed LHA that is closest to the actual LHA.
+
+In all sight reduction methods that plot from an assumed longitude, if the DR longitude is close to 0° or
+180°, the assumed longitude might not be in the same hemisphere as the DR longitude.  In those cases, the
+standard form ofassumed longitude will be displayed, with the appropriate operation.  For example, If the
+DR longitude is 0°20'W and the GHA is 0°50', Celestial Tools will display the assumed longitude as (-)
+0°10'E rather than (+) 359°50'W.
+
+When switching from one sight reduction method to another, or after pressing "Clear All" or "Clear except
+DR", any options will be left in the state they were last in.
+
+Reductions by the Law of Cosines method can be saved (there is no provision for doing this with any of
+the other methods), using the "Save for Fix" button, and the last twelve saved are retained.  After a
+minimum of two sights are reduced by the Law of Cosines method and saved, you have the option of
+establishing a fix, with the "Establish Fix" button, using sights selected from the list of up to twelve.
+
+If taking sights from a moving vessel, the  times of the sights must be entered, only accurate enough to
+establish the chronological order of the sights. (Sights with times and without times cannot be mixed.)
+The time of the fix is the time of the latest sight selected.  (At sea, if the time between the earliest
+and latest sights is more than 20 minutes, the fix should be considered a Running Fix.)  Do not use times
+that cross midnight.  Adjust times to avoid this; the times only need to correctly represent
+chronological order.  If sights are taken from a fixed position, e.g. from a Known Position (KP) when
+taking sights for a sight folder, the times are not required, but all sights selected for the fix must
+have the same DR position.  Keep in mind that you should expect a small difference between the calculated
+fix and a plotted fix if the plotted fix was established with a sight reduction method that plots from an
+Assumed Position (AP) (e.g. the Nautical Almanac Sight Reduction method) rather than one that plots from
+a DR position (Law of Cosines in Celestial Tools).  (Although Celestial Tools has no provision to
+establish a fix from sights taken by any method other than the Law of Cosines, reducing these sights with
+the Law of Cosines should result in a fix that is relatively close to what would be established using
+other reduction methods.  Fixes established from methods that plot from an assumed position, even if from
+a moving vessel, should be within one nautical mile or so from the fix established by the Law of
+Cosines.)  In addition to the latitude and longitude of the fix, the distance and bearing from the DR to
+the fix will be displayed.
+
+To include a Noon Sight as part of the list of sights saved for a fix, use the Ho, Dec, and L from the
+Noon Sight.  Set LHA equal to zero by setting GHA equal to LoW or 360-LoE.  Reduce the sight with the
+"Law of Cosines" button, then save it with the "Save for Fix" button.
+
+Caution:  Versions of Celestial Tools prior to V2.3.0 had a bug that prevented some valid sets of sights
+from establishing a fix.  This bug was removed, with the consequence that almost any set of sights will
+produce a fix, regardless of cut or length of intercept.  It is left to the user to select appropriate
+sights.
+
+After each reduction is done a "Meridian Diagram" button becomes available.  Pressing this button opens
+another window showing the Projection on the Plane of the Celestial Meridian, based on the values in the
+reduction.  There is the option of representing the hour circles and vertical circles as accurate
+ellipses (default) or as less accurate arcs of circles.  Vertical circles and hour circles are solid of
+the body is to the west, dashed if to the east. Construction lines for both the hour circle and vertical
+circle are shown.  The position of the body is represented by a dot, which is located at the intersection
+of the parallel of altitude and the parallel of declination, regardless of the hour circle or vertical
+circle.  If circles are used, the hour circle and vertical circle are forced to pass through the body,
+and the plotted values of LHA and Zn may not agree with the calculated values.  With good input data, the
+differences are not expected to exceed 4 degrees.  When ellipses are used, if the input data is good, the
+hour circle and vertical circle should intersect at (or at least near) the intersection of the parallel
+of altitude and parallel of declination.  If not, look for an error in the data input, which would
+probably also have caused an excessively large intercept value.  Since when circles are used the hour
+circle and vertical circle are forced to pass through the intersection of the parallel of altitude and
+parallel of declination, the quality of the input data cannot be judged.  The graphics associated with
+each parameter are color-coded; the color legend appears in the upper left corner of the window.  This
+tool is shared with the Sight Reduction & Fix tool, and will use the data from the last reduction done
+with either of the two.  The "Meridian Diagram" button is enabled only once for each reduction.  To
+enable it again, the "Law of Cosines" or the "NASR" button must be pressed.  However, if the Meridian
+Diagram windows is already opened, switching between "Ellipses" and "Circles" will create a meridian
+diagram based on the last reduction done.  To use new values, one of the seven sight reduction method
+buttons must be pressed again.
+
+Pressing the "Clear All" button clears all inputs and outputs.  Pressing the "Clear except DR" button
+leaves the DR L and DR Lo as they were.
+
+c. Accuracy/Resolution:  These tools should reproduce the values in the corresponding parts of the USPS
+SR96 form exactly, with the possible exception for NASR noted above, and for Pub. 249 and Pub. 229 noted
+below.  In the Law of Cosines, all values of latitude, LHA, and declination are rounded to five decimal
+places, to conform to the method used in the examples in the JN and N student manuals, and these values
+are used in subsequent calculations.  The calculated value of Hc is rounded to five decimal places, and
+this value is used in subsequent calculations.  However, depending on how the student does the
+calculations, e.g. using unrounded values stored in memory, and even the model of the calculator used,
+the value of the decimal representation of Hc may differ in the fifth, and possibly fourth, decimal
+place, and the degrees and minutes representation may differ by 0.1', from the student's values.  A
+difference of 0.1° in the value of Z is also possible.  In the methods that use an AP, the DR-LOP
+distance is rounded to tenths of a nautical mile.  The  EP L and EP Lo should agree with a careful plot
+within 0.1' for LoC and 0.3' for the other methods.  A two-body fix (for Law of Cosines only) should
+agree fairly well with a plot, generally within 0.2' of latitude and longitude, but a three (or more)-
+body fix may not agree that well with a plot because of the uncertainty in determining the fix position
+of the plot.  When comparing a fix plot based on a methods that use an AP with the LoC calculated fix,
+differences of up to about 1' of latitude and longitude can be expected.  The distance and bearing from
+the DR to the fix are rounded to tenths of a nautical mile and whole degrees, respectively.
+
+For all methods, the final value of Zn is rounded to whole degrees, the current USPS standard, which may
+be contrary to some of the old SR forms, which rounded Zn to tenths of a degree.  For the form of the Law
+of Cosine used, the azimuth of bodies near the zenith will not be accurate.
+
+For Pub. 249, the values of Tab Hc and Tab d may differ from the tables by 1'.
+
+For Pub. 229, all correction interpolations are done mathematically, and will occasionally be at a
+variance with the interpolation table.  This variance should not exceed 0.1', and is most likely to occur
+for the value of d2 corr.
+
+H.O. 211 notes: 1) Both the compact and original versions have most of the tabular data rounded to the
+nearest whole number.  However, the compact version show values below 166 to once decimal place, and the
+original version shows values below 239 to one decimal place.  The example in the compact version shows
+one of these low values rounded to a whole number, but an example in the original version uses the
+tenths.  However, Celestial Tools will abide by the USPS rules for the compact version:  "Record all
+decimal values exactly as shown in the Compact Table.  Do not round to the next whole number. Carry all
+decimal values forward and use for all computations." 2) If "Compact" is selected, input latitude and
+declination and the calculated value of K~L will be shown rounded to the nearest minute.  If "Original"
+is selected, input latitude and declination and the calculated value of K~L will be shown rounded to the
+nearest half minute.  These are the values actually used to enter the table, which are of more help to
+the student than the real values.  If latitude and declination do not exactly correspond to a tabulated
+value, improved accuracy can be obtained with interpolation, but this is generally not done, and is not
+done by Celestial Tools. 3) From the "Compact Signt Reduction Table" booklet, first edition:  "Accuracy
+decreases as K approaches 90° and an error of several miles may result. Consequently, it is good practice
+to discard any sight in which K is between 82° and 98°.  Interpolation of the table will improve the
+result somewhat if the salvation of the sight is imperative."  Celestial Tools does not interpolate in
+these cases, but provides the option of using the Sadler Technique, described in the second edition, in
+these cases. 4) When the body is near or on the prime vertical, the last A value (used to determine Z)
+may be negative.  If so, it will be set to zero and Z will be 90°. 5) Due to the vagaries of rounding,
+there will occasionally be a difference of one unit in the least significant figure of the calculated
+tabular values compared to the actual tabular values.
+
+For H.O. 214, there will occasionally be a difference of 1 unit (0.01) in the value of delta t compared
+to the tabular values.  All corrections are not calculated mathematically, but are done by emulating the
+multiplication tables at the end of the H.O. 214 book, and should match the tables well. The tables,
+however, could be off by no more than 0.1' compared to a mathemical calculation.
+
+For H.O. 208, there will occasionally be a difference of 1 unit in the values of A, B, C, and D, compared
+to the tabular values, and other differences resulting as a consequence of these - no more than 0.2' in
+intercept and no error in azimuth.
+
+For both versions of the S-Table, the tabular values produced by Celestial Tools should be within 0.001
+of the printed values.  When deriving an angle from a tabulated value, if there is a group of the same
+tabulated value, Celestial Tools will try to use the average value.  Due to the vagaries of rounding,
+this can result in an angle that differs from the printed values by 1'.  Also, the Farley version example
+in the book shows a couple of angles to tenths of a minute.  Celestial Tools will round these values to
+whole minutes.
+
+For the Weems Line of Position Book, the A and B values calculated by Celestial Tools may disagree with
+the tabular or interpolated B values by one least significant digit, i.e. if the tabular values are to
+units, the disagreement might be 1; if the tabular values are to tenths, the disagreement might be 0.1.
+(In the case of interpolated values, the program calculates the values using linear interpolation, the
+way it would be done manually, which does not necessarily agree with values which would be determined by
+direct calculation.)  Though examples in the third edition of the book show values of A always rounded to
+units, Celestial Tools will show them to the resolution displayed in the table, and complete the
+calculation using this resolution.  The angles calculated by Celestial Tools may disagree with the
+tabular or interpolated values by 0.1'.  The values of Z and Zn calculated by formula may disagree with
+examples in the book by 0.1° if the examples are shown to that resolution.
+

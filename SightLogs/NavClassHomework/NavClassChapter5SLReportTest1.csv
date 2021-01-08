@@ -1,0 +1,8 @@
+Num,DateTime,Body,Limb,DST,WE,WEtype,ZD,Hs,HorType,HorDist,Apprx Brg,HEye,IC,ICType,Lat,Long,LLoBy,Int,Az,SLEP,Name,Squadron,Remarks
+1,06/29/2004 05:20:14,Venus,Lower,,0007,Slow,Auto,20°02.6',Natural,00 Feet,S,9 ft,00°0.5',Off,22°25.7'N,49°31.2'W,GPS,1.2 nm Toward,78°,EP L 22°25.9'N   EP Lo 49°29.9'W,Nav Class,Chapter 5
+2,06/29/2004 05:25:06,Fomalhaut,Lower,,0007,Slow,Auto,37°07.2',Natural,00 Feet,S,9 ft,00°0.5',Off,22°25.7'N,49°31.2'W,GPS,1.3 nm Away,191°,EP L 22°27.0'N   EP Lo 49°30.9'W,Nav Class,Chapter 5
+3,08/22/2004 15:40:00,Sun,Upper,,0004,Fast,Auto,35°15.2',Natural,00 Feet,S,17 ft,00°0.3',Off,22°37.5'N,42°30.3'W,DR,1.7 nm Toward,268°,EP L 22°37.4'N   EP Lo 42°32.1'W,Nav Class,Chapter 5
+4,08/22/2004 15:50:04,Moon,Lower,,0004,Fast,Auto,43°32.2',Natural,00 Feet,S,17 ft,00°0.3',Off,22°37.5'N,42°30.3'W,GPS,2.2 nm Toward,157°,EP L 22°35.5'N   EP Lo 42°29.4'W,Nav Class,Chapter 5
+5,08/22/2004 15:50:04,Moon,Lower,,0004,Fast,Auto,43°32.2',Natural,00 Feet,S,17 ft,00°0.3',Off,22°37.5'N,42°30.3'W,DR,2.2 nm Toward,157°,EP L 22°35.5'N   EP Lo 42°29.4'W,Nav Class,Chapter 5
+6,10/28/2004 17:20:06,Vega,Lower,,0000,Fast,Auto,68°34',Natural,00 Feet,S,6 ft,00°0.0',Off,27°40.0'N,71°05.0'W,DR,7.5 nm Toward,307°,EP L 27°44.5'N   EP Lo 71°11.8'W,Nav Class,Chapter 5
+7,10/28/2004 17:30:21,Schedar,Lower,,0000,Fast,Auto,35°52.5',Natural,00 Feet,S,6 ft,00°0.0',Off,27°40.0'N,71°05.0'W,DR,0.4 nm Away,38°,EP L 27°39.7'N   EP Lo 71°05.3'W,Nav Class,Chapter 5

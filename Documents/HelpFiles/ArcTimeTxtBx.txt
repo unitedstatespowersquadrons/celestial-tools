@@ -1,0 +1,19 @@
+ARCS AND TIMES CONVERTERS
+
+a. Purpose:  Convert expressions in arc to their equivalents in time and expressions in time to their
+equivalents in arc.  Convert Local Mean Time (LMT) to Zone Time (ZT) and ZT to LMT.
+
+b. Operation:  Select the desired conversions.  Enter the values to be converted.  For LMT and ZT
+conversions also enter the longitude.  Press the "Convert" button and the equivalent/converted values are
+displayed.  For LMT and ZD conversions, the Zone Meridian (ZM) is also displayed.
+
+If all inputs for a conversion are left blank, that conversion is not displayed.  The inputs are not
+treated as zeros.
+
+Switching conversion from LMT to ZT to ZT to LMT rf vice versa retains the input data.
+
+Arc input is limited to 359°59.9'.  Time input is limited to 23h59m59s.
+
+c. Accuracy/Resolution:  Arc output is rounded to the nearest 0.1'.  Time outputs are rounded to the
+nearest second.
+

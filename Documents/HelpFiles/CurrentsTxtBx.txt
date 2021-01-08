@@ -1,0 +1,61 @@
+CURRENTS
+
+a. Purpose:  Determine the set and drift (velocity) of the tidal current at a desired time, using data
+extracted from a Tidal Current Table, as taught in the USPS Advanced Piloting (AP) 85/86 course or the AP
+2011 (or AP 2004) course (see Operation).  (This is not a tidal current prediction program.)  The Current
+tool uses a form similar to the worksheet of the AP 85/86 course.
+
+b. Operation:  For determining the tidal current at a reference station, required inputs are the desired
+time and the times of the slack and maximum (flood or ebb) that bracket the desired time, and the
+velocity and set of the maximum, obtained from Table 1 of the tidal current table.  For determining the
+tidal current at a substation, additional required inputs are the Table 2 differences for times and
+velocities of the slack(s) and maximum(s).  When determining the tidal current at a substation, it is
+often not obvious which slack and maximum bracket the desired time, because of the Table 2 time
+differences.  In those cases, the other slack and maximum Table 1 and Table 2 data can be entered to help
+determine the proper slack and maximum to use.  Required times cannot be left blank, even if the required
+time is 0000.  All other inputs are optional, and can be used when a printed record of a complete tide
+determination is desired.
+
+Note:  Tidal current tables use standard time.  The user must convert daylight savings times to standard
+times before extracting data from the Tidal Current Table.
+
+When entering the Table 2 time differences, use the format of the Tidal Current Table, i.e. the sign goes
+with the hour, even if the hour is zero. However, plus signs and leading zeros can be omitted.
+
+The program will recognize when the selected times of slack and maximum  cross midnight.
+
+Activating the "Calculate" button starts the calculation.  Once the localized times and velocities are
+calculated, the user must determine which slack and which maximum are the ones that bracket the desired
+time, and check the appropriate check boxes.  (For technical reasons, this selection is not done
+automatically.)  Only one slack and one maximum can be selected.  As soon as a second check box is
+checked, the calculation is completed using the selected option.  If only one slack time and only one
+maximum time are entered, their boxes will be automatically checked and the calculation completed.
+
+For "normal" locations, i.e. those where there is little or no hydraulic current, there are options to
+determine the velocity factor by doing the calculation mathematically (the default), where the actual
+values are used; or by using Table 3A values (as taught in AP 85/86), where the actual entering arguments
+are rounded to tabular values; or to do the calculation using the "50-90 Rule" (as taught in AP 2011 and
+AP 2004).  For locations where there is a strong hydraulic current, the Table 3B option should be used.
+
+When switching from one option to another there is no need to activate the "Calculate" button.
+
+Choices that would be circled on a paper worksheet will appear in bold type.
+
+Activating the "Clear" button clears all inputs and outputs.
+
+c. Accuracy/Resolution:  As with tidal current tables, the computation assumes that the increase (flood)
+and decrease (ebb) of the tidal current velocity conform to simple sine curves.  This is often not true,
+so the tidal current velocities obtained will be approximate. The most accurate results are obtained
+using mathematical calculation for the velocity factor.  Using the Table 3A option adds a bit of error to
+the theoretical (sine) calculation, and the "50-90 Rule" can, but will not necessarily, impose a  larger
+error, but these errors are usually no more than a half a knot, and are probably less relevant than if
+the flood and ebb do not conform to a sine curve.
+
+Localized velocities are rounded to hundredths of a knot, except for the "50-90 Rule" where they are
+rounded to tenths of a knot.  The predicted velocity is rounded to tenths of a knot.
+
+Celestial Tools uses the method of the PREDICTION OF CURRENT AND DIRECTION form of AP 2011 and AP 2004
+for the "50-90 Rule".  Note that if the Time Difference converted to minutes (line (4) of the form) is
+not evenly divisible by three, then Time#3 on line (6) will differ from the later of the bracketed times
+(line (1)) by one minute.
+

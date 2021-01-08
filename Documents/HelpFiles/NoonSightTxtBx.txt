@@ -1,0 +1,132 @@
+NOON SIGHT
+
+a. Purpose:  Calculate the zone time of Local Apparent Noon to the nearest second.  (This is done by the
+GHA method.)  Calculate latitude from a noon sight.  Calculate latitude and longitude from observed zone
+time of LAN.
+
+b. Operation:  Required inputs for zone time of LAN are date and DR longitude.   Zone description is
+automatically calculated based on longitude, but any civil standard time zone can be entered manually to
+allow for time zones not based on longitude, or for Universal Time.  As a convenience feature, the UT
+(GMT) option forces time outputs to be in Universal Time.  Check the "DST" box if the timepiece is set
+for Daylight Savings Time.  Any of the entered values can be changed at any time and the calculations
+redone.  Press the "Get Zone Time of LAN" button to complete the calculation.
+
+In order to calculate latitude from a noon sight or longitude from observed zone time of LAN, the
+Observed ZT of LAN must have a value.  It cannot be left blank. (The "Noon Sight" button will not appear
+until there is a value.)  In the case of a noon sight for a sight folder, the zone description will be
+correct, based on the entered longitude of the known position, and the ZT of LAN will be accurate.  If
+this is done, that value will be automatically inserted into the "Observed ZT of LAN" box, but it can be
+changed to the actual observed time, within the range of 111328 to 124427 (121328 to 134427 if "DST" is
+checked) if Auto ZD is selected, the extreme values during the available years of the program at the far
+west and east ends of a time zone.  (When Manual ZD or UT (GMT) is selected, the time can fall outside
+this range.)  At sea, where DR longitude is just an estimate, the calculated ZT of LAN gives the
+navigator an idea of when to be on deck to start a series of sights to determine the maximum altitude of
+the sun (for latitude) and possibly the time of LAN (for longitude), a more difficult value to determine.
+Watch time must be converted to zone time by applying watch error and zone description.  If zone time
+then falls outside the specified range but can be corrected by adding or subtracting an integral number
+of hours (probably just one hour, if the DR position is fairly accurate), then the zone description of
+the timepiece does not match the actual time zone.  Adjust the hours to make this correction, and adjust
+the zone description, using the Manual option, as required.  (If the timepiece is set for a non-whole-
+hour civil zone description, not done at sea, the additional minutes must be taken into account.)
+
+Additional required inputs for calculating latitude from a noon sight are azimuth of the sun (north or
+south) or DR Latitude, sextant altitude, type of horizon (natural, artificial, or dip short), height of
+eye, index error, and temperature and pressure (defaults are standard values).  (When using non-standard
+temperature or pressure, when the unit is changed the value is set to the standard value for the new
+unit.  If there is going to be a change in the units of temperature or pressure, it is recommended that
+the units be changed before a value is entered.)  All the options available in the "Sight Reduction and
+Fix" tool are available here.  If the calculated ZT of LAN is used for the Observed ZT of LAN, as would
+be done when working from a known position, the program uses this value and the declination of the sun at
+this time.  (It is unnecessary to enter the actual time of the sight since, even at the equinoxes, when
+the declination of the sun is changing the fastest, there is no significant change in the declination of
+the sun within 10 seconds of LAN, the previous allowable limit for USPS Sight Folders, currently 30
+seconds.)  Press the "Noon Sight" button to complete the calculation.
+
+Note for Artificial Horizons:  Although superimposing the Sun on itself is not recommended for artificial
+horizon sights, as of V5.0.0 Celestial Tools permits this.  If Artificial Horizon are selected, an
+additional choice, Center, appears in the Sun Limb box.  If this is chosen, the center of the Sun is used
+in the calculation.  If Show Ho corrections as SR Form is selected, the altitude correction is done as it
+would be done using the Nautical Almanac:  the main correction is obtained as if the body were a star or
+planet, i.e. semi-diameter and parallax are not included.  (Parallax is not zero but is considered small
+enough to be ignored.)  If Show Ho corrections as Parameters is selected, parallax is included.
+
+Note for Dip Short sights:   For a given height of eye there is a dip short distance beyond which only
+standard dip values (based only on height of eye) are required.  If the dip short distance exceed the
+distance to the natural horizon for the entered height of eye, the program will automatically switch the
+Horizon from Dip Short to Natural.   Note that entry of the numerical portion of Ds dist. is limited to
+five characters, including a decimal point, which should cover all reasonable values.
+
+Required inputs for calculating longitude from observed zone time of LAN are the date and zone
+description of the timepiece (from the "Zone Time of LAN" section) plus the Observed ZT of LAN, the time
+the sun reaches its highest point in the sky.  (Strictly speaking,  the maximum altitude does not
+necessarily occur at meridian transit.  See the Accuracy/Resolution section below.)  This can best be
+obtained from the average time of equal-altitude sights before and after LAN, or from a plot (or a curve-
+fitting program) of a series of sights starting before and ending after LAN.  Keep in mind that all these
+methods require accurate sights, which are difficult to obtain, especially during the times of year when
+the altitude of the sun does not change much around LAN.
+
+Press the "Noon Sight" button to complete the calculation.
+
+Both latitude and longitude can be calculated from a noon sight without entering a DR latitude or DR
+longitude.  Required inputs are the date and zone description of the timepiece (from the "Zone Time of
+LAN" section), the Observed ZT of LAN, plus the sight and sextant data.  Press the "Noon Sight" button to
+complete the calculation.
+
+If there is any vessel movement with a significant north-south component during the time of a meridian
+transit observation, the time at which maximum altitude is observed will not be the exact time that the
+sun is directly on the vessel's meridian. This is because the rate of change of altitude due to the
+vessel's motion is greater than the rate of change in altitude that would be observed from a stationary
+position.
+
+If you are only interested in longitude from observed zone time of LAN, it is not necessary to enter any
+altitude data, but any one of the "At LAN" choices must be selected.  The resulting latitude calculation
+can be ignored.
+
+After activating the "Noon Sight" button, the program displays an "Altitude" box and a "Declination" box
+like those of "Sight Reduction and Fix", plus a box showing the latitude computation.  If DR Latitude was
+selected rather than the azimuth of the sun, the difference between the DR Latitude and the calculated
+latitude is displayed.  It also displays a half meridian diagram illustrating the calculation.  On this
+diagram, "O" is the sun, "Q" is the equator, and "Pn" or "Ps" is the elevated pole.
+
+The longitude based on the observed zone time of LAN is also displayed at the bottom of the window.  If
+the ZD is correct, the longitude from the observed ZT of LAN should be close to the calculated ZT of LAN.
+It should also be noted that because the calculated ZT of LAN is rounded to the nearest second, if that
+value is used to calculate longitude, the calculated longitude may disagree with the value of DR
+longitude used to calculate the ZT of LAN by 0.1'.
+
+The ability to determine longitude from the time of LAN, in fact from the time of meridian transit of any
+of the 64 bodies included in the built-in almanac, has always been available in the Sight Reduction tool
+of Celestial Tools.  See the Sight Reduction and Fix Help for how this is done.
+
+If any of the data used to calculate the time of LAN is changed, all the calculated data disappears.
+This is to prevent another calculation from being done with an incorrect time.
+
+c. Accuracy/Resolution:  See Help>General>"Almanac" Accuracy.
+
+The computed time of LAN should agree with a manual calculation within one second.  (If the value of the
+GHA Difference is exactly between two tabulated values of GHA Increment, the minute/second value
+corresponding to the higher value is used.)  When Show Ho corrections as SR Form is selected, the
+calculated latitude should be within 0.2' of the value obtained with a manual calculation using data from
+the Nautical Almanac.  The longitude from the observed zone time of LAN should be within 0.2' of the
+value obtained with a manual calculation using data from the Nautical Almanac.
+
+Because of the differences in the ways the tabular (SR Form) corrections and the parameters for the Sun
+are calculated, the results can be slightly different for the SR Form and Parameters options.  This
+difference generally does not exceed 0.2'.  For the purposes of comparison to a manual reduction, the SR
+Form option should be used.  Use the Parameters option only to see how the parameters change as the input
+values are changed.
+
+It should be noted that for bodies with a changing declination, such as the Sun, culmination (maximum
+altitude) does not necessarily occur at meridian transit.  The time between culmination and meridian
+transit is a function of latitude and time of year.  For the Sun, the time difference increases with
+increasing latitude, and is greatest at the equinoxes, when the declination of the Sun is changing the
+fastest, and is zero at the solstices.  At the equinoxes, the time difference is, in seconds,
+approximately 15.3 x tan Lat.  In fact, even at the equinoxes, the difference in the altitude of the Sun
+at culmination and at meridian transit does not reach 0.1' until the latitude reaches about 88°, where
+the time difference is over seven minutes.  The recommendation of starting to take sights 10 to 20
+minutes before the calculated time of meridian transit guarantees that the peak altitude will be seen,
+and an accurate latitude can be determined.  However, the time of culmination cannot be used to determine
+an accurate longitude.  The actual time of meridian passage, which is difficult to determine, must be
+used.  But even at the equinoxes and 88º latitude, the time difference (7m18s), which amounts to 1°49.5'
+of longitude, is only about 3.8 nautical miles.
+

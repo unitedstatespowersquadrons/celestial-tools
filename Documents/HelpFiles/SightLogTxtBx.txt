@@ -1,0 +1,132 @@
+Purpose: To allow a person to input, update,  edit, delete, reduce (using SRF form), print, and store in external
+text files logs of sights taken. This Sight Log form uses the same input fields, edits, and requirements as the Sight
+Reduction Form (SRF), and the two can work in concert with Sight Log entries being 'reduced' by the SRF form and the
+resulting intercept and azimuth transferred back to the Sight Log Form.
+
+Special Windows Requirement for SightLog:
+The short Date Format on your computer must be the following format  MM/dd/yyyy
+To verify this open the Control Panel application & select Region to view the short date format.
+
+
+SightLog Form work areas: 
+1. Top of form: working sight data fields and control buttons 
+2. Middle of form: Log of sights input and stored in a DataGrid. This area has scroll bars for up / down and 
+right / left scrolling of the log of sights data area. 
+3. Bottom of form: File buttons and Exit button. File buttons allow you to open, save, create new, and print the
+current SightLog data visible in the DataGrid view. The Exit button allows a person to close out the open form 
+and, if needed, save updated SightLog data in external text file.
+
+Basic Work Flow 
+1. Open SightLog form from the Celestial Tools Main Menu 
+Either 
+2.a. Open existing stored SightLog text files using the Open File button. Usually all saved SightLog files are 
+found in the SightLogs folder that can be found inside the folder where the CelestialTools.exe file is stored. 
+After opening an existing file, all sights will appear in the middle of the form log of sights. Once the log 
+of sights data appears, you can select one sight and work on it in the top working area on the form. Once a 
+sight is selected from log of sights area, its data will be transferred to the working fields
+at the top of the form where you can update, delete, add another based on that sight, reduce, or share the sight
+data. See later procedures in this document for these details. 
+OR 
+2.b. Start adding new working data in the fields at the top of the form, and when it is complete, click the 
+Add Sight button to insert the working data in the log of sights area in the middle of the form. After sight 
+data is added to the log of sights, it can be selected for further work. Once a sight is selected from log of 
+sights area, its data will be transferred to the working fields at the top of the form where you can update, 
+delete, add another based on that sight, or reduce the sight data entered. See later procedures in this document 
+for these details. 
+3. While a person is working on sight data at the top of the form, the working data can be reduced if the 
+Reduce Sight button appears. Clicking this button will open the Sight Reduction form, transfer all sight log
+data to the SRF form and have it reduced, and finally transfer the intercept and azimuth from the SRF back to 
+working data area at the top of the Sight Log form. After reducing the sight log entry, other buttons to add, 
+update, or delete can be clicked. 
+4. There is also a options available in the SightLog Options box directly above the log of sights area in the
+middle of the form. They do the following:
+	4.a. hs/IE Format: A drop down box that allows DM or DMS format for hs and IE entries. Default is DM.
+	4.b. Show Sight WT and hs Diff's: In the log of sights area in the middle of the form, starting with 
+	the second sight, display the WT differences in second between the current and previous sight, and 
+	display the hs difference in Degrees and Minutes between the current and previous sight. Default is 
+	not selected.
+	4.c. Automatically Reduce New/Chg'd sights: When set on (by clicking) all new or changed sights will
+	automatically be reduced using the SRF form. The Reduce Sight button will not appear or become available
+	when this option is set on. Default is set off (not clicked).
+	4.d. Clear fields after new or updated sight: All input fields at the top of the screen are cleared
+	aftr a new sight is input or an existing sight is updated with no errors.
+	4.e. Display Sight GHA/Dec/Ho fields: Similar to the Show Sight WT and hs Diff's, this option will 
+	display the GHA, Dec, and Ho from Sight Reduction Form for a reduced sight. Otherwise those fields
+	are not displayed by default.
+
+5. At any time when entering or evaluating sights, the contents of the log of sights area in the middle of the
+form can be written to an external text file by using the Save sight Log Report button. 
+6. If the Exit button is clicked, and updated but not saved information is contained in the log of sights area
+in the middle of the form, you will be prompted to save the info if desired. You can bypass this option and exit
+without saving. 
+7. All of the Sight File Option buttons, except for the Print Sight Data, will present a standard Windows fill 
+prompt and option dialog box with all file functionality available.
+8. Clicking the Print Sight Data will bring up a standard Windows printer selection and print options dialog box
+and allow you to print off the contents of the log of sights area.
+
+Working Data Fields for data entry or working with sight:
+Name: Free form text field that can contain the name of person or sight
+Squadron: Fre form text field that can contain the squadron name, class, or similar data
+Sight No.: Sequential number of sight. Protected field that is manipulated and maintained strictly by the 
+	Sight Log Form
+Sight Date / Watch Time: Integrated Windows data and time control where you can key in manually date and time 
+	fields or you can selected the date from a drop down calendar control but still enter time fields. 
+	Standard date and time edits are applied upon data entry. Default is the current date and time for the 
+	computer you are using.
+WE (mmss): Watch Error for the sight taken. Must be 4 digit numeric where valid minutes and seconds are entered
+WE Type: Drop down control that allows selection of Fast or Slow for WE entered. Default is Fast.
+ZD: Zone Description drop down control that allows an Auto ZD based on Longitude entered or manual selection of
+	ZD. Default is Auto ZD.
+DST: Day Light Savings Time selection box. Click / Select if the date / time entered is in DST time zone. Can be 
+	selected automatically by date / time entered but this can be deselected if necessary. 
+Body: Drop down control that allows the selection of the celestial body for the sight. Matches exactly the same 
+	field on the SRF form. Default is the Sun.
+Limb: Drop down control that allows the selection of the appropriate limb for the body entered: Upper, Lower, or 
+	Center. Default is Lower.
+DR Lat: Assumed current position Latitude in either Degree & Minutes or Degrees, Minutes, and Seconds. No default
+DR Lat N/S: Drop control that allows the selection of whether the Latitude entered is North (N) or South (S). 
+	Default is N.
+DR Long: Assumed current position Longitude in either Degree & Minutes or Degrees, Minutes, and Seconds. No default
+DR Long E/W: Drop down control that allows selection of whether Longitude entered is East (E) or West (W). Default
+	is W.
+IE: Index Error for Sextant entered using either DM or DMS format. No default.
+IE Type: Drop down control that allows selection of whether the Index Error enterd is On the Arc or Off the Arc. 
+	Default is On Arc (-).
+HE: Height of eye for sight using the units entered in the next drop down field. No default
+HE Type: Drop down control that allows selection of the HE units.
+Horizon: Drop down control that allows selection of horizon type and if necessary the distance and units to the 
+	horizon. No defaults.
+Apprx Bearing: Drop down control that allows selection of the approximate bearing of the sight; required field but 
+	no default
+SR Intercept and Azimuth: Protected text field that will be filled in after a sight is reduced using the SRF form. 
+	It will contain a text statement of the interecept distance and the azimuth direction of the results of the
+	sight reduction.
+SR EP: Protected text field that will be filled in aftr a sight is reduced using the SRF form with a text statement
+	of the estimate SR EP Lat and Long.
+Remarks: Free form text field that can contain anything desired to explain or augment the sight data entered. No
+	default; not required.
+	
+Sight Activity Buttons:
+Add Sight - Add a new sight to the sight log data with the error free input fields
+Update Sight - This button appears when an existing sight is selected. When clicked, the sight data in the 
+	input fields will be updated in the sight log
+Delete Sight - This button appears when an existing sight is selected. When clicked, it causes the sight 
+	selected to be deleted from the sight log.
+Clear Fields - This button appears when an exisitng sight is selected. When clicked, it causes the input 
+	fields to be cleared of all data.
+
+Sight Reduction - This button appears when an existing sight is selected. When clicked, it sends all of the 
+	data from the input fields to the Sight Reduction Form input fields, the sight data to be reduced using
+	the SRF form, and the resulting Intercept (a), Azimuth (Zn), GHA, Dec, and Ho to be transferred back
+	into the sight log.
+Alt SR Method - This button appears whenever the GHA, Dec, and Ho data is formatted from a reduced sight. When
+	clicked, it sends all input data including the GHA, Dec, and Ho to be sent to the Alternate SR Method
+	form. The user can then click the appropriate reduction methods of the 8 visible there. No data is 
+	transferred back into the sight log.
+Noon Sight Form - This button appears when the selected sight is a Sun sight. When clicked, it causes the input 
+	data fields to be pushed to the Noon Sight Planner form and the Noon Sight processing to be executed. No 
+	data is transferred back into the Sight Log.
+
+	
+
+

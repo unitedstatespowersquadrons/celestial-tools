@@ -1,0 +1,215 @@
+SIGHT REDUCTION & FIX
+
+a. Purpose:  Completely reduce a sight to intercept and azimuth; calculate estimated position; use two
+more reduced sights to establish a fix; calculate latitude from altitude of Polaris (or do a full
+reduction of a Polaris sight).
+
+b. Operation:  Required inputs are celestial body (default is Sun L.L.), DR latitude (except when
+determining latitude by altitude of Polaris) and longitude, date, watch time (24-hour format), watch
+error, zone description, sextant altitude, type of horizon (natural, artificial, or dip short), height of
+eye, index error, and temperature and pressure (defaults are standard values).
+
+If the selected celestial body is the Sun, two options are presented.  "NA val. of hourly GHA/d" (the
+default) calculates the value of the GHA of the Sun as presented on the daily pages of the Nautical
+Almanac (a value that "is deliberately adjusted by up to 0.15' to reduce the error due to ignoring the v-
+correction"), and agrees with the Nautical Almanac in almost all cases.  (This is the way Sun reductions
+would normally be done using the Nautical Almanac.)  It also calculates the d value using an "average" of
+the three days shown on the Nautical Almanac page.  "Accurate val. of hourly GHA/d" calculates the value
+of the GHA of the Sun without the Nautical Almanac's adjustment, and applies the v-value and v-correction
+that would be used if the Nautical Almanac included v-values for the Sun, and the existing Increments and
+Corrections.  It also calculates the d value based on the date and time of the sight.
+
+If the selected celestial body is a star other than Polaris, two options are presented.  "NA val. of SHA/
+Dec" (the default) calculates the SHA and declination of the star as presented on the daily pages of the
+Nautical Almanac, i.e. based on UT 1200 of the middle day of the page.  "Accurate val. of SHA/Dec"
+calculates the SHA and declination of the star based on the date and time of the sight.
+
+If the selected celestial body is Polaris, two options are presented.  "Latitude by altitude of Polaris"
+(the default) calculates latitude as with the Polaris (Pole Star) Tables in the Nautical Almanac.  "Full
+reduction of Polaris sight" reduces the sight as is done with the 57 other stars.
+
+If the selected celestial body is a planet, two options are presented.  "NA val. of v/d" (the default)
+calculates the v value, v correction, d value, and d correction as presented on the daily pages of the
+Nautical Almanac, i.e. based on an "average" of the three days on the page.  "Accurate val. of v/d"
+calculates the v value, v correction, d value, and d correction based on the date and time of the sight.
+
+Sextant altitude and index error can be entered in either degrees and decimal minutes (DM.m) or degrees,
+minutes, and seconds (DMS).  Off the arc index error can be entered as either the actual reading from the
+sextant ("off the arc (rdg.)") or the calculated value ("off the arc (val.)"); the program makes the
+appropriate adjustment when calculating index correction.  (The degree value should always be read to the
+right of the index mark.  Take, for example, an off the arc reading between 1 and 2 degrees and a
+micrometer drum reading of 22.3'.  This can be entered as either 2°22.3' off the arc (rdg.) or as 1°37.7'
+off the arc (val.).  Either will give an index correction of +1°37.7.)  Zone description is automatically
+calculated based on longitude, but any civil standard time zone can be entered manually to allow for time
+zones not based on longitude, or for Universal Time.  As a convenience feature, the UT (GMT) option
+allows Universal Time to be entered directly, with a ZD of 0.  Check the "DST" box if the timepiece is
+set for Daylight Savings Time.  Any of the entered values can be changed at any time and the calculations
+redone.  Unnecessary inputs are not requested; e.g. if you are doing an artificial horizon reduction, you
+will not be asked for height of eye.  Reductions, except for latitude by altitude of Polaris, can be
+saved, using the "Save for Fix" button, and the last twelve saved are retained.
+
+There is also a place for an optional Sight Number (0 to 99).
+
+It will work for natural, artificial, and dip short horizons; any reasonable temperature or pressure; and
+any sextant altitude up to 150°.  Sights with apparent altitudes greater than 90° are automatically
+treated as back sights.  It will accept height of eye in feet, inches, meters, or centimeters; distance
+to dip short horizon in feet, yards, meters, statute miles, or nautical miles; temperature in Fahrenheit
+or Centigrade, and pressure in inches of mercury or millibars.  (When using non-standard temperature or
+pressure, when the unit is changed the value is set to the standard value for the new unit.  If there is
+going to be a change in the units of temperature or pressure, it is recommended that the units be changed
+before a value is entered.)
+
+Note for Artificial Horizons:  Although superimposing the Sun or Moon on itself is not recommended for
+artificial horizon sights, as of V5.0.0 Celestial Tools permits this.  If either the Sun or Moon, LL or
+UL, and Artificial Horizon are selected, a checkbox, Use superimposed AH images, appears below the Body
+selection.  If this is checked, the limb selection is ignored, and the center of the Sun or Moon is used
+in the calculation.  In the case of the Sun, if Show Ho corrections as SR Form is selected, the altitude
+correction is done as it would be done using the Nautical Almanac:  the main correction is obtained as if
+the body were a star or planet, i.e. semi-diameter and parallax are not included.  (Parallax is not zero
+but is considered small enough to be ignored.)  If Show Ho corrections as Parameters is selected,
+parallax is included.  In the case of the Moon,  if Show Ho corrections as SR Form is selected, the
+altitude correction is done as it would be done using the Nautical Almanac:  the main correction is taken
+from the upper Moon table, the additional correction is calculated from one half the upper plus lower
+corrections from the lower Moon table, and an additional 15' is subtracted because the Moon tables are
+based on lower limb values.  (The line of the SR form that normally says "UL ( -30.0'" is replaced by "AH
+( superimp.".)  If Show Ho corrections as Parameters is selected, semi-diameter and augmentation are not
+included.
+
+Note for Dip Short sights:   For a given height of eye there is a dip short distance beyond which only
+standard dip values (based only on height of eye) are required.  If the dip short distance exceed the
+distance to the natural horizon for the entered height of eye, the program will automatically switch the
+Horizon from Dip Short to Natural.   Note that entry of the numerical portion of Ds dist. is limited to
+five characters, including a decimal point, which should cover all reasonable values.
+
+Once all the data is entered, press the "Reduce Sight" button to perform the sight reduction.
+
+Intercept and azimuth are found using the SR96 version of the USPS "calculator" implementation of the Law
+of Cosines, and data is displayed on a form similar to, but not exactly like, the USPS Sight Reduction
+Form SR96b.  In the Altitude box, there is the option of showing the corrections from ha to Ho as they
+would be shown on the SR Form (Main, Add'l, etc.) or as the parameters they actually are - usually
+refraction, parallax, and semi-diameter - but shown to three decimal places in order to more easily see
+what is actually changing as the inputs are changed.  (For the Moon, the semi-diameter shown is the
+geocentric semi-diameter, as would be measured by an imaginary observer at the center of the Earth, and
+is independent of the altitude of the Moon.  Augmentation of the semi-diameter of the Moon is the
+correction that makes the semi-diameter topocentric, as would be measured by an observer on the surface
+of the Earth, and increases with increasing altitude of the Moon.  Augmentation always makes the semi-
+diameter of the Moon larger at altitude than it is on the horizon.)  (Parallax is shown for the planets,
+but it is not included in the calculation of Ho, since planets are treated as point sources when viewed
+through a sextant telescope.)  (Note that changing this option has the same effect as activating the
+"Reduce Sight" button: the output display area is updated.)  There is an option to use non-standard
+temperature and pressure values.  Everything is calculated; there is no need to consult an almanac.  The
+Law of Cosines is the preferred sight reduction method because it indicates the quality of a sight taken
+from a known position without plotting.
+
+After a minimum of two sights are reduced and saved, you have the option of establishing a fix, with the
+"Establish Fix" button, using sights selected from the list of up to twelve.  The time of the fix is the
+time of the latest sight selected.  (At sea, if the time between the earliest and latest sights is more
+than 20 minutes, the fix should be considered a Running Fix.)  In addition to the latitude and longitude
+of the fix, the distance (rounded to tenths of a nautical mile) and bearing (rounded to whole degrees)
+from the DR to the fix will be displayed.  (Note:  When using Manual ZD (or DST), many combinations of
+watch time, watch error, and zone description will result in the same UT, the time that is used to
+calculate the positions of the bodies. The Fix window will always show the zone time resulting from watch
+time and watch error.  In order to avoid any confusion, the same zone description should be used for all
+related sights in a group.)
+
+Caution:  Versions of Celestial Tools prior to V2.3.0 had a bug that prevented some valid sets of sights
+from establishing a fix.  This bug has been removed, with the consequence that almost any set of sights
+will produce a fix, regardless of cut or length of intercept.  It is left to the user to select
+appropriate sights.
+
+After each reduction is done, a "Meridian Diagram" button becomes available.  Pressing this button opens
+another window showing the Projection on the Plane of the Celestial Meridian, based on the values in the
+reduction.  There is the option of representing the hour circles and vertical circles as accurate
+ellipses (default) or as less accurate arcs of circles.  Vertical circles and hour circles are solid of
+the body is to the west, dashed if to the east.
+
+Construction lines for both the hour circle and vertical circle are shown.  The position of the body is
+represented by a dot, which is located at the intersection of the parallel of altitude and the parallel
+of declination, regardless of the hour circle or vertical circle.   If circles are used, the hour circle
+and vertical circle are forced to pass through the body, and the plotted values of LHA and Zn may not
+agree with the calculated values.  With good input data, the differences are not expected to exceed 4
+degrees.  When ellipses are used, if the input data is good, the hour circle and vertical circle should
+intersect at (or at least near) the intersection of the parallel of altitude and parallel of declination.
+If not, look for an error in the data input, which would probably also have caused an excessively large
+intercept value.  Since when circles are used the hour circle and vertical circle are forced to pass
+through the intersection of the parallel of altitude and parallel of declination, the quality of the
+input data cannot be judged.  The graphics associated with each parameter are color-coded; the color
+legend appears in the upper left corner of the window.  This tool is shared with the SR Methods & Fix
+tool, and will use the data from the last reduction done with either of the two.  The "Meridian Diagram"
+button is enabled only once for each reduction.  To enable it again, the "Reduce Sight" button must be
+pressed.  However, if the Meridian Diagram windows is already opened, switching between "Ellipses" and
+"Circles" will create a meridian diagram based on the last reduction done.  To use new values, the
+"Reduce Sight" button must be pressed again.
+
+The Time Diagram uses the following symbols:  V = Aries; ( = moon; P = planet; O = mean Sun; o = apparent
+Sun; * = star.  For sun sights, the position of the apparent Sun is shown.  For all other bodies (except
+Polaris when doing Latitude by Altitude of Polaris), the position of the mean Sun is shown. However, when
+the EqT (Equation of Time) button, located in the lower right corner of the Time Diagram box (except when
+doing Latitude by Altitude of Polaris), is pressed and held (mouse only, no keyboard control) the "other"
+Sun (mean Sun for Sun sights, apparent Sun for sights on all other bodies) will appear on the Time
+Diagram, and the value of the Equation of Time (to be applied to mean time to get apparent time) will
+appear in the lower left corner of the Time Diagram box.
+
+The Latitude by Altitude of Polaris calculation requires an approximate latitude (the Nautical Almanac
+Polaris tables show ten degree increments at low latitudes, five degree increments at middle latitudes,
+and two degree increments at high latitudes).  The program uses DR latitude as the approximate latitude
+unless the DR latitude degrees and minutes are both left blank (e.g. no confidence in your DR latitude),
+in which case the calculated value of Ho is used.  (If your DR latitude is truly on the equator, entering
+a single zero in either the degrees or minutes box of DR L will suffice.)  If Ho is used and it exceeds
+68°59.9', it is considered outside the range of the Polaris Tables, and the calculation will be aborted.
+If a DR latitude is entered, the program displays the difference between the computed latitude and the DR
+latitude.  The Estimated Position is the calculated latitude and the DR longitude.
+
+A "hidden" feature is the ability to determine longitude from the time of meridian transit of any of the
+included bodies.  Enter the date, the observed time of meridian transit, and the body.  Activate the
+"Reduce Sight" button.  If the resulting GHA is less than 180°, the GHA equals west longitude.  If the
+resulting GHA is greater than 180°, subtract it from 360° to get east longitude.  See the Noon Sight Help
+for other information about this method.
+
+c. Accuracy/Resolution:  See Help>General>"Almanac" Accuracy.
+
+The accuracy of the built-in almanac and formulas makes the program more than adequate for practical
+offshore navigation (don't forget - never rely on any one navigation method), but it should only be used
+as a gross check of a JN or N sight reduction form.  If you are using this tool as a quick check of the
+quality of the sights for a sight folder, these errors should be considered before accepting or rejecting
+a sight.  If there is any question, fill out the top of the SR form using the Almanac, then use the Law
+of Cosines part of the SR Methods tool to get intercept and azimuth accurately.  In any case, the program
+should be very helpful in locating major errors.  But remember, the values calculated by this tool should
+not be used in a sight folder.
+
+Compared to a manual reduction, the error in intercept is typically 0.2 nm or less, but is a function of
+the errors in GHA, declination, and Ho, and the azimuth of the body.   For the form of the Law of Cosine
+used, the azimuth of bodies near the zenith will not be accurate.
+
+Because of the differences in the ways the tabular (SR Form) corrections and the parameters for the Moon
+are calculated, the results can be slightly different for the SR Form and Parameters options.  This
+difference generally does not exceed 0.1'.  For the purposes of comparison to a manual reduction, the SR
+Form option should be used, though the Parameters option may be more accurate.  Note that the parallax is
+based on the apparent altitude corrected for refraction and semi-diameter, not on computed altitude.  A
+similar situation exists for Sun sights.  Use the Parameters option only to see how the parameters change
+as the input values are changed.
+
+The whole hour Moon "paradox":  Regarding v and d values and corrections, the Explanation section of the
+Nautical Almanac makes no procedural distinction between sights taken on the hour and those with minutes
+and/or seconds - if the body uses them, they should be applied.  For most bodies this does not matter,
+but in the case of the Moon, where the v and d values often exceed 5.9', resulting in v and d corrections
+of 0.1' (possibly 0.2' for a v or d value of 18.0'), this can create a "paradox".  If the non-zero
+correction is added to the hour value taken from the daily page, the Tot GHA will not be the same as the
+hour value, even though there are no minutes or seconds.  The 1995 and 2002 editions of the American
+Practical Navigator ("Bowditch") do an example of a whole hour Moon reduction.  In that example, the v
+and d corrections are applied.  However, according to Catherine Hohenkerk of HM Nautical Almanac Office,
+although it is not clearly stated in the Explanation, when the hours and minutes are zero there is no
+need to go into the Increments and Corrections at all.  Sean Urban, Chief of the USNO Nautical Almanac
+Office, agrees with this, and is also of the opinion that using an example exactly on the hour was a poor
+choice.  Celestial Tools will not show increment values or v or d values or corrections for sights taken
+on the hour.
+
+The  EP L and EP Lo should agree with a careful plot within 0.1'.  A two-body fix should agree fairly
+well with a plot, but a three- (or more) body fix may not agree that well with a plot because of the
+uncertainty in determining the fix position of the plot.  Keep in mind that you should expect a small
+difference between the calculated fix and a plotted fix if the plotted fix was established with a sight
+reduction method that plots from APs (e.g. the Nautical Almanac Sight Reduction method) rather than one
+that plots from DRs (Law of Cosines in the Sight Reduction tool).
+
+The value of the Equation of Time should be accurate to within two seconds.
+

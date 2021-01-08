@@ -1,0 +1,31 @@
+Deck Log Page Info:
+Vessel Name - Text 50
+Navigator Name - Text 50
+From - Text 50
+To - Text 50
+Date - Date Picker mm/dd/yyyy
+
+Log Info:
+Entry # - nnn
+Zone time - Time picker - hh:mm:ss
+Course (PSC) - nnn.n deg
+Variation - nn.n E/W 
+Deviation - n.n E/W 
+Course (True) - nnn.n 
+Speed (Knots) - nn.n
+Position: Lat, Long, Type(DR, GPS, Fix, RFix) drop down
+Weather - Text 100
+Remarks - Text 100
+Distance from prev log entry: nm nnn.n
+
+Data Keys: Date + Zone Time + Entry #
+
+Date is one page 
+Each entry on page has a number and a Zone Time for uniqueness
+
+Open a Deck Log file: read text file into array sorted by date and time assign entry # within date
+File can have multiple dates (deck log pages) - plot will take page or range of entries on one page to plot
+New Date starts new page of entries
+Date field on screen will be drop down of dates found in input file - Need separate option to start new date
+Entries option: add new; update selected; delete selected; cls plot page; cls plot range of entries; custom plot range; custom plot page
+File options: open file; create new file; print deck log report; 

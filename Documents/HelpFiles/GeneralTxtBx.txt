@@ -1,0 +1,276 @@
+GENERAL
+
+Special Windows Requirement for Celestial Tools:
+The short Date Format on your computer must be the following format  MM/dd/yyyy
+To verify this open the Control Panel application & select Region to view the short date format.
+
+a. Purpose:  Although the data produced by Celestial Tools is fairly accurate, the program should not be
+used for navigation.  Its primary purpose is instructional:  to aid students in planning sights; to allow
+students to quickly check the quality of sights; and to help students find errors in their work. It is
+not intended to do the work for the student.
+
+b.  System requirements i. Operating System:  Windows 7, 8, or 10 ii. CPU:  Anything capable of running a
+	current copy of Windows should be fine iii. Support files:  All required support files are
+	included in the released exe program and associated release folders iv. Hard disk space:  6-7
+	megabytes plus additional space for Sight Log and Favorites files created v. Memory:  Less than
+	10MB available memory if all tools are running. vi. Screen resolution:  800x600 or greater.  If
+	you are using 800x600 and your Windows taskbar is at the bottom of the screen and Auto hide is
+	not enabled, the bottom of the Sight Reduction window will be obscured by the taskbar.  It is
+	recommended that Auto hide be enabled or the taskbar be moved to the right side of the screen.
+	The same recommendation is made for any other toolbars, such as the Microsoft Office toolbar,
+	that might obscure part of a window. vii. Fonts:  Tahoma, Arial, Courier New, and Symbol,
+	provided with Windows.  (Windows 95 will substitute MS Sans Serif for Tahoma.)  With the
+	exception of Windows 10, font size must be set to 96 dpi (called small, smaller, standard,
+	normal, or 100% depending on operating system). viii. Mouse:  Recommended ix. Printer:
+	Recommended
+
+c. Windows: Most of the working windows have two types of sections:  data entry and output display.  All
+windows can be minimized and moved but cannot be maximized or resized.
+
+d. Tool Tip Text: When the cursor is over many of the items in the data entry section of a window, a tool
+tip will appear, showing information such as the allowable input range.
+
+e. Inputs:  The inputs for all modules are set up to require minimum keystrokes. For example, a longitude
+of "072" degrees and "04.0" minutes can simply be entered as "72" and "4".  There is considerable error
+checking, warning you if you have entered obviously incorrect values.  In certain cases, if you have
+entered an illegal value, the program will not let you move on until you enter a legal value.  Except for
+the Interpolation tool, which has special rules; the Observed ZT of LAN in Noon Sight; the desired ZT for
+body visibility in Sight Planner, which cannot be left blank; and the DR L in Sight Reduction Latitude by
+altitude of Polaris, which has special meaning when left blank, numerical inputs initially left blank are
+treated as zero, but subsequent zero entries should be of the proper format as shown in the associated
+tool tip text.
+
+Most arc-minute data input boxes expect a format of MM.m, i.e. four characters including the decimal
+point, with only one digit after the decimal point. Currently there is nothing in Celestial Tools to
+prevent inputs of M.mm or .mmm.  Be careful with these boxes.  Also, if one of these boxes has a value in
+it that includes a decimal point, and you wish to change it to a value that starts with a decimal point,
+it is best not to highlight the original value and try to enter the new value.  It will not accept an
+initial decimal point in these circumstances.  It is best to to delete the original value before entering
+the new value, or start the new value with a zero, followed by the decimal point.
+
+Note:  Celestial Tools only accepts digits and dots (periods) for numerical inputs.  It will work for
+computers set for a language other than U.S. English, but inputs must use dots (periods), rather than
+commas (or anything else), as decimal separators, regardless of the language.  Outputs will be displayed
+in the format of the selected language.
+
+f. "Almanac" Accuracy:  The Sight Planner, Sight Reduction, and Noon Sight tools contain a medium-
+precision "almanac" for the 57 navigational stars, the four navigational planets, the Sun, the Moon, and
+Polaris, plus 70 additional "helper" stars (see Sight Planner Help), limited to the years 1901-2099. It
+also includes "tables" for dip, refraction, and Increments and Corrections. Accuracy details are
+described below, and values generally will not exactly agree with the Nautical Almanac.  However, they
+are more than accurate enough to achieve results consistent with the purpose of the program.
+
+It should be noted that the Nautical Almanac itself does not claim perfect accuracy.  From page 261,
+paragraph 24, regarding the accuracy of the main data:  "The quantities tabulated in this Almanac are
+generally correct to the nearest 0.1'; the exception is the Sun's GHA which is deliberately adjusted by
+up to 0.15' to reduce the error due to ignoring the v-correction....The largest error that can occur in
+the GHA or Dec of any body other than the Sun or Moon is less than 0.2'; it may reach 0.25' for the GHA
+of the Sun and 0.3' for that of the Moon....In practice it may be expected that only one third of the
+values of GHA and Dec taken out will have errors larger than 0.05' and less than one tenth will have
+errors larger than 0.1'."
+
+A note about Delta T:  Delta T is a measure of the difference between a time scale based on the rotation
+of the Earth and an idealized uniform timescale at the surface of the Earth.  For maximum accuracy of
+positional data, the value of Delta T must be included in calculations.  But the rotation of the Earth is
+not constant, so Delta T cannot be predicted - it can only be inferred from observations.  For past years
+in the "telescopic era" (starting in 1620) the value of Delta T has been measured and recorded, but
+values for the future can only be extrapolated from recent data.  Two sources of Delta T predictions are
+generally considered :  the United States Naval Observatory (USNO) MICA v2.2.2 software package, and the
+International Earth Rotation and Reference Systems Service (IERS) Sub-bureau for Rapid Service and
+Predictions.  The values of Delta T from these two sources have been diverging since 2006.  The current
+observed Delta T trend is increasing less rapidly than the MICA predictions but more rapidly than the
+IERS predictions.  This is a problem for almanac producers when trying to estimate suitable values of
+Delta T for future almanacs.  This raises the question of whether computer programs like Celestial Tools
+should use known values of Delta T in its calculations, or the predicted values that the almanac
+producers might have used.  Most programs either require the user to enter a value of Delta T, which can
+be obtained from the USNO web site and other sources, or have a built-in table or polynomial expansions
+(which is what Celestial Tools uses), for past years.  For this reason, positions calculated by programs,
+based on recorded Delta T values, could be different from almanac values based on Delta T predictions.
+For the years since 2010, recent observed data indicates that Delta T has been increasing by about 0.36
+seconds per year.  For 31 December 2099, the last date allowed by Celestial Tools, the difference in
+Delta T between the MICA prediction and the 0.36 seconds per year extrapolation is about 104 seconds.
+This may sound like a lot, but for the Moon, the body most affected by Delta T, this amounts to only a 1'
+difference in GHA.  For this reason, Celestial Tools will continue to use the MICA predictions until they
+are changed.
+
+Positional accuracy of the bodies: Considering the accuracy statements in the Nautical Almanac, for the
+Sight Reduction and Noon Sight tools the expected worst case errors for the parameters used to calculate
+the GHA and declination, compared to values extracted from the Nautical almanac, are: Stars:  SHA 0.1'
+(Note 1); Dec 0.1' (Note 1); GHA Aries hr 0.1'; GHA Aries m s 0.0'; Dec 0.1' Planets:  GHA hr 0.1'; GHA m
+s 0.0'; v 0.1'; v corr 0.1' (Note 2); Dec hr 0.1'; d 0.1'; d corr 0.1' (Note 2); also see Note 3 Sun:
+GHA hr 0.1' (Note 4); GHA m s 0.0; Dec hr 0.1'; d 0.1'; d corr 0.1' (Note 2) Moon:  GHA hr 0.1'; GHA m s
+0.0; v 0.1'; v corr 0.1' (Note 2); Dec hr 0.1'; d 0.1'; d corr 0.1' (Note 2)
+
+Note 1:  For the SHA and declination of the stars, the Nautical Almanac uses the value for UT 12h of the
+middle day of the three days covered by a daily page.  Celestial Tools has options to do it that way or
+using the actual date and time of the sight for its calculation of SHA.  In either case a discrepancy of
+no more than 0.1' is expected. Note 2:  The v corr and d corr should be accurate for whatever v or d
+value is calculated, but since the calculated v or d value can have an error of 0.1', so can v corr and d
+corr.  The v and d values of the planets and the d value of the Sun listed in the Nautical Almanac are
+"averages" for the three days shown on the page.    For the Sun and planets, the Sight Reduction tool has
+two modes.  In the Nautical Almanac mode Celestial Tools calculates the d value for the Sun and the v and
+d values for the planets using an "average" for the three days shown on the page.  In the Accurate mode
+it calculates these values for the date and time of the sight.  In the Noon Sight tool, only the
+"average" value is used to calculate d.  Celestial Tools calculates the v corr and d corr based on the
+Greenwich year of the sight.  See Yellow Pages (I&C) Help regarding differences in Nautical Almanac
+Increments and Corrections tables. Note 3:  The planet Venus exhibits phases like the Moon, which can be
+seen with optical aid.  From 1952 to 1984 the additional corrections for Venus listed in the Nautical
+Almanac allowed for both parallax and phase.  The phase correction was required because the tabulated
+position was for the planet's center of disk.  Before 1952 and since 1985 the tabulated position of Venus
+is for its center of light, and the phase correction is incorporated into the tabulated values of GHA and
+Dec.  Celestial Tools does not correct for phase, i.e. it calculates the position of the center of disk
+(as do most sources other than the Nautical Almanac), so the GHA of Venus can be as much as an additional
+0.5' off compared to the Nautical Almanac for years other than 1952-1984.  (Mars also exhibits phases,
+but the effect is negligible.) Note 4:  0.1' for Sight Reduction when set for "NA val. of hourly GHA/d"
+and for Noon Sight.  (0.0' for about 99% of the cases.)  0.2' for Sight Reduction when set for "Accurate
+val. of hourly GHA/d" and for Sight Planner Star Finder Data. (The "averages" used by the Nautical
+Almanac to determine the v and d values for the planets and the d value for the Sun are based on the
+difference between the associated value at 0h UT of the middle day of the page and 0h UT on the following
+day, divided by 24, as confirmed by Catherine Hohenkerk of HMNAO.  This is in contrast to what is said in
+Bowditch (through the 2002 edition), which states that they are based on the difference between the 1200
+UT value and the 1300 UT value of the middle day.  According to Sean Urban, Chief of the Nautical Almanac
+Office of the US Naval Observatory, these correction will be made in the next edition of Bowditch,
+expected mid-2017.)
+
+The Sight Reduction tool attempts to duplicate the steps of a manual reduction, adding several
+parameters, each with a potential error, to get a total. As such, the resulting GHA or declination might
+not match the values obtained from a source that calculates GHA and declination directly, such as the
+Sight Planner Star Finder Data tool.  Considering this, the expected worst case errors for GHA and
+declination are: Stars:  GHA 0.2'; Dec 0.1' Planets:  GHA 0.2' (0.7' for Venus compared to Nautical
+Almanacs before 1952 and since 1985); Dec 0.2' Sun:  GHA 0.2' (when set for "NA val. of hourly GHA"); Dec
+0.2' Moon:  GHA 0.2'; Dec 0.2'
+
+For Latitude by Altitude of Polaris, the values of a0, a1, and a2 are expected to agree with those
+extracted from the Nautical Almanac within 0.1'.  It is unlikely, however, that all three will be off at
+the same time.  Often, if one value is 0.1' too high another will be 0.1' too low, resulting in the
+proper total correction  The calculated Zn should agree with the Nautical Almanac within 0.1°.
+
+The Sight Planner tool calculates all values directly, but rounds azimuths and altitudes to whole degrees
+before creating the list of visible bodies. Therefore it is possible for there to be a one degree error
+in the values listed.
+
+Altitude corrections: The calculated value of dip will agree with the Nautical Almanac dip tables for
+values of height of eye up to 70.5 feet and 21.4 meters.  For greater heights of eye, generally not a
+concern of the student, there are occasional discrepancies of 0.1'.  In the ranges of heights of eye of
+8-10 feet and 2.4-3 meters, which are covered by both the interpolation and critical portions of the dip
+table, the calculated value of dip will agree with the critical table.  (Note, for example, that the
+interpolated and critical portions of the dip table disagree at 8.1, 8.2, 8.7, and 9.8 feet.)
+
+Computed refraction (the Main altitude correction for the stars and planets, but affecting all bodies)
+will agree with the Nautical Almanac for apparent altitudes greater than about 10°  (in Sight Reduction,
+when Show Ho corrections as SR Form is selected) , and may be a few tenths of a minute off for lower
+altitudes.  For non-standard temperature and pressure, the additional refraction correction may be as
+much as several minutes off the Nautical Almanac value for very low altitudes.  (When Show Ho corrections
+as Parameters is selected in Sight Reduction, there may be a larger difference for refraction.)  The
+refraction corrections used by the Nautical Almanac changed in 2004.  For apparent altitudes less than
+about 10°, Celestial Tools uses the formula from the Sight Reduction Procedures section of the Nautical
+Almanac (which did not change until 2005), based on the Greenwich year derived from the date entered in
+the data entry section of the form in use (Sight Reduction & Fix or Noon Sight).  (This is only a
+significant factor for altitudes less than 2°.  However, this change also affected the critical values of
+apparent altitude on the Altitude Corrections Table 10°-90°-Sun,Stars,Planets (Table A2), so care should
+be taken to use the correct table when doing a manual calculation.)
+
+The additional correction for the planets Venus and Mars (parallax) should agree with 1985 and later
+Nautical Almanacs within 0.1.  Almanacs from 1952 to 1984 included a phase correction for Venus in
+addition to parallax.  Since 1985 the phase correction has been incorporated in the tabulations for the
+GHA and Dec.   Celestial Tools only considers parallax, so for Almanac years prior to 1985 a discrepancy
+of a few tenths of an arc-minute can be expected in the additional correction for Venus.
+
+For dip short, Celestial Tools uses the formula in recent (1981 or later) editions of Bowditch.  This
+formula is exact for the refraction model adopted. Current JN and N course materials (and the back of the
+SR form) use an approximate formula found in earlier editions of Bowditch, which matches the exact
+formula in most cases, but differences, never exceeding 0.3', do appear for very short distances, and
+there is an occasional difference of 0.1' elsewhere.  Because the approximate formula can develop
+unacceptably large errors with large heights of eye coupled with short distances, it should not be used
+if it results in a dip that exceeds 200' (3º20').
+
+Regarding the altitude correction for the Sun, for a given limb and apparent altitude, the Almanac
+Altitude Correction Tables use an average value of semi-diameter over each of the six-month periods
+tabulated (and, on the bottom of the Sun column on each daily page, an average value of semi-diameter for
+the three days covered by the page).  This allows a year's worth of corrections to occupy only a third of
+a page, with a maximum error of only a few tenths of an arc minute.  In Sight Reduction and Noon Sight,
+if Show Ho corrections as SR Form is selected, Celestial Tools will similarly use an average value of
+semi-diameter.  If Show Ho corrections as Parameters is selected, Celestial Tools uses the actual date
+and time in its computation.  Additionally, from 1954 through 1969, the Almanac included an irradiation
+correction of -1.2' for the upper limb of the Sun, which is included in Celestial Tools.  The refraction
+correction change of 2004 also affected the transition points of this table.  In all cases, the output of
+Celestial Tools may not agree with that extracted from the Almanac.  If Show Ho corrections as SR form is
+selected, expected worst case error is 0.1' compared to the Sun Altitude Correction Table or the semi-
+diameter value at the bottom of the Sun column of the daily page.   If Show Ho corrections as Parameters
+is selected, the values, though more accurate, may be in less agreement with the Almanac.  Whichever mode
+is selected, the corresponding value of Ho is used in the Law of Cosines calculation.
+
+The horizontal parallax (HP) of the Moon is expected to be within 0.1' of the value extracted from the
+Nautical Almanac, and is based on the whole UT hour nearest to the time of observation, which could be
+the hour following the observation.  (This is the method on page 280 of the Nautical Almanac, and in the
+USPS Navigation Student Manual since N2009.)  The Main and Add'l corrections for the Moon are expected to
+agree with the Nautical Almanac within 0.1 (using the refraction formula for the entered year).
+
+Remember, though, that the purpose of Celestial Tools is not to do the student's work, but to provide an
+aid in locating errors.
+
+g. Data display "anomalies":  Versions of Celestial Tools prior to V4.0.0 used lower precision
+algorithms, so, in order to avoid additional errors, for most tools, arithmetic was done to the full
+precision of the computer, followed by rounding.  (An exception to this rule was Height of Eye, where
+inches and centimeters were converted to feet and meters, respectively, which were then rounded to one
+decimal place for dip calculation and display purposes.) Occasionally this resulted in the whole not
+being equal to the sum of the parts.  Take, for example, 1.06 + 1.06.  If rounding to one decimal place
+is done first, the result would be 1.1 + 1.1 = 2.2. If rounding to one decimal place is done last, you
+would have 1.06 + 1.06 = 2.12, resulting in a display of 1.1 + 1.1 = 2.1.  With the improved accuracy of
+V4.0.0, it was no longer felt that this was necessary.  Rounding is always done first, so the whole will
+equal the sum of the parts.  When calculating estimated positions or fixes, the values of intercept and
+azimuth are rounded to tenths of a nautical mile and whole degrees, respectively, before the calculations
+are made, to more closely match a manual plot.
+
+In versions of Celestial Tool prior to V4.0.0, it might also have been noticed that an angle calculated
+by the program (one not entered by the user) in degrees and minutes might not equal its representation in
+decimal degrees.  This was because the calculation was done in decimal degrees to the full precision of
+the computer, then converted to degrees and minutes, followed by rounding the minutes to one decimal
+place.  Again, with the improved accuracy of V4.0.0, the representation in decimal degrees will be
+correct for the angle displayed in degrees and minutes.
+
+One "anomaly" that has been retained in V4.0.0 and later is that, in most cases, the program does not
+round a number for one displayed value then round it again for a subsequent displayed value.  This can
+result in an "anomaly".  As an example, say Sight Reduction calculates a value for Z of N 49.51... W.
+Rounded to one decimal place, this is displayed as N 49.5 W.  When this is converted to Zn, the unrounded
+value of Z is rounded to whole degrees, displaying a Zn value of 310.  If the rounded value of Z were
+used, a Zn value of 311 would be displayed.
+
+For the SR Methods tool, this "anomaly" will not occur.  In order to match manual sight reductions,
+intermediate values are rounded to the required precision then used in subsequent calculations.  A Z of N
+49.5 W results in a Zn of 311.
+
+h. Rounding:  Celestial Tools rounds by the method currently taught by the United States Power Squadrons,
+"rounding upward".  For instance, if rounding to a whole number, 34.0-34.4 round to 34, and 34.5-34.9
+round to 35.  In the past "rounding to the even", also known as "banker's rounding", a method still used
+in some references, was used.  When using this method to round to a whole number, .5 is dropped if
+preceded by an even number, but raising to the next whole number if preceded by an odd number.  For
+instance, 34.5 would round to 34, but 35.5 would round to 36.
+
+i. Printing:  All of the windows worth printing have a small button with an icon of a printer in the
+upper right-hand corner below the Close button. Except for the case of the Help window, when this button
+is activated, a bitmapped image of the window, including the title bar and border, is sent to the
+selected printer.  For the Help window, the text alone is printed for all 20 topics (tabs) or any
+individual topic.  Individual words, sentences, paragraphs, etc. can be cut and pasted into a text editor
+or word processor (e.g. Windows Notepad) and printed from there.  With the exception of the Help, where
+this does not apply, all portions of a window intended to be printed must be contained within the monitor
+screen; offscreen portions will not be printed.
+
+Printer selection is done from the main menu.  When the "Select Printer" button is activated, a window
+with a drop-down list of available printers appears.  The default is the Windows default printer, but any
+of the others can be selected.  The selected printer is active for all the tools of Celestial Tools, but
+does not affect any other program.
+
+j. Dates and times:  The default date is the system date.  It can be changed to any date from 1901 to
+2099.  Invalid dates will produce an error message.
+
+A note about Manual Zone Descriptions:  Although there are a limited number of locations that do not use
+whole hours as their zone description, there is an even more limited number of hour values that are
+associated with the two possible minute values, 30 and 45.  Nevertheless, Celestial Tools allows for any
+hour value to be associated with those minute values.  Negative manual zone descriptions are entered by
+putting a minus sign as the first character of the ZD h box.  If a ZD of -0h30m or -0h45m is desired, a
+"-" or a "-0" should be entered in the ZD h box.  Positive manual zone descriptions will accept, but do
+not requre, a "+".
+
+k. Contact information:  Please send any comments, suggestions, or recommendations to harry_hammond@msn.com.
+

@@ -1,0 +1,80 @@
+TIDES
+
+a. Purpose:  Determine the height of the tide at a desired time, using data extracted from a Tide Table,
+as taught in the USPS Advanced Piloting (AP) 85/86 course or the AP 2004 (or later) course (see
+Operation).  (This is not a tide prediction program.)  The Tide tool uses a form similar to the worksheet
+of the AP 85/86 course.
+
+Determine vertical clearance and depth under keel.
+
+b. Operation:  For determining the tide at a reference station, required inputs are the desired time and
+the times and heights of the high and low tides that bracket the desired time, obtained from Table 1 of
+the Tide Table.  For determining the tide at a substation, additional required inputs are the Table 2
+differences for times and heights of the high and low tides.  Times cannot be left blank, even if the
+required time is 0000.  Heights are shown in feet, but can be entered in feet, meters, centimeters, or
+any other linear unit, but the same unit must be used throughout, and the resultant heights will be in
+that unit.  (It is recommended that centimeters be converted to meters.)  All other inputs are optional,
+and can be used when a printed record of a complete tide determination is desired.
+
+Note:  Tide tables use standard time.  The user must convert daylight savings times to standard times
+before extracting data from the Tide Table.
+
+When entering the Table 2 time differences, use the format of the tide table, i.e. the sign goes with the
+hour, even if the hour is zero.  However, plus signs and leading zeros can be omitted.  Table 2 height
+differences need not be preceded by a plus sign (+) if additive, but must be preceded by a minus sign (-)
+if subtractive or an asterisk (*) if Table 2 expressed it as a ratio (indicated by an asterisk).  Omitted
+zeros for height and time difference inputs are added automatically for the sake of a printed record.
+
+The program will recognize when the times that bracket the desired time cross midnight.
+
+Activating the "Calculate" button completes the calculation, using the selected option.
+
+There are options to determine the height of tide correction by doing the calculation mathematically (the
+default), where the actual values are used; or by using Table 3 values (as taught in AP 85/86), where the
+actual entering arguments are rounded to tabular values; or to do the calculation using a simplified
+"Rule of Twelfths" (as taught in AP 2004, a form of what is more commonly known as the "Rule of Tenths",
+and is not the usual presentation of the Rule of Twelfths), where times are rounded to whole hours and
+percentages are used for each time increment; or to do the calculation using an alternate form of  the
+"Rule of Twelfths".  When using the simplified "Rules of Twelfths", if the half cycle duration is
+significantly different from six hours, the results may not be satisfactory.  If this is true, the
+alternate version of the "Rules of Twelfths", giving more accurate results, should be used.  A rule of
+thumb is if the difference is 60 minutes or more the alternate form should be used, but the alternate
+form can always be used, giving more accurate results, regardless of the difference.
+
+When switching from one option to another there is no need to activate the "Calculate" button.
+
+Choices that would be circled on a paper worksheet will appear in bold type.
+
+Activating the "Clear" button clears all inputs and outputs.
+
+Activating the "Calculate Vertical Clearances" button, which can be done with or without a previous depth
+calculation, opens another window which is used to calculate the vertical clearance (defined in the AP
+course as the clearance between the water and an overhead bridge) and the actual clearance (between the
+highest point on the boat and the bridge), and the depth clearance (between the boat's keel and the
+bottom).  Inputs are expected in feet or meters, with the same unit must be used throughout, and the
+results will be in that unit.  Height of tide at desired time is required for either calculation. All
+previously entered or calculated values are cleared, except if a height if tide calculation was already
+made, it will automatically be used for this function, but can be changed if desired.
+
+For Vertical Clearance, additional required inputs are the height of the object to be cleared (from the
+chart), the mean tidal range (from Table 2), the mean tide level (from Table 2), and, if actual clearance
+is desired, the height of the highest point on the boat.  For Depth Under Keel, additional required
+inputs are the depth (from the chart) and the boat's draft.  (Charted heights and depths are given in
+whole units and must be entered as such.)  Either calculation can be done by itself, or both cacluations
+can be done simultaneously.  When Vertical Clearance is calculated, the intermediate step of the height
+of MHW above MLLW is also shown.
+
+Activating the "Clear" button clears all inputs and outputs.
+
+c. Accuracy/Resolution:  As with tide tables, the computation assumes that the rise and fall of the tides
+conform to simple cosine curves.  This is often not true, so the heights obtained will be approximate.
+The most accurate results are obtained using mathematical calculation for the height of tide correction.
+Using the Table 3 option adds a bit of error to the theoretical (cosine) calculation; the alternate form
+of the "Rule of Twelfths" generally imposes a  larger error, but these errors are usually no more than a
+half a unit (more significant if the unit is meters, less significant if the unit is feet), and are
+probably less relevant than if the rise and fall do not conform to a cosine curve.  The simplified form
+of  the "Rule of Twelfths", however, can impose a significant and dangerous error if the half cycle
+duration is significantly different from six hours
+
+All height results are rounded to the nearest tenth of a unit.
+

@@ -1,0 +1,224 @@
+Sight # = 1   Body = Moon   Limb = Lower   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 06/17/2020 05:00:22   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 17°49.6'   ApprxBrg=S   IC = 00°1.9' Off   HE = 10 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.9 nm Toward   SR Azimuth = 90°   SR EP =  EP L 40°04.9'N   EP Lo 105°12.3'W
+SR GHA = 29° 47.7'   SR Dec = 12° 00.1' N   SR Ho = 18° 48.5'
+Name = Harry   Squadron = Sight Folder Bldr Res AM
+
+Sight # = 2   Body = Moon   Limb = Lower   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 06/17/2020 05:03:25   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 18°21.5'   ApprxBrg=S   IC = 00°1.9' Off   HE = 10 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1.7 nm Away   SR Azimuth = 90°   SR EP =  EP L 40°04.9'N   EP Lo 105°15.7'W
+SR GHA = 30° 32.2'   SR Dec = 12° 00.6' N   SR Ho = 19° 20.3'
+Name = Harry   Squadron = Sight Folder Bldr Res AM
+
+Sight # = 3   Body = Moon   Limb = Lower   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 06/17/2020 05:08:34   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 19°21.4'   ApprxBrg=S   IC = 00°1.9' Off   HE = 10 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.2 nm Toward   SR Azimuth = 91°   SR EP =  EP L 40°04.9'N   EP Lo 105°13.2'W
+SR GHA = 31° 47.1'   SR Dec = 12° 01.5' N   SR Ho = 20° 20.0'
+Name = Harry   Squadron = Sight Folder Bldr Res AM
+
+Sight # = 4   Body = Mars   Limb = Lower   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 06/17/2020 05:15:45   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 39°16.4'   ApprxBrg=S   IC = 00°1.9' Off   HE = 10 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.7 nm Toward   SR Azimuth = 147°   SR EP =  EP L 40°04.3'N   EP Lo 105°13.0'W
+SR GHA = 80° 02.9'   SR Dec = 5° 10.8' S   SR Ho = 39° 10.3'
+Name = Harry   Squadron = Sight Folder Bldr Res AM
+
+Sight # = 5   Body = Mars   Limb = Lower   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 06/17/2020 05:17:21   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 39°26.6'   ApprxBrg=S   IC = 00°1.9' Off   HE = 10 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1 nm Toward   SR Azimuth = 147°   SR EP =  EP L 40°04.1'N   EP Lo 105°12.8'W
+SR GHA = 80° 26.9'   SR Dec = 5° 10.8' S   SR Ho = 39° 20.5'
+Name = Harry   Squadron = Sight Folder Bldr Res AM
+
+Sight # = 6   Body = Mars   Limb = Lower   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 06/17/2020 05:22:11   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 39°55.6'   ApprxBrg=S   IC = 00°1.9' Off   HE = 10 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.6 nm Toward   SR Azimuth = 149°   SR EP =  EP L 40°04.4'N   EP Lo 105°13.1'W
+SR GHA = 81° 39.5'   SR Dec = 5° 10.8' S   SR Ho = 39° 49.5'
+Name = Harry   Squadron = Sight Folder Bldr Res AM
+
+Sight # = 7   Body = Sun   Limb = Lower   Lat = 40°05.2'N   Long = 105°13.2'W   L/Lo By = GPS
+Date/Zone Time = 06/20/2020 12:50:22   DST = X   ZD = Auto      WE = 0000 Slow
+HS = 73°3.8'   ApprxBrg=SE   IC = 00°1.9' On   HE = 11 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1 nm Toward   SR Azimuth = 170°   SR EP =  EP L 40°04.2'N   EP Lo 105°13.0'W
+SR GHA = 102° 09.3'   SR Dec = 23° 26.2' N   SR Ho = 73° 10.0'
+Name = Test sight log 0421   Squadron = ABC-C
+
+Sight # = 8   Body = Sun   Limb = Lower   Lat = 40°05.2'N   Long = 105°13.2'W   L/Lo By = GPS
+Date/Zone Time = 06/20/2020 12:54:13   DST = X   ZD = Auto      WE = 0000 Slow
+HS = 73°10.6'   ApprxBrg=SE   IC = 00°1.9' On   HE = 11 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1.4 nm Toward   SR Azimuth = 173°   SR EP =  EP L 40°03.8'N   EP Lo 105°13.0'W
+SR GHA = 103° 07.1'   SR Dec = 23° 26.2' N   SR Ho = 73° 16.8'
+Name = Test sight log 0421   Squadron = ABC-C
+
+Sight # = 9   Body = Sun   Limb = Lower   Lat = 40°05.2'N   Long = 105°13.2'W   L/Lo By = GPS
+Date/Zone Time = 06/20/2020 13:01:20   DST = X   ZD = Auto      WE = 0000 Slow
+HS = 73°13.0'   ApprxBrg=SE   IC = 00°1.9' On   HE = 11 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1.7 nm Away   SR Azimuth = 179°   SR EP =  EP L 40°06.9'N   EP Lo 105°13.2'W
+SR GHA = 104° 53.6'   SR Dec = 23° 26.2' N   SR Ho = 73° 19.2'
+Name = Test sight log 0421   Squadron = ABC-C
+
+Sight # = 10   Body = Sun   Limb = Lower   Lat = 40°05.2'N   Long = 105°13.2'W   L/Lo By = GPS
+Date/Zone Time = 06/20/2020 13:02:34   DST = X   ZD = Auto      WE = 0000 Slow
+HS = 73°13.2'   ApprxBrg=SE   IC = 00°1.9' On   HE = 11 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1.6 nm Away   SR Azimuth = 180°   SR EP =  EP L 40°06.8'N   EP Lo 105°13.2'W
+SR GHA = 105° 12.1'   SR Dec = 23° 26.2' N   SR Ho = 73° 19.4'
+Name = Test sight log 0421   Squadron = ABC-C
+
+Sight # = 11   Body = Sun   Limb = Lower   Lat = 40°05.2'N   Long = 105°13.2'W   L/Lo By = GPS
+Date/Zone Time = 06/20/2020 13:03:25   DST = X   ZD = Auto      WE = 0000 Slow
+HS = 73°12.9'   ApprxBrg=SE   IC = 00°1.9' On   HE = 11 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1.9 nm Away   SR Azimuth = 181°   SR EP =  EP L 40°07.1'N   EP Lo 105°13.2'W
+SR GHA = 105° 24.9'   SR Dec = 23° 26.2' N   SR Ho = 73° 19.1'
+Name = Test sight log 0421   Squadron = ABC-C
+
+Sight # = 12   Body = Sun   Limb = Lower   Lat = 40°05.2'N   Long = 105°13.2'W   L/Lo By = GPS
+Date/Zone Time = 06/20/2020 13:05:16   DST = X   ZD = Auto      WE = 0000 Slow
+HS = 73°12.5'   ApprxBrg=SE   IC = 00°1.9' On   HE = 11 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1.7 nm Away   SR Azimuth = 182°   SR EP =  EP L 40°06.9'N   EP Lo 105°13.1'W
+SR GHA = 105° 52.6'   SR Dec = 23° 26.2' N   SR Ho = 73° 18.7'
+Name = Test sight log 0421   Squadron = ABC-C
+
+Sight # = 13   Body = Sun   Limb = Lower   Lat = 40°05.2'N   Long = 105°13.2'W   L/Lo By = GPS
+Date/Zone Time = 06/20/2020 13:08:22   DST = X   ZD = Auto      WE = 0000 Slow
+HS = 73°11.7'   ApprxBrg=SE   IC = 00°1.9' On   HE = 11 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.5 nm Away   SR Azimuth = 185°   SR EP =  EP L 40°05.7'N   EP Lo 105°13.1'W
+SR GHA = 106° 39.1'   SR Dec = 23° 26.2' N   SR Ho = 73° 17.9'
+Name = Test sight log 0421   Squadron = ABC-C
+
+Sight # = 14   Body = Antares   Limb = Lower   Lat = 40°05.2'N   Long = 105°13'W   L/Lo By = GPS
+Date/Zone Time = 07/26/2020 19:25:12   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 19°9.6'   ApprxBrg=SE   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.3 nm Toward   SR Azimuth = 155°   SR EP =  EP L 40°04.9'N   EP Lo 105°12.8'W
+SR GHA = 78° 49.4'   SR Dec = 26° 28.6' S   SR Ho = 19° 03.1'
+Name = Harry Sight Folder log   Squadron = Monday July 27 2020
+UserInfo=SightFolder Jupiter,Moon, Antares sights
+
+Sight # = 15   Body = Antares   Limb = Lower   Lat = 40°05.2'N   Long = 105°13'W   L/Lo By = GPS
+Date/Zone Time = 07/26/2020 20:55:12   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 23°26.8'   ApprxBrg=SE   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.4 nm Toward   SR Azimuth = 176°   SR EP =  EP L 40°04.8'N   EP Lo 105°13.0'W
+SR GHA = 101° 23.2'   SR Dec = 26° 28.6' S   SR Ho = 23° 20.9'
+Name = Harry Sight Folder log   Squadron = Monday July 27 2020
+UserInfo=SightFolder Jupiter,Moon, Antares sights
+
+Sight # = 16   Body = Antares   Limb = Lower   Lat = 40°05.2'N   Long = 105°13'W   L/Lo By = GPS
+Date/Zone Time = 07/26/2020 21:20:05   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 23°29.2'   ApprxBrg=SE   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.6 nm Away   SR Azimuth = 182°   SR EP =  EP L 40°05.8'N   EP Lo 105°13.0'W
+SR GHA = 107° 37.4'   SR Dec = 26° 28.6' S   SR Ho = 23° 23.3'
+Name = Harry Sight Folder log   Squadron = Monday July 27 2020
+UserInfo=SightFolder Jupiter,Moon, Antares sights
+
+Sight # = 17   Body = Moon   Limb = Lower   Lat = 40°05.2'N   Long = 105°13'W   L/Lo By = GPS
+Date/Zone Time = 07/26/2020 21:25:34   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 27°39.2'   ApprxBrg=SE   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1.4 nm Away   SR Azimuth = 230°   SR EP =  EP L 40°06.1'N   EP Lo 105°11.6'W
+SR GHA = 147° 36.5'   SR Dec = 7° 08.3' S   SR Ho = 28° 42.3'
+Name = Harry Sight Folder log   Squadron = Monday July 27 2020
+UserInfo=SightFolder Jupiter,Moon, Antares sights
+
+Sight # = 18   Body = Moon   Limb = Lower   Lat = 40°05.2'N   Long = 105°13'W   L/Lo By = GPS
+Date/Zone Time = 07/26/2020 21:28:22   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 27°15.6'   ApprxBrg=SE   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.4 nm Away   SR Azimuth = 230°   SR EP =  EP L 40°05.5'N   EP Lo 105°12.6'W
+SR GHA = 148° 17.1'   SR Dec = 7° 09.0' S   SR Ho = 28° 18.9'
+Name = Harry Sight Folder log   Squadron = Monday July 27 2020
+UserInfo=SightFolder Jupiter,Moon, Antares sights
+
+Sight # = 19   Body = Moon   Limb = Lower   Lat = 40°05.2'N   Long = 105°13'W   L/Lo By = GPS
+Date/Zone Time = 07/26/2020 22:03:05   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 21°55.6'   ApprxBrg=SE   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1.2 nm Away   SR Azimuth = 237°   SR EP =  EP L 40°05.9'N   EP Lo 105°11.7'W
+SR GHA = 156° 40.2'   SR Dec = 7° 17.1' S   SR Ho = 23° 00.7'
+Name = Harry Sight Folder log   Squadron = Monday July 27 2020
+UserInfo=SightFolder Jupiter,Moon, Antares sights
+
+Sight # = 20   Body = Moon   Limb = Lower   Lat = 40°05.2'N   Long = 105°13'W   L/Lo By = GPS
+Date/Zone Time = 07/26/2020 22:05:12   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 21°38.2'   ApprxBrg=SE   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1.6 nm Toward   SR Azimuth = 238°   SR EP =  EP L 40°04.4'N   EP Lo 105°14.8'W
+SR GHA = 157° 10.9'   SR Dec = 7° 17.6' S   SR Ho = 22° 43.3'
+Name = Harry Sight Folder log   Squadron = Monday July 27 2020
+UserInfo=SightFolder Jupiter,Moon, Antares sights
+
+Sight # = 21   Body = Mars   Limb = Lower   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 08/01/2020 05:15:44   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 53°28.0'   ApprxBrg=E   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1.3 nm Toward   SR Azimuth = 173°   SR EP =  EP L 40°03.6'N   EP Lo 105°13.3'W
+SR GHA = 100° 59.8'   SR Dec = 3° 39.3' N   SR Ho = 53° 23.7'
+Name = Harry Sight Folder   Squadron = Aug 1 Morning sunrise sights on Venus Mars
+
+Sight # = 22   Body = Mars   Limb = Lower   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 08/01/2020 05:16:30   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 53°28.4'   ApprxBrg=E   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.6 nm Toward   SR Azimuth = 173°   SR EP =  EP L 40°04.3'N   EP Lo 105°13.4'W
+SR GHA = 101° 11.3'   SR Dec = 3° 39.3' N   SR Ho = 53° 24.1'
+Name = Harry Sight Folder   Squadron = Aug 1 Morning sunrise sights on Venus Mars
+
+Sight # = 23   Body = Mars   Limb = Lower   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 08/01/2020 05:17:20   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 53°28.8'   ApprxBrg=E   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.1 nm Away   SR Azimuth = 174°   SR EP =  EP L 40°05.0'N   EP Lo 105°13.5'W
+SR GHA = 101° 23.8'   SR Dec = 3° 39.3' N   SR Ho = 53° 24.5'
+Name = Harry Sight Folder   Squadron = Aug 1 Morning sunrise sights on Venus Mars
+
+Sight # = 24   Body = Mars   Limb = Lower   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 08/01/2020 05:18:04   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 53°30.0'   ApprxBrg=E   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.2 nm Toward   SR Azimuth = 174°   SR EP =  EP L 40°04.7'N   EP Lo 105°13.5'W
+SR GHA = 101° 34.8'   SR Dec = 3° 39.3' N   SR Ho = 53° 25.7'
+Name = Harry Sight Folder   Squadron = Aug 1 Morning sunrise sights on Venus Mars
+
+Sight # = 25   Body = Sun   Limb = Lower   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 08/12/2020 09:25:04   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 35°42.2'   ApprxBrg=E   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1.5 nm Toward   SR Azimuth = 101°   SR EP =  EP L 40°04.6'N   EP Lo 105°11.6'W
+SR GHA = 50° 02.1'   SR Dec = 14° 41.8' N   SR Ho = 35° 53.2'
+Name = Harry Sight Folder   Squadron = August 12 Sun Moon fix
+
+Sight # = 26   Body = Sun   Limb = Lower   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 08/12/2020 09:27:05   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 36°2.4'   ApprxBrg=E   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1 nm Away   SR Azimuth = 102°   SR EP =  EP L 40°05.1'N   EP Lo 105°14.8'W
+SR GHA = 50° 32.4'   SR Dec = 14° 41.8' N   SR Ho = 36° 13.4'
+Name = Harry Sight Folder   Squadron = August 12 Sun Moon fix
+
+Sight # = 27   Body = Sun   Limb = Lower   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 08/12/2020 09:28:24   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 36°19.4'   ApprxBrg=E   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1.2 nm Toward   SR Azimuth = 102°   SR EP =  EP L 40°04.7'N   EP Lo 105°12.0'W
+SR GHA = 50° 52.1'   SR Dec = 14° 41.8' N   SR Ho = 36° 30.4'
+Name = Harry Sight Folder   Squadron = August 12 Sun Moon fix
+
+Sight # = 28   Body = Moon   Limb = Upper   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 08/12/2020 09:30:28   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 56°5.8'   ApprxBrg=E   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 1.6 nm Toward   SR Azimuth = 238°   SR EP =  EP L 40°04.1'N   EP Lo 105°15.3'W
+SR GHA = 134° 54.9'   SR Dec = 18° 03.7' N   SR Ho = 56° 17.1'
+Name = Harry Sight Folder   Squadron = August 12 Sun Moon fix
+
+Sight # = 29   Body = Moon   Limb = Upper   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 08/12/2020 09:31:22   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 55°56.0'   ApprxBrg=E   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.4 nm Toward   SR Azimuth = 238°   SR EP =  EP L 40°04.7'N   EP Lo 105°13.9'W
+SR GHA = 135° 08.0'   SR Dec = 18° 03.8' N   SR Ho = 56° 07.5'
+Name = Harry Sight Folder   Squadron = August 12 Sun Moon fix
+
+Sight # = 30   Body = Moon   Limb = Upper   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 08/12/2020 09:33:44   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 55°33.6'   ApprxBrg=E   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.4 nm Toward   SR Azimuth = 239°   SR EP =  EP L 40°04.7'N   EP Lo 105°13.9'W
+SR GHA = 135° 42.2'   SR Dec = 18° 04.1' N   SR Ho = 55° 45.4'
+Name = Harry Sight Folder   Squadron = August 12 Sun Moon fix
+
+Sight # = 31   Body = Moon   Limb = Upper   Lat = 40°04.9'N   Long = 105°13.5'W   L/Lo By = GPS
+Date/Zone Time = 08/12/2020 09:36:10   DST = X   ZD = Auto      WE = 0000 Fast
+HS = 55°10.0'   ApprxBrg=E   IC = 00°1.9' Off   HE = 8 ft   Horizon = Dip Short   Dip Short = 1 Statute Mile
+SR Intercept = 0.3 nm Toward   SR Azimuth = 240°   SR EP =  EP L 40°04.7'N   EP Lo 105°13.8'W
+SR GHA = 136° 17.8'   SR Dec = 18° 04.5' N   SR Ho = 55° 22.1'
+Name = Harry Sight Folder   Squadron = August 12 Sun Moon fix
+
