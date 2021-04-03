@@ -4,45 +4,84 @@
         <name>CelestialTools</name>
     </assembly>
     <members>
+        <member name="F:CelestialTools.FormReadGPXFile.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CelestialTools.FormReadGPXFile.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CelestialTools.FormReadGPXFile.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CelestialTools.GPXPush.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CelestialTools.GPXPush.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CelestialTools.GPXPush.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="T:CelestialTools.My.Resources.Resources">
             <summary>
-            A strongly-typed resource class, for looking up localized strings, etc.
+              A strongly-typed resource class, for looking up localized strings, etc.
             </summary>
         </member>
         <member name="P:CelestialTools.My.Resources.Resources.ResourceManager">
             <summary>
-            Returns the cached ResourceManager instance used by this class.
+              Returns the cached ResourceManager instance used by this class.
             </summary>
         </member>
         <member name="P:CelestialTools.My.Resources.Resources.Culture">
             <summary>
-            Overrides the current thread's CurrentUICulture property for all
-            resource lookups using this strongly typed resource class.
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
             </summary>
         </member>
         <member name="P:CelestialTools.My.Resources.Resources.ABC_white">
             <summary>
-            Looks up a localized resource of type System.Drawing.Bitmap.
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CelestialTools.My.Resources.Resources.ABC1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:CelestialTools.My.Resources.Resources.back">
             <summary>
-            Looks up a localized resource of type System.Drawing.Bitmap.
+              Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:CelestialTools.My.Resources.Resources.down">
             <summary>
-            Looks up a localized resource of type System.Drawing.Bitmap.
+              Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:CelestialTools.My.Resources.Resources.forward">
             <summary>
-            Looks up a localized resource of type System.Drawing.Bitmap.
+              Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:CelestialTools.My.Resources.Resources.up">
             <summary>
-            Looks up a localized resource of type System.Drawing.Bitmap.
+              Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
     </members>
