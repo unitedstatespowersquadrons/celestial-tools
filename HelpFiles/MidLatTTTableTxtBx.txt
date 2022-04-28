@@ -1,0 +1,22 @@
+THE SAILINGS
+
+a. Purpose:  For Mid-Latitude Sailing, Calculate either the Mid-Lat worksheet data or the Simplified 
+Traverse Table data
+Input fields: 
+	1. Initial Latitude degrees, minutes, and N/S
+	2. Initial Longitude degrees, minutes, and E/W
+	3. Initial True course
+	4. Total distance to travel in nautical miles 
+	5. Travese Table check box unchecked (default)/ Mid-Lat Worksheet check box = checked
+	6. Calculate button - required to click to cause display to calculate required data
+	
+This form can be invoked from the Main Menu or from the Sailings Form when Mid-Lat destination info is requested.
+When invoked from Main Menu, the location info, course, and distance will be blank and Traverse Table check box is selected
+(box is unchecked).
+When invoked from Sailings Form, the Sailings Form location, course, and distance info is pushed into the same fields
+on this form, the Traverse Table data is chosen (box unchecked), and the Calculate button executed.
+The data displayed as output are the standard Mid-Lat worksheet data and the Simplified Traverse Table worksheet (as defined
+and taught in ABC Navigation - N - class).
+Errors are those associated with invalid latitude, longitude, true course, and distance fields. 
+
+

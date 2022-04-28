@@ -4,25 +4,33 @@ Special Windows Requirement for Celestial Tools:
 The short Date Format on your computer must be the following format  MM/dd/yyyy
 To verify this open the Control Panel application & select Region to view the short date format.
 
+Windows 10 Display Settings >> Scale and Layout >> Advanced scaling settings >> 
+	"Let Windows try to fix apps so they're not blurry" Option MUST BE SET OFF for Celestial Tools 
+	to display properly.
+
 a. Purpose:  Although the data produced by Celestial Tools is fairly accurate, the program should not be
 used for navigation.  Its primary purpose is instructional:  to aid students in planning sights; to allow
 students to quickly check the quality of sights; and to help students find errors in their work. It is
 not intended to do the work for the student.
 
-b.  System requirements i. Operating System:  Windows 7, 8, or 10 ii. CPU:  Anything capable of running a
-	current copy of Windows should be fine iii. Support files:  All required support files are
-	included in the released exe program and associated release folders iv. Hard disk space:  6-7
-	megabytes plus additional space for Sight Log and Favorites files created v. Memory:  Less than
-	10MB available memory if all tools are running. vi. Screen resolution:  800x600 or greater.  If
-	you are using 800x600 and your Windows taskbar is at the bottom of the screen and Auto hide is
-	not enabled, the bottom of the Sight Reduction window will be obscured by the taskbar.  It is
-	recommended that Auto hide be enabled or the taskbar be moved to the right side of the screen.
-	The same recommendation is made for any other toolbars, such as the Microsoft Office toolbar,
-	that might obscure part of a window. vii. Fonts:  Tahoma, Arial, Courier New, and Symbol,
-	provided with Windows.  (Windows 95 will substitute MS Sans Serif for Tahoma.)  With the
-	exception of Windows 10, font size must be set to 96 dpi (called small, smaller, standard,
-	normal, or 100% depending on operating system). viii. Mouse:  Recommended ix. Printer:
-	Recommended
+b.  System requirements: 
+	i. Operating System:  Windows 7, 8, or 10 
+	ii. CPU:  Any CPU capable of running a current copy of Windows should be fine 
+	iii. Support files:  All required support files are included in the released exe program and associated folders 
+	iv. Hard disk space:  6-7 megabytes plus additional space for Sight Log and Favorites files created 
+	v. Memory:  Less than 10MB available memory if all tools are running. 
+	vi. Screen resolution:  800x600 or greater.  Consider using the highest screen resolution possible.  
+	For screen resolutions below 1360 x 768, it is recommended that Auto hide be enabled or that
+	the taskbar be moved to the right side of the screen. The same recommendation is made for any 
+	other toolbars, such as the Microsoft Office toolbar, that might obscure part of a window. 
+	vii. Fonts:  Tahoma, Arial, Courier New, and Symbol, provided with Windows.   
+	With the exception of Windows 10, font size must be set to 96 dpi (called small, smaller, standard,
+	normal, or 100% depending on operating system). 
+	viii. Mouse:  Required 
+	ix. Printer: Recommended
+	xi. Windows 10 Display Settings >> Scale and Layout >> Advanced scaling settings >> 
+	"Let Windows try to fix apps so they're not blurry" Option MUST BE SET OFF for Celestial Tools 
+	to display properly.
 
 c. Windows: Most of the working windows have two types of sections:  data entry and output display.  All
 windows can be minimized and moved but cannot be maximized or resized.

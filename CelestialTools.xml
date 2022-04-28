@@ -118,6 +118,11 @@
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:CelestialTools.My.Resources.Resources.windows_help_icon_6">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="F:CelestialTools.FormPlanList.components">
             <summary>
             Required designer variable.
