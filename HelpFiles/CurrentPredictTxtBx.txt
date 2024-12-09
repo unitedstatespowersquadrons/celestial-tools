@@ -1,0 +1,35 @@
+CURRENTS
+
+a. Purpose:  Determine the set and drift (velocity) of the tidal current at a desired time, using data
+extracted from a Tidal Current Table, as taught in the USPS Advanced Marine Navigation (AMN) course.  
+The Current tool uses a form similar to the worksheet taughts in the MN/AMN classes.
+
+b. Operation:  
+Required Input fields:
+1. Location Name of reference station
+2. Station ID number for reference station
+3. Date and Time for desired current speed and direction
+4. Using current references tables for location, input the 3 sets of date/time from slack current and the 
+2 sets of date/time, Flood/Ebb designation, speed in knots, and direction in True Degrees.
+5. Use the 'Calculation' button at the middle bottom of the form to request the calculated height of tide
+at the desired date and time and location.
+
+Note:  Tidal current tables use standard time.  The user must convert daylight savings times to standard
+times before extracting data from the Tidal Current Table.
+
+The program will recognize when the selected times of slack and maximum  cross midnight.
+
+When updating any input field, yopu will need to activate the "Calculate" button to get updated results.
+
+Choices that would be circled on a paper worksheet will appear in bold type.
+
+Activating the "Clear" button clears all inputs and outputs.
+
+Localized velocities are rounded to hundredths of a knot, except for the "50-90 Rule" where they are
+rounded to tenths of a knot.  The predicted velocity is rounded to tenths of a knot.
+
+Celestial Tools uses the method of the PREDICTION OF CURRENT AND DIRECTION form for the "50-90 Rule". 
+Note that if the Time Difference converted to minutes (line (4) of the form) is
+not evenly divisible by three, then Time#3 on line (6) will differ from the later of the bracketed times
+(line (1)) by one minute.
+

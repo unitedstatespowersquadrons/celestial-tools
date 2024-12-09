@@ -21,6 +21,23 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="F:CelestialTools.CurrentPredict.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CelestialTools.CurrentPredict.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CelestialTools.CurrentPredict.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="F:CelestialTools.DisplayFactorTbl.components">
             <summary>
             Required designer variable.
@@ -169,6 +186,23 @@
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:CelestialTools.SRFAdjust.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CelestialTools.TidePredict.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CelestialTools.TidePredict.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CelestialTools.TidePredict.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.

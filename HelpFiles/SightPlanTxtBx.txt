@@ -1,44 +1,39 @@
 SIGHT PLANNER
 
-a. Purpose:  "Twilight" calculator and "Star Finder".  It will calculate the times of the Sun's rising
+a. Purpose:  For the date/time and latitude & longitude input, this form will display th following:
+1. The sunrise and sunset times for all 4 astronomical times and the moonrise / moonset info
+2. List of Visible Bodies: Three lists of visible astronomical bodies by their 1st, 2nd, and 3rd magnitude.
+3. Sky View of Visible Bodies: A configurable sky view of the visible astronomical bodies
+4. Star Finder Data: Input data to configure and use the traditional Star Finder 
+5. Rising / Setting Times: A 24 hour circular view of the sun and moon rising and setting times 
+at the top of the form
+
+Note: Uset can create a list of bodies for a planned sight outing by clicking on the body name on 
+the "List of Visible Bodies" page or the "View of Visible Bodies" page. The sight plan list created
+can be printed off or saved as a text file that can be found in the /FavoriteLocs folder where Celestial
+Tools runs on Windows. When you close the sight plan list form, the plan list is closed and gone (unless
+saved as a text file or printed).
+
+Sun and Moon Rising and Setting Times: The Sight Planner will calculate the times of the Sun's rising
 and setting phenomena (twilights) and azimuths of sunrise and sunset for the entered date and location,
 and find the azimuth, altitude, and magnitude of the navigational bodies which are above the horizon at a
 selected time, without the need to consult an almanac or tables or to use a Rude (2102-D) Star Finder.
 (Since the program is intended to emulate the Rude Star Finder, it does not include corrections for
 refraction and dip.)  It will also calculate the availability data for a Sun-Moon fix for the entered
 date, location, azimuth range, and minimum altitude.  In addition, it will calculate the times
-(accurately or using the approximate method currently taught in N) and azimuths of moonrise and moonset
-and the phase of the Moon for the entered date and location.
+(accurately or using the approximate method currently taught in the Celestial Navigation class) and 
+azimuths of moonrise and moonset and the phase of the Moon for the entered date and location.
 
-b. Operation:  Initial required inputs are date and DR latitude and longitude.  Zone Description is
-automatically calculated based on longitude, but any civil standard time zone can be entered manually to
-allow for time zones not based on longitude, or for Universal Time.  As a convenience feature, the UT
-(GMT) option forces time outputs to be in Universal Time.  Check the DST box if the timepiece is set for
-Daylight Savings Time.  Select whether the azimuths of the Sun and Moon should be shown for when the
-upper limb or the center of the body is on the visible horizon (see below).  Moon rise and set data is
-calculated fairly accurately unless the "Approximate Moon rise and set data" box is checked, in which
-case the accuracy will be similar to that of the approximate method currently taught in the N course.
-(Checking or unchecking that box has the same effect as activating the "Get Twilight Times/Moon Data"
-button.)  After activating the "Get Twilight Times/Moon Data" button, the program displays the zone times
+b. Operation:  Initial required inputs are date & time, location latitude and longitude, and time zone. 
+Zone Description is automatically calculated based on longitude, when 'auto' option is chose. The GMT / UT
+option forces time outputs to be in Universal Time.  Check the DST box if the timepiece is set for
+Daylight Savings Time. The program displays the zone times
 of sunrise, sunset, and civil, nautical, and astronomical morning and evening twilights in 24-hour
 format; the azimuths of sunrise and sunset (in parentheses, next to the times, if "Upper Limb" is
 selected); the times and azimuths of moonrise and moonset (if "Upper Limb" is selected), if they occur;
 and  the approximate phase of the Moon at ZT 1200, expressed in percent illumination, and whether it is
 waxing or waning.  (Note that rises and sets are defined as when the upper limb of the body is on the
 visible horizon.)  Any of the entered values can be changed at any time and the calculations redone.
-
-If "Center" is selected, the Sun and Moon azimuths shows are for when the center of the body is on the
-visible horizon.  Comparing the compass bearing of a celestial body with a computer bearing provides an
-accurate means of checking the deviation of a compass at sea.  This is usually done by measuring the
-body's amplitude, the angle between the body and the prime vertical (90° or 270°), measured along the
-horizon, when the center of the body is on the visible horizon.  Amplitude is then applied to the
-appropriate prime vertical to get the true azimuth of the center of the body.  Celestial Tools calculates
-the true azimuth directly, and displays it to the nearest tenth of a degree, as would a manual
-calculation.  (Although these azimuths are associated with the rises and sets, they actually occur
-shortly after the rises and shortly before the sets.)
-
-(Note that changing between "Upper Limb" and "Center" has the same effect as activating the "Get Twilight
-Times/Moon Data" button:  the azimuths are updated.)
 
 A time of "----" indicates that the Sun phenomenon does not occur for the date and location entered (e.g.
 midsummer sun does not set in high latitudes).
@@ -97,7 +92,7 @@ visible horizon, so the body is actually below the horizon.  A body is considere
 is above the visible horizon, so, for example, it might be several minutes after the time of sunrise
 before the Sun is visible.
 
-If "View Visible Bodies" is selected, a view of how the bodies appear in the sky is displayed.  There are
+If "Sky View Visible Bodies" is selected, a view of how the bodies appear in the sky is displayed.  There are
 three options:
 
 If "View Overhead" is selected (the default), the view is from the inside of the celestial sphere, as it
