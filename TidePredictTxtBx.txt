@@ -1,0 +1,26 @@
+TIDE Predict Form for Marine Navigation (MN) and Advanced Marine Navigation (AMN) classes:
+
+a. Purpose:  Determine the height of the tide at a desired time, using data extracted from a Tide Table,
+as taught in the USPS Advanced Marine Navigation (AMN) course . The height of tides at the desired data 
+and time, and location will be calculated using the 'Rule of 12ths' methods taught in class.  
+
+b. Operation:  
+Required Input Fields:
+1. Location Name of reference station
+2. Station ID number for reference station
+3. Date and Time for desired tide height
+4. Using tide references tables for location, input the 4 sets of date/time of tide, High/Low designation,
+and tide height in feet.
+5. Use the 'Calculation' button at the middle bottom of the form to request the calculated height of tide
+at the desired date and time and location.
+
+Note:  Tide tables use standard time.  The user must convert daylight savings times to standard times
+before extracting data from the Tide Table.
+
+Changing any of the required data fields listed above will require the 'Calculation' button to be clicked
+again to produce updated results.
+
+Activating the "Clear" button clears all inputs and outputs.
+
+All height results are rounded to the nearest tenth of a unit.
+
