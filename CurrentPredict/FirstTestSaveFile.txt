@@ -1,0 +1,1 @@
+Location=Charleston Harbor;StationID=6651;DTDesired=03/07/2023 13:00;DTSlack1=03/07/2023 02:18;DTSlack2=03/07/2023 08:24;DTSlack3=03/07/2023 14:42;DTMaxFE1=03/07/2023 04:48;DTMaxFE2=03/07/2023 11:36;Speed1=001.7;Speed2=002.3;Direction1=313;Direction2=127

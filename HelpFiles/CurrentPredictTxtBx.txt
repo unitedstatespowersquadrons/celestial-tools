@@ -1,4 +1,4 @@
-CURRENTS
+CURRENT Predict Form for Marine Navigation (MN) and Advanced Marine Navigation (AMN) classes:
 
 a. Purpose:  Determine the set and drift (velocity) of the tidal current at a desired time, using data
 extracted from a Tidal Current Table, as taught in the USPS Advanced Marine Navigation (AMN) course.  

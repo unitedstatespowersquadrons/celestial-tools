@@ -1,0 +1,1 @@
+Location=Charleston SC;StationID=556381;DTDesired=11/22/2023 11:30;DTTideHt1=11/22/2023 03:07;DTTideHt2=11/22/2023 09:21;DTTideHt3=11/22/2023 15:36;DTTideHt4=11/22/2023 21: 50;HiLow1=High;HiLow2=Low;HiLow3=High;HiLow4=Low;TideHt1=05.5;TideHt2=00.5;TideHt3=05.7;TideHt4=00.0;

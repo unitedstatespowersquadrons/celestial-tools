@@ -1,0 +1,36 @@
+Celestial Tools Change Log
+
+Last Updated: 12/12/2024 
+Last Updated by: Harry Hammond ( harry_hammond@msn.com )
+
+Release Date: 6/25/2024 
+Release Version:  Celestial Tools (Vsn 2024-06-0024-2218)
+Release Changes: 
+1. Sailings Form: Corrected errors in computation of great circle routes 
+found by Mike Guler in testing during the summer.
+2. Sailings Form: Corrected and improved the Set & Drift calculation options
+ and user input fields. Added ability to use CLSPlot form to display Set & Drift data.
+
+
+Release Date: 9/17/2024 
+Release Version:  Celestial Tools (Vsn 2024-09-0017-1805)
+Release Changes: 
+1. Tides form and Current form: Corrected calculations of Tide Heights and
+ Current speed and direction in both forms against Adv Marine Nav course material. 
+ Calcs were in errors
+
+Release Date: 11/09/2024 
+Release Version:  Celestial Tools (Vsn 2024-11-0009-2024)
+Release Changes: 
+1. Tide Predict form and Current Predict form: Implemented these two new CT forms
+ to directly implement and mimic the same two forms as taught in the Adv Marine Nav class.
+
+Release Date: 12/12/2024 
+Release Version:  Celestial Tools (Vsn 2024-12-0012-1558)
+Release Changes: 
+1. Tide Predict form and Current Predict form: Added File Save and File Open 
+functions to each form so thatdata input can be saved to a text file and recalled
+ as needed (or shared)
+2. Menu form: When Menu form loads it checks that all necessary subfolder exist. 
+If any are missing it creates them for processing use. Added subfolder for TidePredict
+and Current Predict forms.
