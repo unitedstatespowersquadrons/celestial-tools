@@ -34,3 +34,10 @@ functions to each form so thatdata input can be saved to a text file and recalle
 2. Menu form: When Menu form loads it checks that all necessary subfolder exist. 
 If any are missing it creates them for processing use. Added subfolder for TidePredict
 and Current Predict forms.
+
+Release Date: 12/27/2024 
+Release Version:  Celestial Tools (Vsn 2024-12-0027-1911)
+Release Changes: 
+1. AltSR form, NASR and all other tabular SR methods: correct code to correctly calc and report S latitudes
+and E longitudes. Validate CLS plot for AltSR tabular sight reductions as accurate and formatted correctly.
+2. HelpFiles folder in Visual Studio/GitHub folder: Add CTChangeLog text file 
