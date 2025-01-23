@@ -48,3 +48,8 @@ Release Changes:
 Added File Save and Open logic to Sight Planner Form sight plan list so plan text files can be properly
 saved and reopened. On Sight Plan List form, added ability to Delete an individual sight. On Sight Plan List
 form added logic to prompt for a File Save when form Exit or Close is executed (if a File Save was not already done). 
+
+Release Date: 01/22/2025
+Release Version:  Celestial Tools (Vsn 2025-01-0023-1734)
+Release Changes: 
+Fixed error in SRF SR96 LOC form when computing LHA vcorr for moon sights. 
