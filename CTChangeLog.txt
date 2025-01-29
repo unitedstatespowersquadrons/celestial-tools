@@ -53,3 +53,9 @@ Release Date: 01/22/2025
 Release Version:  Celestial Tools (Vsn 2025-01-0023-1734)
 Release Changes: 
 Fixed error in SRF SR96 LOC form when computing LHA vcorr for moon sights. 
+
+Release Date: 01/29/2025
+Release Version:  Celestial Tools (Vsn 2025-01-0028-1703)
+Release Changes: 
+Fixed Noon Sight form to correctly calculate eval of sun sight data. Correct interface from SightLog form to only 
+display NoonSight button on a sun sight with sight time between 1100 hr and 1400 hrs.
