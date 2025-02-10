@@ -1,30 +1,42 @@
 Celestial Tools Change Log
 
-Last Updated: 12/12/2024 
-Last Updated by: Harry Hammond ( harry_hammond@msn.com )
-
-Release Date: 6/25/2024 
-Release Version:  Celestial Tools (Vsn 2024-06-0024-2218)
+(Most recent to oldest) 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 02/11/2025
+Release Version:  Celestial Tools (Vsn 2025-02-0011-1200)
 Release Changes: 
-1. Sailings Form: Corrected errors in computation of great circle routes 
-found by Mike Guler in testing during the summer.
-2. Sailings Form: Corrected and improved the Set & Drift calculation options
- and user input fields. Added ability to use CLSPlot form to display Set & Drift data.
+Fixed error in TVMDC form and Visualize TVMDC form to properly calc compass course from deviation.
+Reformated Main Menu buttons to:
+1. Use larger, darker font on all buttons and fields for better readability
+2. Add button to display Change Log from Help files folder
+3. Reoriented buttons for Exit, Help, PrintScreen, Change Log, and Settings so form will fit on most screens
+4. Moved various buttons in each group for better logical grouping for users.
 
-
-Release Date: 9/17/2024 
-Release Version:  Celestial Tools (Vsn 2024-09-0017-1805)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 01/22/2025
+Release Version:  Celestial Tools (Vsn 2025-01-0023-1734)
 Release Changes: 
-1. Tides form and Current form: Corrected calculations of Tide Heights and
- Current speed and direction in both forms against Adv Marine Nav course material. 
- Calcs were in errors
-
-Release Date: 11/09/2024 
-Release Version:  Celestial Tools (Vsn 2024-11-0009-2024)
+Fixed error in SRF SR96 LOC form when computing LHA vcorr for moon sights. 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 01/20/2025
+Release Version:  Celestial Tools (Vsn 2025-01-0017-1727)
 Release Changes: 
-1. Tide Predict form and Current Predict form: Implemented these two new CT forms
- to directly implement and mimic the same two forms as taught in the Adv Marine Nav class.
-
+Added File Save and Open logic to Sight Planner Form sight plan list so plan text files can be properly
+saved and reopened. On Sight Plan List form, added ability to Delete an individual sight. On Sight Plan List
+form added logic to prompt for a File Save when form Exit or Close is executed (if a File Save was not already done). 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 01/29/2025
+Release Version:  Celestial Tools (Vsn 2025-01-0028-1703)
+Release Changes: 
+Fixed Noon Sight form to correctly calculate eval of sun sight data. Correct interface from SightLog form to only 
+display NoonSight button on a sun sight with sight time between 1100 hr and 1400 hrs.
+Release Date: 12/27/2024 
+Release Version:  Celestial Tools (Vsn 2024-12-0027-1911)
+Release Changes: 
+1. AltSR form, NASR and all other tabular SR methods: correct code to correctly calc and report S latitudes
+and E longitudes. Validate CLS plot for AltSR tabular sight reductions as accurate and formatted correctly.
+2. HelpFiles folder in Visual Studio/GitHub folder: Add CTChangeLog text file 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Release Date: 12/12/2024 
 Release Version:  Celestial Tools (Vsn 2024-12-0012-1558)
 Release Changes: 
@@ -34,28 +46,25 @@ functions to each form so thatdata input can be saved to a text file and recalle
 2. Menu form: When Menu form loads it checks that all necessary subfolder exist. 
 If any are missing it creates them for processing use. Added subfolder for TidePredict
 and Current Predict forms.
-
-Release Date: 12/27/2024 
-Release Version:  Celestial Tools (Vsn 2024-12-0027-1911)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 11/09/2024 
+Release Version:  Celestial Tools (Vsn 2024-11-0009-2024)
 Release Changes: 
-1. AltSR form, NASR and all other tabular SR methods: correct code to correctly calc and report S latitudes
-and E longitudes. Validate CLS plot for AltSR tabular sight reductions as accurate and formatted correctly.
-2. HelpFiles folder in Visual Studio/GitHub folder: Add CTChangeLog text file 
-
-Release Date: 01/20/2025
-Release Version:  Celestial Tools (Vsn 2025-01-0017-1727)
+1. Tide Predict form and Current Predict form: Implemented these two new CT forms
+ to directly implement and mimic the same two forms as taught in the Adv Marine Nav class.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 9/17/2024 
+Release Version:  Celestial Tools (Vsn 2024-09-0017-1805)
 Release Changes: 
-Added File Save and Open logic to Sight Planner Form sight plan list so plan text files can be properly
-saved and reopened. On Sight Plan List form, added ability to Delete an individual sight. On Sight Plan List
-form added logic to prompt for a File Save when form Exit or Close is executed (if a File Save was not already done). 
-
-Release Date: 01/22/2025
-Release Version:  Celestial Tools (Vsn 2025-01-0023-1734)
+1. Tides form and Current form: Corrected calculations of Tide Heights and
+ Current speed and direction in both forms against Adv Marine Nav course material. 
+ Calcs were in errors
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 6/25/2024 
+Release Version:  Celestial Tools (Vsn 2024-06-0024-2218)
 Release Changes: 
-Fixed error in SRF SR96 LOC form when computing LHA vcorr for moon sights. 
-
-Release Date: 01/29/2025
-Release Version:  Celestial Tools (Vsn 2025-01-0028-1703)
-Release Changes: 
-Fixed Noon Sight form to correctly calculate eval of sun sight data. Correct interface from SightLog form to only 
-display NoonSight button on a sun sight with sight time between 1100 hr and 1400 hrs.
+1. Sailings Form: Corrected errors in computation of great circle routes 
+found by Mike Guler in testing during the summer.
+2. Sailings Form: Corrected and improved the Set & Drift calculation options
+ and user input fields. Added ability to use CLSPlot form to display Set & Drift data.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
