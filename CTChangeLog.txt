@@ -2,6 +2,17 @@ Celestial Tools Change Log
 
 (Most recent to oldest) 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 02/15/2025
+Release Version:  Celestial Tools (Vsn 2025-02-0015-1200)
+Release Changes: 
+Updated Sight Planner, Noon Sun Sight, SR96 LOC, Alt SR, SightLog, CLS Plot, Custom Plot,
+Sailings, Predict Tide, Predict Current, Noon Meridian Transit graph, Analema graph, and 
+and Sight Plan forms with larger default fonts (Arial 9 or 10 Bold) for easier readability.
+These changes will increase size of each form slightly but will make the forms easier to 
+read in person and easier to read over a streaming web meeting. Other forms will be updated
+in the future but these were the primary group requested for this conversion.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Release Date: 02/11/2025
 Release Version:  Celestial Tools (Vsn 2025-02-0011-1200)
 Release Changes: 
