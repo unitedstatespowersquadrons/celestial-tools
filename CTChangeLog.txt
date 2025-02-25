@@ -2,6 +2,14 @@ Celestial Tools Change Log
 
 (Most recent to oldest) 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 02/25/2025
+Release Version:  Celestial Tools (Vsn 2025-02-0025-1200)
+Release Changes: 
+Updated CLS Plot and Custom Plot forms to fix translation of mouse position over plot 
+area to lat/long coordinates. A 2 line changes in each modules had disturbed the mapping
+math and needed correction.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Release Date: 02/15/2025
 Release Version:  Celestial Tools (Vsn 2025-02-0015-1200)
 Release Changes: 
