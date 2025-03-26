@@ -1,30 +1,72 @@
 Celestial Tools Change Log
 
-Last Updated: 12/12/2024 
-Last Updated by: Harry Hammond ( harry_hammond@msn.com )
-
-Release Date: 6/25/2024 
-Release Version:  Celestial Tools (Vsn 2024-06-0024-2218)
+(Most recent to oldest) 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 03/26/2025
+Release Version:  Celestial Tools (Vsn 2025-03-0026-0800)
 Release Changes: 
-1. Sailings Form: Corrected errors in computation of great circle routes 
-found by Mike Guler in testing during the summer.
-2. Sailings Form: Corrected and improved the Set & Drift calculation options
- and user input fields. Added ability to use CLSPlot form to display Set & Drift data.
+Add edits to load event of Main Menu to check if Windows Display Scaling factor is 100%.
+If the factor is 100% then nothing is done. If the factor is not 100% then a warning 
+message is displayed informing the user that CT will not display properly and do they
+want to continue (Yes) or exit (No). If the No option is chosen, then CT exits. If the
+Yes option is chosen then a warning message appear at the bottom of the Main Menu display
+warning the user that CT forms will not display properly.
 
-
-Release Date: 9/17/2024 
-Release Version:  Celestial Tools (Vsn 2024-09-0017-1805)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 02/25/2025
+Release Version:  Celestial Tools (Vsn 2025-02-0025-1200)
 Release Changes: 
-1. Tides form and Current form: Corrected calculations of Tide Heights and
- Current speed and direction in both forms against Adv Marine Nav course material. 
- Calcs were in errors
+Updated CLS Plot and Custom Plot forms to fix translation of mouse position over plot 
+area to lat/long coordinates. A 2 line changes in each modules had disturbed the mapping
+math and needed correction.
 
-Release Date: 11/09/2024 
-Release Version:  Celestial Tools (Vsn 2024-11-0009-2024)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 02/15/2025
+Release Version:  Celestial Tools (Vsn 2025-02-0015-1200)
 Release Changes: 
-1. Tide Predict form and Current Predict form: Implemented these two new CT forms
- to directly implement and mimic the same two forms as taught in the Adv Marine Nav class.
+Updated Sight Planner, Noon Sun Sight, SR96 LOC, Alt SR, SightLog, CLS Plot, Custom Plot,
+Sailings, Predict Tide, Predict Current, Noon Meridian Transit graph, Analema graph, and 
+and Sight Plan forms with larger default fonts (Arial 9 or 10 Bold) for easier readability.
+These changes will increase size of each form slightly but will make the forms easier to 
+read in person and easier to read over a streaming web meeting. Other forms will be updated
+in the future but these were the primary group requested for this conversion.
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 02/11/2025
+Release Version:  Celestial Tools (Vsn 2025-02-0011-1200)
+Release Changes: 
+Fixed error in TVMDC form and Visualize TVMDC form to properly calc compass course from deviation.
+Reformated Main Menu buttons to:
+1. Use larger, darker font on all buttons and fields for better readability
+2. Add button to display Change Log from Help files folder
+3. Reoriented buttons for Exit, Help, PrintScreen, Change Log, and Settings so form will fit on most screens
+4. Moved various buttons in each group for better logical grouping for users.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 01/22/2025
+Release Version:  Celestial Tools (Vsn 2025-01-0023-1734)
+Release Changes: 
+Fixed error in SRF SR96 LOC form when computing LHA vcorr for moon sights. 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 01/20/2025
+Release Version:  Celestial Tools (Vsn 2025-01-0017-1727)
+Release Changes: 
+Added File Save and Open logic to Sight Planner Form sight plan list so plan text files can be properly
+saved and reopened. On Sight Plan List form, added ability to Delete an individual sight. On Sight Plan List
+form added logic to prompt for a File Save when form Exit or Close is executed (if a File Save was not already done). 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 01/29/2025
+Release Version:  Celestial Tools (Vsn 2025-01-0028-1703)
+Release Changes: 
+Fixed Noon Sight form to correctly calculate eval of sun sight data. Correct interface from SightLog form to only 
+display NoonSight button on a sun sight with sight time between 1100 hr and 1400 hrs.
+Release Date: 12/27/2024 
+Release Version:  Celestial Tools (Vsn 2024-12-0027-1911)
+Release Changes: 
+1. AltSR form, NASR and all other tabular SR methods: correct code to correctly calc and report S latitudes
+and E longitudes. Validate CLS plot for AltSR tabular sight reductions as accurate and formatted correctly.
+2. HelpFiles folder in Visual Studio/GitHub folder: Add CTChangeLog text file 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Release Date: 12/12/2024 
 Release Version:  Celestial Tools (Vsn 2024-12-0012-1558)
 Release Changes: 
@@ -34,10 +76,25 @@ functions to each form so thatdata input can be saved to a text file and recalle
 2. Menu form: When Menu form loads it checks that all necessary subfolder exist. 
 If any are missing it creates them for processing use. Added subfolder for TidePredict
 and Current Predict forms.
-
-Release Date: 12/27/2024 
-Release Version:  Celestial Tools (Vsn 2024-12-0027-1911)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 11/09/2024 
+Release Version:  Celestial Tools (Vsn 2024-11-0009-2024)
 Release Changes: 
-1. AltSR form, NASR and all other tabular SR methods: correct code to correctly calc and report S latitudes
-and E longitudes. Validate CLS plot for AltSR tabular sight reductions as accurate and formatted correctly.
-2. HelpFiles folder in Visual Studio/GitHub folder: Add CTChangeLog text file 
+1. Tide Predict form and Current Predict form: Implemented these two new CT forms
+ to directly implement and mimic the same two forms as taught in the Adv Marine Nav class.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 9/17/2024 
+Release Version:  Celestial Tools (Vsn 2024-09-0017-1805)
+Release Changes: 
+1. Tides form and Current form: Corrected calculations of Tide Heights and
+ Current speed and direction in both forms against Adv Marine Nav course material. 
+ Calcs were in errors
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 6/25/2024 
+Release Version:  Celestial Tools (Vsn 2024-06-0024-2218)
+Release Changes: 
+1. Sailings Form: Corrected errors in computation of great circle routes 
+found by Mike Guler in testing during the summer.
+2. Sailings Form: Corrected and improved the Set & Drift calculation options
+ and user input fields. Added ability to use CLSPlot form to display Set & Drift data.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
