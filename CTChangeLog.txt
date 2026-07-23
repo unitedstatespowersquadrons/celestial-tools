@@ -2,6 +2,17 @@ Celestial Tools Change Log
 
 (Most recent to oldest) 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 03/26/2025
+Release Version:  Celestial Tools (Vsn 2025-03-0026-0800)
+Release Changes: 
+Add edits to load event of Main Menu to check if Windows Display Scaling factor is 100%.
+If the factor is 100% then nothing is done. If the factor is not 100% then a warning 
+message is displayed informing the user that CT will not display properly and do they
+want to continue (Yes) or exit (No). If the No option is chosen, then CT exits. If the
+Yes option is chosen then a warning message appear at the bottom of the Main Menu display
+warning the user that CT forms will not display properly.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Release Date: 02/25/2025
 Release Version:  Celestial Tools (Vsn 2025-02-0025-1200)
 Release Changes: 
