@@ -2,6 +2,22 @@ Celestial Tools Change Log
 
 (Most recent to oldest) 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 10/14/2026
+Release Version:  Celestial Tools (Vsn 2026-10-0014-1400)
+Release Changes: 
+Sync with altest source versions in GitHub for whole project, rebuild solution, and upload latest to GitHub download.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 07/23/2026
+Release Version:  Celestial Tools (Vsn 2026-07-0023-1100)
+Release Changes: 
+Cleaned up the Star Finder display data for easier reading and use, and move the selection tab for Star Finder to end of list for Sight Planner.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Release Date: 04/15/2025
+Release Version:  Celestial Tools (Vsn 2026-04-0015-2204)
+Release Changes: 
+The body drop down list on the SRF form and the SightLog form was updated to include correct the Zubenelgenubi star entry.
+The original drop down list had several spaces appended to the end that needed to be removed to logic would use it properly
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Release Date: 03/26/2025
 Release Version:  Celestial Tools (Vsn 2025-03-0026-0800)
 Release Changes: 
